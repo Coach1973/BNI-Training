@@ -29,7 +29,7 @@ def render_row(rank, p, sessions):
 
 
 def main():
-    data = json.load(io.open("data.json", encoding="utf-8"))
+    data = json.load(io.open("data_msp.json", encoding="utf-8"))
     sessions = data["sessions"]
     people = sorted(data["people"], key=lambda p: (-p["attended_count"], p["name"]))
 
@@ -41,9 +41,9 @@ def main():
         rows_html=rows_html,
         total_people=len(people),
     )
-    with io.open("index.html", "w", encoding="utf-8") as f:
+    with io.open("msp.html", "w", encoding="utf-8") as f:
         f.write(html)
-    print("index.html done")
+    print("msp.html done")
 
 
 HTML_TEMPLATE = """<!DOCTYPE html>
@@ -139,8 +139,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </head>
 <body>
     <div class="header-container">
+        <p style="margin:0 0 10px 0;"><a href="index.html" style="color:#00f0ff;text-decoration:none;font-size:.9rem;">← 回全區培訓總覽</a></p>
         <h1>BNI 培訓紀錄總資料庫</h1>
-        <p class="subtitle">大樹教練 BNI 培訓出席戰情儀表板　2026年1月起｜共6場次</p>
+        <p class="subtitle">大樹教練 MSP初階/進階培訓出席戰情儀表板　2026年1月起｜共6場次</p>
     </div>
 
     <div class="stats-row">

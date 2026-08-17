@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BNI大台南南區 培訓總覽</title>
+<style>
+:root {
+    --bg-color: #0b0f19; --panel-bg: #1a2333; --text-main: #e2e8f0; --text-muted: #64748b;
+    --neon-blue: #00f0ff; --neon-green: #10b981; --neon-red: #ff2a2a; --neon-gold: #f59e0b;
+    --silver: #cbd5e1; --bronze: #d97706;
+}
+* { box-sizing: border-box; }
+body {
+    background: var(--bg-color); color: var(--text-main);
+    font-family: 'Helvetica Neue','PingFang TC','Microsoft JhengHei',sans-serif;
+    margin: 0; padding: 40px 20px; display: flex; flex-direction: column; align-items: center;
+}
+.header-container { text-align: center; margin-bottom: 24px; }
+h1 { color: var(--neon-blue); font-size: 2.2rem; letter-spacing: 2px; margin: 0; text-shadow: 0 0 15px rgba(0,240,255,.5); }
+p.subtitle { color: var(--text-muted); font-size: 1rem; margin-top: 10px; }
+.nav-link { color: var(--neon-blue); text-decoration: none; font-size: .88rem; }
+
+.tabs { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1200px; margin-bottom: 24px; }
+.tab-btn {
+    background: var(--panel-bg); border: 1px solid #2d3748; color: var(--text-muted);
+    padding: 12px 22px; border-radius: 999px; cursor: pointer; font-size: .95rem; font-weight: 600;
+    letter-spacing: 1px; transition: all .2s ease;
+}
+.tab-btn.active { color: #0b0f19; background: var(--neon-blue); border-color: var(--neon-blue); box-shadow: 0 0 20px rgba(0,240,255,.5); }
+.tab-btn:hover:not(.active) { border-color: var(--neon-blue); color: var(--neon-blue); }
+
+.stats-row { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; width: 100%; max-width: 1200px; margin-bottom: 28px; }
+.stat-card { background: var(--panel-bg); border: 1px solid #2d3748; border-radius: 10px; padding: 16px 26px; min-width: 150px; text-align: center; }
+.stat-card .num { font-size: 1.8rem; font-weight: bold; color: var(--neon-blue); text-shadow: 0 0 10px rgba(0,240,255,.4); }
+.stat-card .lbl { font-size: .8rem; color: var(--text-muted); margin-top: 4px; letter-spacing: 1px; }
+
+.section { width: 100%; max-width: 1200px; margin-bottom: 32px; }
+.section-title { color: var(--neon-gold); font-size: 1.3rem; letter-spacing: 2px; text-align: center; margin: 0 0 6px 0; text-shadow: 0 0 12px rgba(245,158,11,.4); }
+.section-sub { color: var(--text-muted); text-align: center; font-size: .88rem; margin: 0 0 24px 0; }
+
+/* ===== TOP10 表揚榜 ===== */
+.podium { display: flex; align-items: flex-end; justify-content: center; gap: 18px; margin-bottom: 28px; flex-wrap: wrap; }
+.podium-card {
+    background: linear-gradient(180deg, #1a2333 0%, #0f172a 100%);
+    border-radius: 14px; padding: 20px 18px; text-align: center; width: 180px;
+    position: relative; border: 2px solid #2d3748;
+}
+.podium-card.rank-1 { order: 2; width: 210px; padding-top: 34px; border-color: var(--neon-gold); box-shadow: 0 0 35px rgba(245,158,11,.45); }
+.podium-card.rank-2 { order: 1; border-color: var(--silver); box-shadow: 0 0 22px rgba(203,213,225,.3); }
+.podium-card.rank-3 { order: 3; border-color: var(--bronze); box-shadow: 0 0 22px rgba(217,119,6,.3); }
+.medal { font-size: 2.4rem; line-height: 1; margin-bottom: 6px; }
+.podium-card.rank-1 .medal { font-size: 3rem; }
+.podium-name { font-weight: bold; color: #fff; font-size: 1.1rem; margin-bottom: 4px; }
+.podium-chapter { color: var(--text-muted); font-size: .8rem; margin-bottom: 10px; }
+.podium-count { font-size: 1.5rem; font-weight: bold; color: var(--neon-gold); }
+.podium-card.rank-2 .podium-count { color: var(--silver); }
+.podium-card.rank-3 .podium-count { color: var(--bronze); }
+.podium-count-lbl { font-size: .72rem; color: var(--text-muted); letter-spacing: 1px; }
+
+.rank-list { max-width: 700px; margin: 0 auto; background: var(--panel-bg); border-radius: 12px; border: 1px solid #2d3748; overflow: hidden; }
+.rank-row { display: flex; align-items: center; gap: 14px; padding: 12px 20px; border-bottom: 1px solid #2d3748; }
+.rank-row:last-child { border-bottom: none; }
+.rank-badge {
+    width: 30px; height: 30px; border-radius: 50%; border: 2px solid var(--neon-gold); color: var(--neon-gold);
+    display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: .85rem; flex-shrink: 0;
+}
+.rank-row .rname { font-weight: bold; color: #fff; flex: 1; }
+.rank-row .rchapter { color: var(--text-muted); font-size: .82rem; }
+.rank-row .rcount { color: var(--neon-gold); font-weight: bold; font-size: 1rem; }
+.congrats { text-align: center; color: var(--neon-gold); font-size: .95rem; margin: 0 0 22px 0; letter-spacing: 1px; }
+.empty-note { text-align: center; color: var(--text-muted); padding: 30px; }
+
+/* ===== 分會排名 ===== */
+.chapter-rank { max-width: 800px; margin: 0 auto; background: var(--panel-bg); border-radius: 12px; border: 1px solid #2d3748; padding: 24px 28px; }
+.chapter-row { margin-bottom: 16px; }
+.chapter-row:last-child { margin-bottom: 0; }
+.chapter-row-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+.chapter-row-head .cname { font-weight: bold; color: #fff; font-size: 1rem; }
+.chapter-row-head .cname .badge { color: var(--neon-gold); margin-right: 8px; }
+.chapter-row-head .cstat { color: var(--text-muted); font-size: .8rem; }
+.chapter-bar-bg { background: #0f172a; border-radius: 6px; height: 14px; overflow: hidden; }
+.chapter-bar-fill { height: 100%; background: linear-gradient(90deg, var(--neon-blue), var(--neon-green)); border-radius: 6px; transition: width .4s ease; }
+
+/* ===== 明細表 ===== */
+.controls { width: 100%; max-width: 1200px; display: flex; gap: 10px; margin-bottom: 12px; }
+.controls input[type=text] { flex: 1; background: var(--panel-bg); border: 1px solid #2d3748; color: var(--text-main); padding: 10px 14px; border-radius: 8px; font-size: 1rem; }
+.table-wrapper { width: 100%; max-width: 1200px; background: var(--panel-bg); border-radius: 12px; border: 1px solid #2d3748; overflow: auto; max-height: 520px; }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+thead th { position: sticky; top: 0; background: #0f172a; padding: 12px 16px; color: var(--neon-blue); font-weight: 600; font-size: .85rem; border-bottom: 2px solid var(--neon-blue); }
+tbody td { padding: 10px 16px; border-bottom: 1px solid #2d3748; font-size: .9rem; }
+tbody tr:hover { background: rgba(0,240,255,.05); }
+.td-date { color: var(--text-muted); white-space: nowrap; font-size: .85rem; }
+.td-name { font-weight: bold; color: #fff; }
+.td-chapter { color: #94a3b8; font-size: .82rem; }
+.td-type { color: var(--neon-green); font-size: .85rem; }
+
+.note-panel { width: 100%; max-width: 1200px; margin-top: 8px; background: #1a2333; border-radius: 12px; border: 1px solid #2d3748; padding: 22px 28px; }
+.note-panel p { color: #e2e8f0; line-height: 1.8; margin: 0; font-size: .88rem; }
+
+@media (max-width: 600px) {
+    body { padding: 20px 10px; }
+    h1 { font-size: 1.4rem; }
+    .podium-card { width: 130px; padding: 14px 10px; }
+    .podium-card.rank-1 { width: 150px; }
+}
+</style>
+</head>
+<body>
+    <div class="header-container">
+        <p style="margin:0 0 10px 0;"><a class="nav-link" href="msp.html">MSP初階/進階培訓紀錄 →</a></p>
+        <h1>BNI大台南南區 培訓總覽</h1>
+        <p class="subtitle">大樹教練｜__DATE_RANGE__｜共__TOTAL_RECORDS__筆官方培訓紀錄</p>
+    </div>
+
+    <div class="tabs" id="tabs">
+        <button class="tab-btn" data-months="3">近3個月</button>
+        <button class="tab-btn active" data-months="6">近6個月</button>
+        <button class="tab-btn" data-months="12">近12個月</button>
+        <button class="tab-btn" data-months="18">近18個月</button>
+        <button class="tab-btn" data-months="24">近24個月</button>
+        <button class="tab-btn" data-months="all">全部(8年+)</button>
+    </div>
+
+    <div class="stats-row" id="statsRow"></div>
+
+    <div class="section">
+        <div class="section-title">🏆 培訓達人排行榜 TOP 10</div>
+        <div class="section-sub" id="rankSub"></div>
+        <div id="podiumArea"></div>
+        <div id="rankListArea"></div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">🏛️ 分會培訓排名</div>
+        <div class="section-sub">各分會在所選期間內的培訓人次總量比較</div>
+        <div class="chapter-rank" id="chapterRankArea"></div>
+    </div>
+
+    <div class="section">
+        <div class="section-title" style="font-size:1.05rem;">📋 培訓紀錄明細</div>
+        <div class="controls">
+            <input type="text" id="searchBox" placeholder="搜尋姓名...">
+        </div>
+        <div class="table-wrapper">
+            <table>
+                <thead><tr><th>日期</th><th>姓名</th><th>分會</th><th>培訓類型</th></tr></thead>
+                <tbody id="detailBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="note-panel">
+        <p>資料來源：BNI Connect官方「地區會員培訓報告」匯出，涵蓋大台南南區5個分會(真富/真愛/真誠/真鑫/真鑽)。時間窗以「今天」往回算，各分頁切換即時重新計算排行榜與分會排名，不需重新整理頁面。培訓類型含：會員成功專案、董事培訓、領導團隊培訓、Workshop、BNI台灣會員大會。</p>
+    </div>
+
+    <script>
+        const RECORDS = __RECORDS_JSON__;
+        const MEDALS = ['🥇', '🥈', '🥉'];
+
+        function monthsAgo(n) {
+            const d = new Date();
+            d.setMonth(d.getMonth() - n);
+            return d;
+        }
+
+        function fmtDate(d) {
+            return d.toISOString().slice(0, 10);
+        }
+
+        function filterByWindow(months) {
+            if (months === 'all') return RECORDS.slice();
+            const cutoff = fmtDate(monthsAgo(parseInt(months, 10)));
+            return RECORDS.filter(r => r.event_date >= cutoff);
+        }
+
+        function renderStats(filtered) {
+            const people = new Set(filtered.map(r => r.name));
+            const chapters = new Set(filtered.map(r => r.chapter));
+            const el = document.getElementById('statsRow');
+            el.innerHTML = `
+                <div class="stat-card"><div class="num">${filtered.length}</div><div class="lbl">培訓人次</div></div>
+                <div class="stat-card"><div class="num">${people.size}</div><div class="lbl">參與會員數</div></div>
+                <div class="stat-card"><div class="num">${chapters.size}</div><div class="lbl">涵蓋分會數</div></div>
+            `;
+        }
+
+        function renderRanking(filtered) {
+            const counts = {};
+            filtered.forEach(r => {
+                if (!counts[r.name]) counts[r.name] = { name: r.name, chapter: r.chapter, count: 0 };
+                counts[r.name].count++;
+            });
+            const ranked = Object.values(counts).sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+            const top10 = ranked.slice(0, 10);
+
+            const sub = document.getElementById('rankSub');
+            const podiumArea = document.getElementById('podiumArea');
+            const listArea = document.getElementById('rankListArea');
+
+            if (top10.length === 0) {
+                sub.textContent = '';
+                podiumArea.innerHTML = '<div class="empty-note">這個時間範圍內還沒有培訓紀錄</div>';
+                listArea.innerHTML = '';
+                return;
+            }
+
+            sub.innerHTML = '<span class="congrats">★ 恭喜以下夥伴，持續投資自己、全力以赴成長 ★</span>';
+
+            const top3 = top10.slice(0, 3);
+            podiumArea.innerHTML = '<div class="podium">' + top3.map((p, i) => `
+                <div class="podium-card rank-${i + 1}">
+                    <div class="medal">${MEDALS[i]}</div>
+                    <div class="podium-name">${p.name}</div>
+                    <div class="podium-chapter">${p.chapter}</div>
+                    <div class="podium-count">${p.count}</div>
+                    <div class="podium-count-lbl">次培訓</div>
+                </div>
+            `).join('') + '</div>';
+
+            const rest = top10.slice(3);
+            if (rest.length === 0) {
+                listArea.innerHTML = '';
+            } else {
+                listArea.innerHTML = '<div class="rank-list">' + rest.map((p, i) => `
+                    <div class="rank-row">
+                        <div class="rank-badge">${i + 4}</div>
+                        <div class="rname">${p.name}</div>
+                        <div class="rchapter">${p.chapter}</div>
+                        <div class="rcount">${p.count} 次</div>
+                    </div>
+                `).join('') + '</div>';
+            }
+        }
+
+        function renderChapterRank(filtered) {
+            const stats = {};
+            filtered.forEach(r => {
+                if (!stats[r.chapter]) stats[r.chapter] = { chapter: r.chapter, count: 0, people: new Set() };
+                stats[r.chapter].count++;
+                stats[r.chapter].people.add(r.name);
+            });
+            const ranked = Object.values(stats).sort((a, b) => b.count - a.count);
+            const maxCount = ranked.length ? ranked[0].count : 1;
+            const el = document.getElementById('chapterRankArea');
+
+            if (ranked.length === 0) {
+                el.innerHTML = '<div class="empty-note">這個時間範圍內還沒有培訓紀錄</div>';
+                return;
+            }
+
+            el.innerHTML = ranked.map((c, i) => {
+                const avg = (c.count / c.people.size).toFixed(1);
+                const pct = Math.max(6, Math.round((c.count / maxCount) * 100));
+                return `
+                <div class="chapter-row">
+                    <div class="chapter-row-head">
+                        <div class="cname"><span class="badge">No.${i + 1}</span>${c.chapter}</div>
+                        <div class="cstat">${c.count} 人次｜${c.people.size} 人參與｜平均 ${avg} 次/人</div>
+                    </div>
+                    <div class="chapter-bar-bg"><div class="chapter-bar-fill" style="width:${pct}%"></div></div>
+                </div>`;
+            }).join('');
+        }
+
+        function renderDetail(filtered, query) {
+            const q = (query || '').trim();
+            const rows = filtered
+                .filter(r => !q || r.name.includes(q))
+                .sort((a, b) => b.event_date.localeCompare(a.event_date));
+            const body = document.getElementById('detailBody');
+            if (rows.length === 0) {
+                body.innerHTML = '<tr><td colspan="4" style="text-align:center;color:#64748b;padding:24px;">沒有符合的紀錄</td></tr>';
+                return;
+            }
+            body.innerHTML = rows.map(r => `
+                <tr>
+                    <td class="td-date">${r.event_date}</td>
+                    <td class="td-name">${r.name}</td>
+                    <td class="td-chapter">${r.chapter}</td>
+                    <td class="td-type">${r.event_type}</td>
+                </tr>
+            `).join('');
+        }
+
+        let currentFiltered = [];
+
+        function renderAll(months) {
+            currentFiltered = filterByWindow(months);
+            renderStats(currentFiltered);
+            renderRanking(currentFiltered);
+            renderChapterRank(currentFiltered);
+            renderDetail(currentFiltered, document.getElementById('searchBox').value);
+        }
+
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderAll(btn.dataset.months);
+            });
+        });
+
+        document.getElementById('searchBox').addEventListener('input', (e) => {
+            renderDetail(currentFiltered, e.target.value);
+        });
+
+        renderAll('6');
+    </script>
+</body>
+</html>

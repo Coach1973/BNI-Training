@@ -117,9 +117,9 @@ def main():
         "sessions": SESSIONS,
         "people": people,
     }
-    with io.open("data.json", "w", encoding="utf-8") as f:
+    with io.open("data_msp.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    print("data.json done, %d people" % len(people))
+    print("data_msp.json done, %d people" % len(people))
 
 
 if __name__ == "__main__":
