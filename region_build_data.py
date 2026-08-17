@@ -85,6 +85,17 @@ SEED_TEACHER_FILL = {
 }
 
 
+# ---- 教練口頭更正：官方報表漏登記的真實出席(2026-08-17) ----
+# 教練核對「在珍近6個月多上的4場」後親口確認：這4場佩君都有實際到場，只是官方報表沒登記到。
+# 這不是估算，是教練指名的真實出席事實，逐筆列出日期+培訓類型直接併入正式記錄。
+MANUAL_ATTENDANCE_CORRECTIONS = [
+    {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-03-12", "event_type": "Workshop"},
+    {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-03-14", "event_type": "董事培訓 - Taiwan"},
+    {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-07-06", "event_type": "董事培訓 - Taiwan"},
+    {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-07-17", "event_type": "領導團隊培訓"},
+]
+
+
 def month_range(start_ym, end_ym):
     y, m = map(int, start_ym.split("-"))
     ey, em = map(int, end_ym.split("-"))
@@ -152,7 +163,7 @@ def main():
                 break
 
     seed_fill_records = build_seed_teacher_fill(official_records, msp_records)
-    all_records = official_records + msp_records + seed_fill_records
+    all_records = official_records + msp_records + seed_fill_records + MANUAL_ATTENDANCE_CORRECTIONS
 
     # 已離會會員先拿掉，再套分會白名單——分會不明(兩邊資料都對不到)的紀錄也一併排除，
     # 因為沒辦法確認他是不是真鑫/真誠/真鑽，寧可不顯示也不要顯示錯分會
@@ -188,8 +199,9 @@ def main():
     }
     with io.open("data.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
-    print("data.json done, %d records (%d official + %d MSP + %d seed-teacher-fill), %d chapters" % (
-        len(public_records), len(official_records), len(msp_records), len(seed_fill_records), len(chapters)))
+    print("data.json done, %d records (%d official + %d MSP + %d seed-teacher-fill + %d manual-correction), %d chapters" % (
+        len(public_records), len(official_records), len(msp_records), len(seed_fill_records),
+        len(MANUAL_ATTENDANCE_CORRECTIONS), len(chapters)))
 
 
 if __name__ == "__main__":
