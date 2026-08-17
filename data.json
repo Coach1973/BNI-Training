@@ -1,8 +1,6 @@
 {
  "generated_note": "公開版：官方BNI Connect報表 + 教練自訂MSP初階/進階/主題培訓 兩條資料源合併，只含分會/姓名/培訓類型/日期。電話/email/角色等個資在私有大腦repo維護，不放這裡。",
  "chapters": [
-  "真富",
-  "真愛",
   "真誠",
   "真鑫",
   "真鑽"
@@ -18,148 +16,10 @@
   "領導團隊培訓"
  ],
  "date_range": [
-  "2018-02-03",
+  "2018-04-13",
   "2026-08-17"
  ],
  "records": [
-  {
-   "chapter": "真富",
-   "name": "朱正文",
-   "event_date": "2026-01-07",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真富",
-   "name": "朱正文",
-   "event_date": "2024-09-07",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真富",
-   "name": "朱正文",
-   "event_date": "2024-11-08",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真富",
-   "name": "朱正文",
-   "event_date": "2025-09-06",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真富",
-   "name": "朱正文",
-   "event_date": "2024-05-11",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真富",
-   "name": "朱正文",
-   "event_date": "2024-09-14",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真富",
-   "name": "朱正文",
-   "event_date": "2025-01-13",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真富",
-   "name": "朱正文",
-   "event_date": "2025-10-25",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真富",
-   "name": "朱正文",
-   "event_date": "2024-05-25",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真富",
-   "name": "朱正文",
-   "event_date": "2024-11-02",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真富",
-   "name": "朱正文",
-   "event_date": "2025-04-19",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真富",
-   "name": "朱正文",
-   "event_date": "2018-02-03",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真富",
-   "name": "高琬婷",
-   "event_date": "2025-02-14",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真富",
-   "name": "高琬婷",
-   "event_date": "2025-03-13",
-   "event_type": "Workshop"
-  },
-  {
-   "chapter": "真富",
-   "name": "高琬婷",
-   "event_date": "2025-01-13",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真愛",
-   "name": "蘇子毓",
-   "event_date": "2025-09-06",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真愛",
-   "name": "蘇子毓",
-   "event_date": "2025-09-08",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真愛",
-   "name": "黃建輝",
-   "event_date": "2025-09-06",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真愛",
-   "name": "黃建輝",
-   "event_date": "2025-09-08",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真愛",
-   "name": "陳新典",
-   "event_date": "2025-09-08",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真愛",
-   "name": "張瑞峰",
-   "event_date": "2025-09-08",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真愛",
-   "name": "許馨方",
-   "event_date": "2025-11-20",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真愛",
-   "name": "許馨方",
-   "event_date": "2025-09-08",
-   "event_type": "會員成功專案"
-  },
   {
    "chapter": "真誠",
    "name": "趙世穎",
@@ -4877,25 +4737,25 @@
    "event_type": "初階MSP"
   },
   {
-   "chapter": null,
+   "chapter": "真誠",
    "name": "林佳伶",
    "event_date": "2026-05-11",
    "event_type": "初階MSP"
   },
   {
-   "chapter": null,
+   "chapter": "真誠",
    "name": "林佳伶",
    "event_date": "2026-06-11",
    "event_type": "主題培訓"
   },
   {
-   "chapter": null,
+   "chapter": "真誠",
    "name": "林佳伶",
    "event_date": "2026-06-15",
    "event_type": "進階MSP"
   },
   {
-   "chapter": null,
+   "chapter": "真誠",
    "name": "林佳伶",
    "event_date": "2026-07-20",
    "event_type": "初階MSP"
@@ -4995,18 +4855,6 @@
    "name": "林佳慧",
    "event_date": "2026-07-20",
    "event_type": "初階MSP"
-  },
-  {
-   "chapter": null,
-   "name": "陳欣佑",
-   "event_date": "2026-06-11",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": null,
-   "name": "陳家煖",
-   "event_date": "2026-06-11",
-   "event_type": "主題培訓"
   },
   {
    "chapter": "真鑽",
@@ -5027,12 +4875,6 @@
    "event_type": "進階MSP"
   },
   {
-   "chapter": null,
-   "name": "江紫緹",
-   "event_date": "2026-04-13",
-   "event_type": "進階MSP"
-  },
-  {
    "chapter": "真誠",
    "name": "郭展鴻",
    "event_date": "2026-04-13",
@@ -5041,12 +4883,6 @@
   {
    "chapter": "真誠",
    "name": "葉建葳",
-   "event_date": "2026-04-13",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真愛",
-   "name": "陳新典",
    "event_date": "2026-04-13",
    "event_type": "進階MSP"
   },
@@ -5087,56 +4923,14 @@
    "event_type": "初階MSP"
   },
   {
-   "chapter": null,
-   "name": "林尹渟",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
    "chapter": "真鑽",
    "name": "楊尚儒",
    "event_date": "2026-05-11",
    "event_type": "初階MSP"
   },
   {
-   "chapter": null,
-   "name": "謝盛峰",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": null,
-   "name": "范郁斌",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": null,
-   "name": "葉彤黎",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": null,
-   "name": "伍芬群",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": null,
-   "name": "吳三貴",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
    "chapter": "真鑽",
    "name": "林宜宏",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": null,
-   "name": "徐偉倫",
    "event_date": "2026-06-15",
    "event_type": "進階MSP"
   },
@@ -5147,32 +4941,14 @@
    "event_type": "進階MSP"
   },
   {
-   "chapter": null,
-   "name": "楊凱為",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
    "chapter": "真鑫",
    "name": "薛如媛",
    "event_date": "2026-07-20",
    "event_type": "初階MSP"
   },
   {
-   "chapter": null,
-   "name": "蔡佩彤",
-   "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
    "chapter": "真鑫",
    "name": "柯宗佑",
-   "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": null,
-   "name": "許超尊",
    "event_date": "2026-07-20",
    "event_type": "初階MSP"
   },
@@ -5201,12 +4977,6 @@
    "event_type": "初階MSP"
   },
   {
-   "chapter": null,
-   "name": "杜泱畯",
-   "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
    "chapter": "真鑽",
    "name": "郭馨文",
    "event_date": "2026-07-20",
@@ -5215,99 +4985,15 @@
  ],
  "roster": [
   {
-   "name": "伍芬群",
-   "chapter": null
-  },
-  {
-   "name": "吳三貴",
-   "chapter": null
-  },
-  {
-   "name": "徐偉倫",
-   "chapter": null
-  },
-  {
-   "name": "杜泱畯",
-   "chapter": null
-  },
-  {
-   "name": "林佳伶",
-   "chapter": null
-  },
-  {
-   "name": "林尹渟",
-   "chapter": null
-  },
-  {
-   "name": "楊凱為",
-   "chapter": null
-  },
-  {
-   "name": "江紫緹",
-   "chapter": null
-  },
-  {
-   "name": "范郁斌",
-   "chapter": null
-  },
-  {
-   "name": "葉彤黎",
-   "chapter": null
-  },
-  {
-   "name": "蔡佩彤",
-   "chapter": null
-  },
-  {
-   "name": "許超尊",
-   "chapter": null
-  },
-  {
-   "name": "謝盛峰",
-   "chapter": null
-  },
-  {
-   "name": "陳家煖",
-   "chapter": null
-  },
-  {
-   "name": "陳欣佑",
-   "chapter": null
-  },
-  {
-   "name": "朱正文",
-   "chapter": "真富"
-  },
-  {
-   "name": "高琬婷",
-   "chapter": "真富"
-  },
-  {
-   "name": "張瑞峰",
-   "chapter": "真愛"
-  },
-  {
-   "name": "蘇子毓",
-   "chapter": "真愛"
-  },
-  {
-   "name": "許馨方",
-   "chapter": "真愛"
-  },
-  {
-   "name": "陳新典",
-   "chapter": "真愛"
-  },
-  {
-   "name": "黃建輝",
-   "chapter": "真愛"
-  },
-  {
    "name": "張羽家",
    "chapter": "真誠"
   },
   {
    "name": "李美花",
+   "chapter": "真誠"
+  },
+  {
+   "name": "林佳伶",
    "chapter": "真誠"
   },
   {

@@ -44,6 +44,14 @@ MSP_SESSION_TYPE = {
 }
 MSP_ATTENDED_STATUS = (msp.P, msp.T, msp.SH)  # 出席／講師0元／分享0元都算真的有到場受訓
 
+# 教練2026-08-17裁示：只留真鑫/真誠/真鑽3分會，真愛/真富資料整個拿掉
+CHAPTER_ALLOWLIST = {"真鑫", "真誠", "真鑽"}
+
+# 已離會會員，教練口述指定不列入計算（陸續補充，姓名須完全比對官方報表用字）
+DEPARTED_MEMBERS = {
+    "江維宣",  # 真誠分會，教練2026-08-17指定
+}
+
 
 def build_msp_records():
     records = []
@@ -76,13 +84,28 @@ def main():
     msp_records = build_msp_records()
 
     # MSP名單裡分會欄位大多是None(教練原始資料只標了6人的分會)，
-    # 用官方報表的姓名→分會對照回填，讓同一個人不會因為紀錄來源不同、分會欄位時有時無
+    # 用官方報表的姓名→分會對照回填，讓同一個人不會因為紀錄來源不同、分會欄位時有時無。
+    # 先試完全比對，比對不到再試前綴(例如MSP名單的"林佳伶"要對到官方報表的"林佳伶 Lavi")。
     official_chapter = {r["name"]: r["chapter"] for r in official_records if r["chapter"]}
     for r in msp_records:
-        if not r["chapter"] and r["name"] in official_chapter:
+        if r["chapter"]:
+            continue
+        if r["name"] in official_chapter:
             r["chapter"] = official_chapter[r["name"]]
+            continue
+        for oname, ochapter in official_chapter.items():
+            if oname.startswith(r["name"]) or r["name"].startswith(oname):
+                r["chapter"] = ochapter
+                break
 
-    public_records = official_records + msp_records
+    all_records = official_records + msp_records
+
+    # 已離會會員先拿掉，再套分會白名單——分會不明(兩邊資料都對不到)的紀錄也一併排除，
+    # 因為沒辦法確認他是不是真鑫/真誠/真鑽，寧可不顯示也不要顯示錯分會
+    public_records = [
+        r for r in all_records
+        if r["name"] not in DEPARTED_MEMBERS and r["chapter"] in CHAPTER_ALLOWLIST
+    ]
 
     chapters = sorted(set(r["chapter"] for r in public_records if r["chapter"]))
     event_types = sorted(set(r["event_type"] for r in public_records))

@@ -31,6 +31,19 @@ p.subtitle { color: var(--line); font-size: 1rem; margin-top: 12px; }
 .tab-btn.active { color: var(--white); background: var(--red); border-color: var(--red); }
 .tab-btn:hover:not(.active) { border-color: var(--red); color: var(--red-dark); }
 
+.custom-months {
+    display: flex; align-items: center; gap: 8px; justify-content: center; flex-wrap: wrap;
+    width: 100%; max-width: 1200px; margin: 0 20px 28px; padding: 14px 20px;
+    background: var(--white); border: 1px solid var(--line); border-radius: 4px; font-size: .9rem; color: var(--sub);
+}
+.custom-months input[type=number] {
+    width: 80px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 4px;
+    font-size: .95rem; color: var(--ink); text-align: center;
+}
+.custom-months input[type=number]:focus { outline: none; border-color: var(--red); }
+.custom-months button { padding: 8px 18px; font-size: .85rem; }
+.custom-months #customMonthsResult { color: var(--red-dark); font-weight: 700; margin-left: 6px; }
+
 .stats-row { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; width: 100%; max-width: 1200px; margin: 0 20px 28px; padding: 0 20px; }
 .stat-card { background: var(--white); border: 1px solid var(--line); border-radius: 4px; padding: 16px 26px; min-width: 150px; text-align: center; }
 .stat-card .num { font-size: 1.9rem; font-weight: 900; color: var(--red); }
@@ -126,7 +139,7 @@ tbody tr:hover { background: var(--paper); }
     <div class="header-container">
         <p style="margin:0 0 10px 0;"><a class="nav-link" href="msp.html">MSP初階/進階培訓紀錄 →</a></p>
         <h1>BNI大台南南區 培訓總覽</h1>
-        <p class="subtitle">大樹教練｜__DATE_RANGE__｜共__TOTAL_RECORDS__筆官方培訓紀錄</p>
+        <p class="subtitle">大樹教練｜__DATE_RANGE__｜共__TOTAL_RECORDS__筆培訓紀錄｜真鑫・真誠・真鑽</p>
     </div>
 
     <div class="tabs" id="tabs">
@@ -135,7 +148,18 @@ tbody tr:hover { background: var(--paper); }
         <button class="tab-btn" data-months="12">近12個月</button>
         <button class="tab-btn" data-months="18">近18個月</button>
         <button class="tab-btn" data-months="24">近24個月</button>
+        <button class="tab-btn" data-months="36">近36個月</button>
+        <button class="tab-btn" data-months="48">近48個月</button>
+        <button class="tab-btn" data-months="60">近60個月</button>
         <button class="tab-btn" data-months="all">全部(8年+)</button>
+    </div>
+
+    <div class="custom-months">
+        <label for="customMonths">自訂查詢：近</label>
+        <input type="number" id="customMonths" min="1" max="200" placeholder="例如 15">
+        <label for="customMonths">個月</label>
+        <button id="customMonthsBtn" class="tab-btn">查詢</button>
+        <span id="customMonthsResult"></span>
     </div>
 
     <div class="stats-row" id="statsRow"></div>
@@ -173,7 +197,7 @@ tbody tr:hover { background: var(--paper); }
     </div>
 
     <div class="note-panel">
-        <p>資料來源：BNI Connect官方「地區會員培訓報告」匯出，涵蓋大台南南區5個分會(真富/真愛/真誠/真鑫/真鑽)。時間窗以「今天」往回算，各分頁切換即時重新計算排行榜與分會排名，不需重新整理頁面。培訓類型含：會員成功專案、董事培訓、領導團隊培訓、Workshop、BNI台灣會員大會。</p>
+        <p>資料來源：BNI Connect官方「地區會員培訓報告」+ 教練自訂MSP初階/進階/主題培訓，僅涵蓋真鑫/真誠/真鑽3個分會。時間窗以「今天」往回算，也可以在上方輸入任意月數自訂查詢區間，各分頁切換即時重新計算排行榜與分會排名，不需重新整理頁面。培訓類型含：會員成功專案、董事培訓、領導團隊培訓、Workshop、BNI台灣會員大會、初階/進階MSP、主題培訓。</p>
     </div>
 
     <script>
@@ -355,12 +379,29 @@ tbody tr:hover { background: var(--paper); }
             renderDetail(currentFiltered, document.getElementById('searchBox').value);
         }
 
-        document.querySelectorAll('.tab-btn').forEach(btn => {
+        function clearActiveTabs() {
+            document.querySelectorAll('#tabs .tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('customMonthsResult').textContent = '';
+        }
+
+        document.querySelectorAll('#tabs .tab-btn').forEach(btn => {
             btn.addEventListener('click', () => {
-                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                clearActiveTabs();
                 btn.classList.add('active');
                 renderAll(btn.dataset.months);
             });
+        });
+
+        function runCustomMonths() {
+            const val = parseInt(document.getElementById('customMonths').value, 10);
+            if (!val || val < 1) return;
+            clearActiveTabs();
+            document.getElementById('customMonthsResult').textContent = `目前顯示：近 ${val} 個月`;
+            renderAll(String(val));
+        }
+        document.getElementById('customMonthsBtn').addEventListener('click', runCustomMonths);
+        document.getElementById('customMonths').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') runCustomMonths();
         });
 
         document.getElementById('searchBox').addEventListener('input', (e) => {
