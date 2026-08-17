@@ -4886,6 +4886,24 @@
    "event_type": "進階MSP"
   },
   {
+   "chapter": "真鑽",
+   "name": "楊仁豪",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊仁豪",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊仁豪",
+   "event_date": "2026-08-17",
+   "event_type": "主題培訓"
+  },
+  {
    "chapter": "真鑫",
    "name": "王聖凱",
    "event_date": "2026-05-11",
@@ -4920,6 +4938,12 @@
    "name": "楊尚儒",
    "event_date": "2026-05-11",
    "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊尚儒",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
   },
   {
    "chapter": "真鑫",
@@ -5013,7 +5037,7 @@
   },
   {
    "chapter": "真鑽",
-   "name": "杜泱畯",
+   "name": "杜泱峻",
    "event_date": "2026-07-20",
    "event_type": "初階MSP"
   },
@@ -5022,6 +5046,48 @@
    "name": "郭馨文",
    "event_date": "2026-07-20",
    "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "王彤",
+   "event_date": "2026-04-13",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "王彤",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "王彤",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "王彤",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "王彤",
+   "event_date": "2026-08-17",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "張羽家",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "張羽家",
+   "event_date": "2026-08-17",
+   "event_type": "主題培訓"
   },
   {
    "chapter": "真誠",
@@ -5076,18 +5142,6 @@
    "chapter": "真誠",
    "event_date": "2026-07-06",
    "event_type": "引薦+1對1工作坊"
-  },
-  {
-   "name": "張羽家",
-   "chapter": "真誠",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "name": "張羽家",
-   "chapter": "真誠",
-   "event_date": "2026-08-17",
-   "event_type": "主題培訓"
   },
   {
    "name": "李美花",
@@ -5679,10 +5733,6 @@
   },
   {
    "name": "杜泱峻",
-   "chapter": "真鑽"
-  },
-  {
-   "name": "杜泱畯",
    "chapter": "真鑽"
   },
   {

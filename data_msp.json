@@ -448,13 +448,13 @@
       "chapter": "真鑽",
       "attendance": {
         "0413": "present",
-        "0511": "nodata",
-        "0611": "nodata",
-        "0615": "nodata",
-        "0720": "nodata",
-        "0817": "nodata"
+        "0511": "absent",
+        "0611": "absent",
+        "0615": "teacher0",
+        "0720": "teacher0",
+        "0817": "teacher0"
       },
-      "attended_count": 1
+      "attended_count": 4
     },
     {
       "name": "王聖凱",
@@ -525,14 +525,14 @@
       "name": "楊尚儒",
       "chapter": "真鑽",
       "attendance": {
-        "0413": "nodata",
+        "0413": "absent",
         "0511": "present",
-        "0611": "nodata",
-        "0615": "nodata",
-        "0720": "nodata",
-        "0817": "nodata"
+        "0611": "absent",
+        "0615": "teacher0",
+        "0720": "absent",
+        "0817": "absent"
       },
-      "attended_count": 1
+      "attended_count": 2
     },
     {
       "name": "謝盛峰",
@@ -730,7 +730,7 @@
       "attended_count": 1
     },
     {
-      "name": "杜泱畯",
+      "name": "杜泱峻",
       "chapter": "真鑽",
       "attendance": {
         "0413": "nodata",
@@ -754,6 +754,32 @@
         "0817": "nodata"
       },
       "attended_count": 1
+    },
+    {
+      "name": "王彤",
+      "chapter": "真誠",
+      "attendance": {
+        "0413": "teacher0",
+        "0511": "share0",
+        "0611": "nodata",
+        "0615": "teacher0",
+        "0720": "teacher0",
+        "0817": "teacher0"
+      },
+      "attended_count": 5
+    },
+    {
+      "name": "張羽家",
+      "chapter": "真誠",
+      "attendance": {
+        "0413": "nodata",
+        "0511": "nodata",
+        "0611": "nodata",
+        "0615": "teacher0",
+        "0720": "nodata",
+        "0817": "teacher0"
+      },
+      "attended_count": 2
     }
   ]
 }

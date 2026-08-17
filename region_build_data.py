@@ -116,9 +116,9 @@ MANUAL_ATTENDANCE_CORRECTIONS = [
     {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-03-12", "event_type": "曜董主題培訓"},
     {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-03-14", "event_type": "董事培訓 - Taiwan"},
     {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-07-06", "event_type": "引薦+1對1工作坊"},
-    # 教練2026-08-18指出：張羽家6/15、8/17擔任講師，講師身份原本就該算培訓，官方報表/MSP名單都沒登記到
-    {"name": "張羽家", "chapter": "真誠", "event_date": "2026-06-15", "event_type": "進階MSP"},
-    {"name": "張羽家", "chapter": "真誠", "event_date": "2026-08-17", "event_type": "主題培訓"},
+    # 張羽家6/15、8/17講師記錄改由msp_build_data.py的PEOPLE_RAW統一維護(2026-08-18教練提供開票總清冊後
+    # 發現她整個MSP名單本來就沒有這個人，已直接加進PEOPLE_RAW，這裡不再重複列，避免透過build_msp_records()
+    # 又算一次造成重複)
     # 教練2026-08-18提供6/27 BNI台灣20週年年會出席名單(教練本人吳大樹不列入評比，排除)
     {"name": "朱正文", "chapter": "真富", "event_date": "2026-06-27", "event_type": "BNI台灣會員大會"},
     {"name": "李美花", "chapter": "真誠", "event_date": "2026-06-27", "event_type": "BNI台灣會員大會"},
