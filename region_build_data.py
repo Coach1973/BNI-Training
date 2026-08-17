@@ -111,8 +111,9 @@ MANUAL_ATTENDANCE_CORRECTIONS = [
     {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-03-12", "event_type": "曜董主題培訓"},
     {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-03-14", "event_type": "董事培訓 - Taiwan"},
     {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-07-06", "event_type": "引薦+1對1工作坊"},
-    # 教練2026-08-18指出：張羽家6/15擔任進階MSP講師，講師身份原本就該算培訓，官方報表/MSP名單都沒登記到
+    # 教練2026-08-18指出：張羽家6/15、8/17擔任講師，講師身份原本就該算培訓，官方報表/MSP名單都沒登記到
     {"name": "張羽家", "chapter": "真誠", "event_date": "2026-06-15", "event_type": "進階MSP"},
+    {"name": "張羽家", "chapter": "真誠", "event_date": "2026-08-17", "event_type": "主題培訓"},
 ]
 
 # ---- DnA團隊季度培訓真實出席名單(2026-08-17，教練指定對照 https://coach1973.github.io/bni-dna/) ----
