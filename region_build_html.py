@@ -11,9 +11,11 @@ def main():
     template = io.open("region_template.html", encoding="utf-8").read()
 
     records_json = json.dumps(data["records"], ensure_ascii=False)
+    roster_json = json.dumps(data["roster"], ensure_ascii=False)
     date_range = "%s ~ %s" % tuple(data["date_range"])
 
     html = template.replace("__RECORDS_JSON__", records_json)
+    html = html.replace("__ROSTER_JSON__", roster_json)
     html = html.replace("__DATE_RANGE__", date_range)
     html = html.replace("__TOTAL_RECORDS__", str(len(data["records"])))
 

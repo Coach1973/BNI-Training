@@ -1,5 +1,5 @@
 {
- "generated_note": "公開版：只含分會/姓名/培訓類型/日期。電話/email/角色等個資在私有大腦repo維護，不放這裡。",
+ "generated_note": "公開版：官方BNI Connect報表 + 教練自訂MSP初階/進階/主題培訓 兩條資料源合併，只含分會/姓名/培訓類型/日期。電話/email/角色等個資在私有大腦repo維護，不放這裡。",
  "chapters": [
   "真富",
   "真愛",
@@ -10,13 +10,16 @@
  "event_types": [
   "BNI台灣會員大會",
   "Workshop",
+  "主題培訓",
+  "初階MSP",
   "會員成功專案",
   "董事培訓 - Taiwan",
+  "進階MSP",
   "領導團隊培訓"
  ],
  "date_range": [
   "2018-02-03",
-  "2026-07-17"
+  "2026-08-17"
  ],
  "records": [
   {
@@ -4536,6 +4539,1096 @@
    "name": "張騰文",
    "event_date": "2024-09-07",
    "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "連晧宇",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "連晧宇",
+   "event_date": "2026-06-11",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "連晧宇",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "連晧宇",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "連晧宇",
+   "event_date": "2026-08-17",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張騰文",
+   "event_date": "2026-04-13",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張騰文",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張騰文",
+   "event_date": "2026-06-11",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張騰文",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張騰文",
+   "event_date": "2026-08-17",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "康文彬",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "康文彬",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "康文彬",
+   "event_date": "2026-08-17",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳淑玲",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳淑玲",
+   "event_date": "2026-08-17",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "蔡珮彤",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "蔡珮彤",
+   "event_date": "2026-08-17",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳佳玲",
+   "event_date": "2026-08-17",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "買駿航",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "買駿航",
+   "event_date": "2026-06-11",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "買駿航",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "買駿航",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "柯朝陽",
+   "event_date": "2026-04-13",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "柯朝陽",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "柯朝陽",
+   "event_date": "2026-06-11",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "柯朝陽",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "吳亞平",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "吳亞平",
+   "event_date": "2026-06-11",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "吳亞平",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "吳亞平",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "古禹澤",
+   "event_date": "2026-04-13",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "古禹澤",
+   "event_date": "2026-06-11",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "古禹澤",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "李美花",
+   "event_date": "2026-04-13",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "李美花",
+   "event_date": "2026-06-11",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "李美花",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "黃一恭",
+   "event_date": "2026-04-13",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "黃一恭",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "黃一恭",
+   "event_date": "2026-06-11",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張敬雍",
+   "event_date": "2026-04-13",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張敬雍",
+   "event_date": "2026-06-11",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張敬雍",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張敬雍",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "張晴晴",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "張晴晴",
+   "event_date": "2026-06-11",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2026-04-13",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2026-06-11",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2026-08-17",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2026-04-13",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2026-06-11",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": null,
+   "name": "林佳伶",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": null,
+   "name": "林佳伶",
+   "event_date": "2026-06-11",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": null,
+   "name": "林佳伶",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": null,
+   "name": "林佳伶",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "杜亞洛",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "杜亞洛",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "劉彥彬",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "劉彥彬",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "許朝竣",
+   "event_date": "2026-04-13",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "許朝竣",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡瑞穠",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡瑞穠",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "莊政川",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "莊政川",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "楊博丞",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "楊博丞",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "陳俊源",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "陳俊源",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "林佳慧",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "林佳慧",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": null,
+   "name": "陳欣佑",
+   "event_date": "2026-06-11",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": null,
+   "name": "陳家煖",
+   "event_date": "2026-06-11",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊智帆",
+   "event_date": "2026-06-11",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2026-06-11",
+   "event_type": "主題培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "宋映璇",
+   "event_date": "2026-04-13",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": null,
+   "name": "江紫緹",
+   "event_date": "2026-04-13",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "郭展鴻",
+   "event_date": "2026-04-13",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "葉建葳",
+   "event_date": "2026-04-13",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真愛",
+   "name": "陳新典",
+   "event_date": "2026-04-13",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "顏淳峯",
+   "event_date": "2026-04-13",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊仁豪",
+   "event_date": "2026-04-13",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "王聖凱",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "吳玫萱",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "黃鑫豊",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "吳志煒",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": null,
+   "name": "林尹渟",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊尚儒",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": null,
+   "name": "謝盛峰",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": null,
+   "name": "范郁斌",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": null,
+   "name": "葉彤黎",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": null,
+   "name": "伍芬群",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": null,
+   "name": "吳三貴",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "林宜宏",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": null,
+   "name": "徐偉倫",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "柯炫任",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": null,
+   "name": "楊凱為",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "薛如媛",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": null,
+   "name": "蔡佩彤",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "柯宗佑",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": null,
+   "name": "許超尊",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "林富郎",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳穗青",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "洪嘉妘",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "傅恩平",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": null,
+   "name": "杜泱畯",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭馨文",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  }
+ ],
+ "roster": [
+  {
+   "name": "伍芬群",
+   "chapter": null
+  },
+  {
+   "name": "吳三貴",
+   "chapter": null
+  },
+  {
+   "name": "徐偉倫",
+   "chapter": null
+  },
+  {
+   "name": "杜泱畯",
+   "chapter": null
+  },
+  {
+   "name": "林佳伶",
+   "chapter": null
+  },
+  {
+   "name": "林尹渟",
+   "chapter": null
+  },
+  {
+   "name": "楊凱為",
+   "chapter": null
+  },
+  {
+   "name": "江紫緹",
+   "chapter": null
+  },
+  {
+   "name": "范郁斌",
+   "chapter": null
+  },
+  {
+   "name": "葉彤黎",
+   "chapter": null
+  },
+  {
+   "name": "蔡佩彤",
+   "chapter": null
+  },
+  {
+   "name": "許超尊",
+   "chapter": null
+  },
+  {
+   "name": "謝盛峰",
+   "chapter": null
+  },
+  {
+   "name": "陳家煖",
+   "chapter": null
+  },
+  {
+   "name": "陳欣佑",
+   "chapter": null
+  },
+  {
+   "name": "朱正文",
+   "chapter": "真富"
+  },
+  {
+   "name": "高琬婷",
+   "chapter": "真富"
+  },
+  {
+   "name": "張瑞峰",
+   "chapter": "真愛"
+  },
+  {
+   "name": "蘇子毓",
+   "chapter": "真愛"
+  },
+  {
+   "name": "許馨方",
+   "chapter": "真愛"
+  },
+  {
+   "name": "陳新典",
+   "chapter": "真愛"
+  },
+  {
+   "name": "黃建輝",
+   "chapter": "真愛"
+  },
+  {
+   "name": "張羽家",
+   "chapter": "真誠"
+  },
+  {
+   "name": "李美花",
+   "chapter": "真誠"
+  },
+  {
+   "name": "林佳伶 Lavi",
+   "chapter": "真誠"
+  },
+  {
+   "name": "楊在珍",
+   "chapter": "真誠"
+  },
+  {
+   "name": "王彤",
+   "chapter": "真誠"
+  },
+  {
+   "name": "盧尚政",
+   "chapter": "真誠"
+  },
+  {
+   "name": "葉建葳",
+   "chapter": "真誠"
+  },
+  {
+   "name": "趙世穎",
+   "chapter": "真誠"
+  },
+  {
+   "name": "郭展鴻",
+   "chapter": "真誠"
+  },
+  {
+   "name": "郭素玲",
+   "chapter": "真誠"
+  },
+  {
+   "name": "鄭禮昂",
+   "chapter": "真誠"
+  },
+  {
+   "name": "鄭綉美",
+   "chapter": "真誠"
+  },
+  {
+   "name": "陳佩君",
+   "chapter": "真誠"
+  },
+  {
+   "name": "陳柔璇",
+   "chapter": "真誠"
+  },
+  {
+   "name": "黃笛軒",
+   "chapter": "真誠"
+  },
+  {
+   "name": "劉彥彬",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "吳亞平",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "吳志煒",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "吳玫萱",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "張晴晴",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "杜亞洛",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "林佳慧",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "林尹渰",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "柯宗佑",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "柯炫任",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "楊博丞",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "王聖凱",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "莊政川",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "蔡珮彤",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "薛如媛",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "謝盛峯",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "買駿航",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "連晧宇",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "連皓宇",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "陳俊源",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "黃鑫豊",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "傅恩平",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "古禹澤",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "周語薇",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "宋映璇",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "康文彬",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "張敬雍",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "張騰文",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "李孟哲",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "李紫妤",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "杜泱峻",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "林仁超",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "林信宏",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "林宜宏",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "林富郎",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "柯朝陽",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "楊仁豪",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "楊尚儒",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "楊智帆",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "楊朝欽",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "洪嘉妘",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "洪嘉鴻",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "王靖雯",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "羅琳",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "莊弼翔",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "蔡丞弘",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "蔡瑞穠",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "蘇志揚",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "許怡如",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "許朝竣",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "謝緯翔",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "邱南寅",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "郭峯志",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "郭政輝",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "郭育銘",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "郭馨文",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "鄭樫峯",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "陳佳玲",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "陳坤成",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "陳建清",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "陳淑玲",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "陳穗青",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "陳逸凡",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "顏淳峯",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "黃一恭",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "黃智宏",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "黃玠瑛",
+   "chapter": "真鑽"
   }
  ]
 }

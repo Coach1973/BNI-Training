@@ -82,6 +82,18 @@ p.subtitle { color: var(--text-muted); font-size: 1rem; margin-top: 10px; }
 .chapter-bar-bg { background: #0f172a; border-radius: 6px; height: 14px; overflow: hidden; }
 .chapter-bar-fill { height: 100%; background: linear-gradient(90deg, var(--neon-blue), var(--neon-green)); border-radius: 6px; transition: width .4s ease; }
 
+/* ===== 未參加名單(反向查詢) ===== */
+.section-title.warn { color: var(--neon-red); text-shadow: 0 0 12px rgba(255,42,42,.4); }
+.absent-list { max-width: 900px; margin: 0 auto; background: var(--panel-bg); border-radius: 12px; border: 1px solid #2d3748; overflow: hidden; }
+.absent-row { display: flex; align-items: center; gap: 14px; padding: 12px 20px; border-bottom: 1px solid #2d3748; }
+.absent-row:last-child { border-bottom: none; }
+.absent-row .aicon { color: var(--neon-red); flex-shrink: 0; }
+.absent-row .aname { font-weight: bold; color: #fff; min-width: 90px; }
+.absent-row .achapter { color: var(--text-muted); font-size: .82rem; min-width: 60px; }
+.absent-row .alast { color: var(--text-muted); font-size: .8rem; margin-left: auto; text-align: right; }
+.absent-row .alast.never { color: var(--neon-red); }
+.all-clear { text-align: center; color: var(--neon-green); padding: 30px; font-size: 1.05rem; }
+
 /* ===== 明細表 ===== */
 .controls { width: 100%; max-width: 1200px; display: flex; gap: 10px; margin-bottom: 12px; }
 .controls input[type=text] { flex: 1; background: var(--panel-bg); border: 1px solid #2d3748; color: var(--text-main); padding: 10px 14px; border-radius: 8px; font-size: 1rem; }
@@ -138,6 +150,12 @@ tbody tr:hover { background: rgba(0,240,255,.05); }
     </div>
 
     <div class="section">
+        <div class="section-title warn">⚠️ 未參加培訓名單</div>
+        <div class="section-sub" id="absentSub">所選時間範圍內完全沒有培訓紀錄的會員（含「從未受過訓」跟「有訓練過但不在這段期間」兩種）</div>
+        <div id="absentArea"></div>
+    </div>
+
+    <div class="section">
         <div class="section-title" style="font-size:1.05rem;">📋 培訓紀錄明細</div>
         <div class="controls">
             <input type="text" id="searchBox" placeholder="搜尋姓名...">
@@ -156,7 +174,16 @@ tbody tr:hover { background: rgba(0,240,255,.05); }
 
     <script>
         const RECORDS = __RECORDS_JSON__;
+        const ROSTER = __ROSTER_JSON__;
         const MEDALS = ['🥇', '🥈', '🥉'];
+
+        // 每個人最後一次受訓日期(不受時間窗影響，看全部歷史)，反向查詢名單要顯示這個當參考
+        const LAST_TRAINED = {};
+        RECORDS.forEach(r => {
+            if (!LAST_TRAINED[r.name] || r.event_date > LAST_TRAINED[r.name]) {
+                LAST_TRAINED[r.name] = r.event_date;
+            }
+        });
 
         function monthsAgo(n) {
             const d = new Date();
@@ -176,7 +203,7 @@ tbody tr:hover { background: rgba(0,240,255,.05); }
 
         function renderStats(filtered) {
             const people = new Set(filtered.map(r => r.name));
-            const chapters = new Set(filtered.map(r => r.chapter));
+            const chapters = new Set(filtered.map(r => r.chapter).filter(Boolean));
             const el = document.getElementById('statsRow');
             el.innerHTML = `
                 <div class="stat-card"><div class="num">${filtered.length}</div><div class="lbl">培訓人次</div></div>
@@ -212,7 +239,7 @@ tbody tr:hover { background: rgba(0,240,255,.05); }
                 <div class="podium-card rank-${i + 1}">
                     <div class="medal">${MEDALS[i]}</div>
                     <div class="podium-name">${p.name}</div>
-                    <div class="podium-chapter">${p.chapter}</div>
+                    <div class="podium-chapter">${p.chapter || '-'}</div>
                     <div class="podium-count">${p.count}</div>
                     <div class="podium-count-lbl">次培訓</div>
                 </div>
@@ -226,7 +253,7 @@ tbody tr:hover { background: rgba(0,240,255,.05); }
                     <div class="rank-row">
                         <div class="rank-badge">${i + 4}</div>
                         <div class="rname">${p.name}</div>
-                        <div class="rchapter">${p.chapter}</div>
+                        <div class="rchapter">${p.chapter || '-'}</div>
                         <div class="rcount">${p.count} 次</div>
                     </div>
                 `).join('') + '</div>';
@@ -236,6 +263,7 @@ tbody tr:hover { background: rgba(0,240,255,.05); }
         function renderChapterRank(filtered) {
             const stats = {};
             filtered.forEach(r => {
+                if (!r.chapter) return; // 分會未知的紀錄不參與分會排名比較
                 if (!stats[r.chapter]) stats[r.chapter] = { chapter: r.chapter, count: 0, people: new Set() };
                 stats[r.chapter].count++;
                 stats[r.chapter].people.add(r.name);
@@ -263,6 +291,35 @@ tbody tr:hover { background: rgba(0,240,255,.05); }
             }).join('');
         }
 
+        function renderAbsentees(filtered, months) {
+            const attendedNames = new Set(filtered.map(r => r.name));
+            const absentees = ROSTER.filter(p => !attendedNames.has(p.name));
+            const sub = document.getElementById('absentSub');
+            const area = document.getElementById('absentArea');
+            const windowLabel = months === 'all' ? '全部區間' : `近${months}個月`;
+
+            if (absentees.length === 0) {
+                sub.textContent = `${windowLabel}內，全體 ${ROSTER.length} 位會員都至少上過一次課`;
+                area.innerHTML = '<div class="all-clear">🎉 全員達標，沒有人落後！</div>';
+                return;
+            }
+
+            sub.textContent = `${windowLabel}內，共 ${absentees.length} / ${ROSTER.length} 位會員沒有任何培訓紀錄`;
+            area.innerHTML = '<div class="absent-list">' + absentees.map(p => {
+                const last = LAST_TRAINED[p.name];
+                const lastHtml = last
+                    ? `<span class="alast">最後受訓 ${last}</span>`
+                    : `<span class="alast never">從未有受訓紀錄</span>`;
+                return `
+                <div class="absent-row">
+                    <span class="aicon">⚠️</span>
+                    <span class="aname">${p.name}</span>
+                    <span class="achapter">${p.chapter || '-'}</span>
+                    ${lastHtml}
+                </div>`;
+            }).join('') + '</div>';
+        }
+
         function renderDetail(filtered, query) {
             const q = (query || '').trim();
             const rows = filtered
@@ -277,7 +334,7 @@ tbody tr:hover { background: rgba(0,240,255,.05); }
                 <tr>
                     <td class="td-date">${r.event_date}</td>
                     <td class="td-name">${r.name}</td>
-                    <td class="td-chapter">${r.chapter}</td>
+                    <td class="td-chapter">${r.chapter || '-'}</td>
                     <td class="td-type">${r.event_type}</td>
                 </tr>
             `).join('');
@@ -290,6 +347,7 @@ tbody tr:hover { background: rgba(0,240,255,.05); }
             renderStats(currentFiltered);
             renderRanking(currentFiltered);
             renderChapterRank(currentFiltered);
+            renderAbsentees(currentFiltered, months);
             renderDetail(currentFiltered, document.getElementById('searchBox').value);
         }
 
