@@ -11,6 +11,7 @@
 """
 import json
 import io
+import os
 
 SESSIONS = [
     {"id": "0413", "label": "4/13 進階MSP"},
@@ -102,9 +103,36 @@ PEOPLE_RAW = {
 }
 
 
+RAW_PATH = r"E:\Claude-Data\mac-openclaw-workflows\claude-brain\data\bni_region_training_raw.json"
+
+
+def load_official_chapter():
+    """姓名→分會對照，來源是官方BNI Connect報表(全5分會，不受region app的3分會白名單限制，
+    因為msp.html從來就沒有教練指示要排除真愛/真富)。"""
+    if not os.path.exists(RAW_PATH):
+        return {}
+    raw = json.load(io.open(RAW_PATH, encoding="utf-8"))
+    return {r["name"]: r["chapter"] for r in raw if r["chapter"]}
+
+
+def backfill_chapter(name, official_chapter):
+    if name in official_chapter:
+        return official_chapter[name]
+    for oname, ochapter in official_chapter.items():
+        if oname.startswith(name) or name.startswith(oname):
+            return ochapter
+    return None
+
+
 def main():
+    official_chapter = load_official_chapter()
     people = []
+    still_unknown = []
     for name, (chapter, att) in PEOPLE_RAW.items():
+        if not chapter:
+            chapter = backfill_chapter(name, official_chapter)
+        if not chapter:
+            still_unknown.append(name)
         attended = sum(1 for v in att if v in (P, T, SH))
         people.append({
             "name": name,
@@ -113,13 +141,14 @@ def main():
             "attended_count": attended,
         })
     data = {
-        "generated_note": "公開版：只含姓名/分會/出席狀態。統編/發票/金額等資料在私有大腦repo維護，不放這裡。",
+        "generated_note": "公開版：只含姓名/分會/出席狀態。統編/發票/金額等資料在私有大腦repo維護，不放這裡。分會優先用教練原始資料，缺的用官方BNI Connect報表姓名比對回填。",
         "sessions": SESSIONS,
         "people": people,
     }
     with io.open("data_msp.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    print("data_msp.json done, %d people" % len(people))
+    print("data_msp.json done, %d people, %d still unknown chapter: %s" % (
+        len(people), len(still_unknown), ", ".join(still_unknown)))
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 {
-  "generated_note": "公開版：只含姓名/分會/出席狀態。統編/發票/金額等資料在私有大腦repo維護，不放這裡。",
+  "generated_note": "公開版：只含姓名/分會/出席狀態。統編/發票/金額等資料在私有大腦repo維護，不放這裡。分會優先用教練原始資料，缺的用官方BNI Connect報表姓名比對回填。",
   "sessions": [
     {
       "id": "0413",
@@ -107,7 +107,7 @@
     },
     {
       "name": "買駿航",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "absent",
         "0511": "present",
@@ -120,7 +120,7 @@
     },
     {
       "name": "柯朝陽",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "present",
         "0511": "present",
@@ -133,7 +133,7 @@
     },
     {
       "name": "吳亞平",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "absent",
         "0511": "present",
@@ -146,7 +146,7 @@
     },
     {
       "name": "古禹澤",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "present",
         "0511": "absent",
@@ -159,7 +159,7 @@
     },
     {
       "name": "李美花",
-      "chapter": null,
+      "chapter": "真誠",
       "attendance": {
         "0413": "present",
         "0511": "absent",
@@ -172,7 +172,7 @@
     },
     {
       "name": "黃一恭",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "present",
         "0511": "present",
@@ -185,7 +185,7 @@
     },
     {
       "name": "張敬雍",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "present",
         "0511": "absent",
@@ -198,7 +198,7 @@
     },
     {
       "name": "張晴晴",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "absent",
         "0511": "present",
@@ -211,7 +211,7 @@
     },
     {
       "name": "陳佩君",
-      "chapter": null,
+      "chapter": "真誠",
       "attendance": {
         "0413": "present",
         "0511": "share0",
@@ -224,7 +224,7 @@
     },
     {
       "name": "楊在珍",
-      "chapter": null,
+      "chapter": "真誠",
       "attendance": {
         "0413": "present",
         "0511": "present",
@@ -237,7 +237,7 @@
     },
     {
       "name": "林佳伶",
-      "chapter": null,
+      "chapter": "真誠",
       "attendance": {
         "0413": "absent",
         "0511": "share0",
@@ -250,7 +250,7 @@
     },
     {
       "name": "杜亞洛",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "absent",
         "0511": "present",
@@ -263,7 +263,7 @@
     },
     {
       "name": "劉彥彬",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "absent",
         "0511": "present",
@@ -276,7 +276,7 @@
     },
     {
       "name": "許朝竣",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "present",
         "0511": "absent",
@@ -289,7 +289,7 @@
     },
     {
       "name": "蔡瑞穠",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "absent",
         "0511": "absent",
@@ -302,7 +302,7 @@
     },
     {
       "name": "莊政川",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "absent",
         "0511": "present",
@@ -315,7 +315,7 @@
     },
     {
       "name": "楊博丞",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "absent",
         "0511": "present",
@@ -328,7 +328,7 @@
     },
     {
       "name": "陳俊源",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "absent",
         "0511": "present",
@@ -341,7 +341,7 @@
     },
     {
       "name": "林佳慧",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "absent",
         "0511": "present",
@@ -380,7 +380,7 @@
     },
     {
       "name": "楊智帆",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "absent",
         "0511": "absent",
@@ -393,7 +393,7 @@
     },
     {
       "name": "邱南寅",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "absent",
         "0511": "absent",
@@ -406,7 +406,7 @@
     },
     {
       "name": "宋映璇",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "present",
         "0511": "nodata",
@@ -432,7 +432,7 @@
     },
     {
       "name": "郭展鴻",
-      "chapter": null,
+      "chapter": "真誠",
       "attendance": {
         "0413": "present",
         "0511": "nodata",
@@ -445,7 +445,7 @@
     },
     {
       "name": "葉建葳",
-      "chapter": null,
+      "chapter": "真誠",
       "attendance": {
         "0413": "present",
         "0511": "nodata",
@@ -458,7 +458,7 @@
     },
     {
       "name": "陳新典",
-      "chapter": null,
+      "chapter": "真愛",
       "attendance": {
         "0413": "present",
         "0511": "nodata",
@@ -471,7 +471,7 @@
     },
     {
       "name": "顏淳峯",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "present",
         "0511": "nodata",
@@ -484,7 +484,7 @@
     },
     {
       "name": "楊仁豪",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "present",
         "0511": "nodata",
@@ -497,7 +497,7 @@
     },
     {
       "name": "王聖凱",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "nodata",
         "0511": "present",
@@ -510,7 +510,7 @@
     },
     {
       "name": "吳玫萱",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "nodata",
         "0511": "present",
@@ -523,7 +523,7 @@
     },
     {
       "name": "黃鑫豊",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "nodata",
         "0511": "present",
@@ -536,7 +536,7 @@
     },
     {
       "name": "吳志煒",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "nodata",
         "0511": "present",
@@ -562,7 +562,7 @@
     },
     {
       "name": "楊尚儒",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "nodata",
         "0511": "present",
@@ -640,7 +640,7 @@
     },
     {
       "name": "林宜宏",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
@@ -666,7 +666,7 @@
     },
     {
       "name": "柯炫任",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
@@ -692,7 +692,7 @@
     },
     {
       "name": "薛如媛",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
@@ -718,7 +718,7 @@
     },
     {
       "name": "柯宗佑",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
@@ -744,7 +744,7 @@
     },
     {
       "name": "林富郎",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
@@ -757,7 +757,7 @@
     },
     {
       "name": "陳穗青",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
@@ -770,7 +770,7 @@
     },
     {
       "name": "洪嘉妘",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
@@ -783,7 +783,7 @@
     },
     {
       "name": "傅恩平",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
@@ -809,7 +809,7 @@
     },
     {
       "name": "郭馨文",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
