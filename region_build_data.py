@@ -152,6 +152,66 @@ def build_dna_quarterly_records(existing_records):
     return records
 
 
+# ---- 教練另一對話框統計1-3月MSP培訓費發票總次數，回頭補進系統(2026-08-18) ----
+# 教練原話：「保證次數一定是正確的」(依$300/場發票金額換算)，但不知道每個月確切幾場。
+# 教練給的月份分配規則：1場→1月；2場→1、2月各一場；3場→1、2、3月各一場；4場→1、2月各一場、3月兩場。
+# 教練同時裁示：「如果Excel表裡面出現重複的，那就不用算；沒有的，才幫我加上去」——
+# 逐月比對該人在該月是否已有任何記錄(來自官方報表/DnA/MSP等其他來源)，已有就跳過不重複加，
+# 只在真的缺口的月份才補一筆。2月/3月有真實對應的MSP場次(2/9進階MSP、3/9初階MSP)，
+# 用真實日期+類型；1月月曆資料遺失查無實際日期，教練確認「1月份就是一堂課」，用估算日期補上。
+INVOICE_JAN_MAR_TOTALS = {
+    "張敬雍": 4, "楊智帆": 4, "蔡丞弘": 4, "郭展鴻": 4, "張羽家": 4,
+    "傅恩平": 3, "林尹渰": 3, "張騰文": 3, "康文彬": 3,
+    "鄭綉美": 2, "李美花": 2, "陳佳玲": 2, "陳穗青": 2,
+    "林宜宏": 1,
+}
+
+
+def invoice_month_targets(total):
+    if total == 1:
+        return {1: 1, 2: 0, 3: 0}
+    if total == 2:
+        return {1: 1, 2: 1, 3: 0}
+    if total == 3:
+        return {1: 1, 2: 1, 3: 1}
+    if total == 4:
+        return {1: 1, 2: 1, 3: 2}
+    raise ValueError("教練的月份分配規則只定義到4場：%r" % total)
+
+
+def build_invoice_jan_mar_records(existing_records, roster_chapter):
+    existing_month_count = {}
+    for r in existing_records:
+        if r["name"] not in INVOICE_JAN_MAR_TOTALS:
+            continue
+        ym = r["event_date"][:7]
+        if ym in ("2026-01", "2026-02", "2026-03"):
+            m = int(ym[5:7])
+            key = (r["name"], m)
+            existing_month_count[key] = existing_month_count.get(key, 0) + 1
+
+    records = []
+    for name, total in INVOICE_JAN_MAR_TOTALS.items():
+        chapter = roster_chapter.get(name)
+        need = invoice_month_targets(total)
+        for m in (1, 2, 3):
+            have = existing_month_count.get((name, m), 0)
+            to_add = max(0, need[m] - have)
+            if to_add == 0:
+                continue
+            if m == 1:
+                date, etype = "2026-01-15", "MSP(估算)"  # 行事曆1月資料遺失，教練確認1月就是1場
+            elif m == 2:
+                date, etype = "2026-02-09", "進階MSP"  # 行事曆真實場次
+            else:
+                date, etype = "2026-03-09", "初階MSP"  # 行事曆真實場次
+            for _ in range(to_add):
+                records.append({
+                    "chapter": chapter, "name": name, "event_date": date, "event_type": etype,
+                })
+    return records
+
+
 def month_range(start_ym, end_ym):
     y, m = map(int, start_ym.split("-"))
     ey, em = map(int, end_ym.split("-"))
@@ -235,9 +295,14 @@ def main():
     dna_quarterly_records = build_dna_quarterly_records(
         official_records + msp_records + seed_fill_records + MANUAL_ATTENDANCE_CORRECTIONS
     )
+    invoice_jan_mar_records = build_invoice_jan_mar_records(
+        official_records + msp_records + seed_fill_records
+        + MANUAL_ATTENDANCE_CORRECTIONS + dna_quarterly_records,
+        official_chapter,
+    )
     all_records = (
         official_records + msp_records + seed_fill_records
-        + MANUAL_ATTENDANCE_CORRECTIONS + dna_quarterly_records
+        + MANUAL_ATTENDANCE_CORRECTIONS + dna_quarterly_records + invoice_jan_mar_records
     )
 
     # 已離會會員先拿掉，再套分會白名單——分會不明(兩邊資料都對不到)的紀錄也一併排除，
@@ -274,9 +339,9 @@ def main():
     }
     with io.open("data.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
-    print("data.json done, %d records (%d official + %d MSP + %d seed-teacher-fill + %d manual-correction + %d dna-quarterly), %d chapters" % (
+    print("data.json done, %d records (%d official + %d MSP + %d seed-teacher-fill + %d manual-correction + %d dna-quarterly + %d invoice-jan-mar), %d chapters" % (
         len(public_records), len(official_records), len(msp_records), len(seed_fill_records),
-        len(MANUAL_ATTENDANCE_CORRECTIONS), len(dna_quarterly_records), len(chapters)))
+        len(MANUAL_ATTENDANCE_CORRECTIONS), len(dna_quarterly_records), len(invoice_jan_mar_records), len(chapters)))
 
 
 if __name__ == "__main__":
