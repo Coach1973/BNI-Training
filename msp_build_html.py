@@ -53,93 +53,90 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BNI 培訓紀錄總資料庫</title>
     <style>
+        /* 色系/字型取自 chapters.bymyway.com/sincere（BNI官方Brand Standards Manual指定色） */
         :root {{
-            --bg-color: #0b0f19;
-            --panel-bg: #1a2333;
-            --text-main: #e2e8f0;
-            --text-muted: #64748b;
-            --neon-blue: #00f0ff;
-            --neon-green: #10b981;
-            --neon-red: #ff2a2a;
-            --neon-gold: #f59e0b;
+            --red: #CF2030; --red-dark: #9B1F27; --ink: #000000; --paper: #FAF7F2;
+            --line: #E5DFD3; --gold: #B08D57; --sub: #6B665D; --white: #FFFFFF;
         }}
+        * {{ box-sizing: border-box; }}
         body {{
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            font-family: 'Helvetica Neue', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            background-color: var(--paper);
+            color: var(--ink);
+            font-family: 'Helvetica Neue', Arial, 'PingFang TC', 'Microsoft JhengHei', 'Noto Sans TC', sans-serif;
             margin: 0;
-            padding: 40px 20px;
+            padding: 0 0 40px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }}
-        .header-container {{ text-align: center; margin-bottom: 28px; }}
+        .header-container {{ width: 100%; background: var(--ink); color: var(--white); text-align: center; padding: 48px 20px 40px; margin-bottom: 28px; }}
         h1 {{
-            color: var(--neon-blue);
+            color: var(--white);
             font-size: 2.2rem;
+            font-weight: 900;
             letter-spacing: 2px;
             margin: 0;
-            text-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
         }}
-        p.subtitle {{ color: var(--text-muted); font-size: 1.05rem; margin-top: 10px; letter-spacing: 1px; }}
+        p.subtitle {{ color: var(--line); font-size: 1rem; margin-top: 12px; letter-spacing: 1px; }}
 
         .stats-row {{
             display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;
-            width: 100%; max-width: 1000px; margin-bottom: 24px;
+            width: 100%; max-width: 1000px; margin: 0 20px 24px; padding: 0 20px;
         }}
         .stat-card {{
-            background: var(--panel-bg); border: 1px solid #2d3748; border-radius: 10px;
+            background: var(--white); border: 1px solid var(--line); border-radius: 4px;
             padding: 16px 22px; min-width: 150px; text-align: center;
         }}
-        .stat-card .num {{ font-size: 1.6rem; font-weight: bold; color: var(--neon-blue); text-shadow: 0 0 10px rgba(0,240,255,.4); }}
-        .stat-card .lbl {{ font-size: .8rem; color: var(--text-muted); margin-top: 4px; letter-spacing: 1px; }}
+        .stat-card .num {{ font-size: 1.7rem; font-weight: 900; color: var(--red); }}
+        .stat-card .lbl {{ font-size: .78rem; color: var(--sub); margin-top: 4px; letter-spacing: 1px; }}
 
         .controls {{
-            width: 100%; max-width: 1000px; display: flex; gap: 10px; margin-bottom: 16px;
+            width: 100%; max-width: 1000px; display: flex; gap: 10px; margin: 0 20px 16px; padding: 0 20px;
         }}
         .controls input[type=text] {{
-            flex: 1; background: var(--panel-bg); border: 1px solid #2d3748;
-            color: var(--text-main); padding: 10px 14px; border-radius: 8px; font-size: 1rem;
+            flex: 1; background: var(--white); border: 1px solid var(--line);
+            color: var(--ink); padding: 10px 14px; border-radius: 4px; font-size: 1rem;
         }}
+        .controls input[type=text]:focus {{ outline: none; border-color: var(--red); }}
 
         .table-wrapper {{
-            width: 100%; max-width: 1000px; background: var(--panel-bg); border-radius: 12px;
-            box-shadow: 0 0 30px rgba(0, 240, 255, 0.1); overflow-x: auto;
-            -webkit-overflow-scrolling: touch; border: 1px solid #2d3748;
+            width: 100%; max-width: 1000px; margin: 0 20px; background: var(--white); border-radius: 4px;
+            overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--line);
         }}
         .table-wrapper table {{ min-width: 900px; }}
         table {{ width: 100%; border-collapse: collapse; text-align: center; }}
-        thead {{ background: #0f172a; border-bottom: 2px solid var(--neon-blue); }}
-        th {{ padding: 16px 12px; color: var(--neon-blue); font-weight: 600; letter-spacing: .5px; white-space: nowrap; font-size: .9rem; }}
-        td {{ padding: 14px 12px; border-bottom: 1px solid #2d3748; font-size: .95rem; }}
-        tbody tr:hover {{ background: rgba(0, 240, 255, 0.05); }}
+        thead {{ background: var(--ink); }}
+        th {{ padding: 16px 12px; color: var(--white); font-weight: 700; letter-spacing: .5px; white-space: nowrap; font-size: .88rem; }}
+        td {{ padding: 14px 12px; border-bottom: 1px solid var(--line); font-size: .95rem; }}
+        tbody tr:hover {{ background: var(--paper); }}
 
-        .present {{ color: var(--neon-green); font-weight: bold; }}
-        .absent {{ color: var(--neon-red); font-weight: bold; }}
-        .nodata {{ color: #475569; }}
-        .special {{ color: var(--neon-gold); font-weight: bold; font-size: .85rem; }}
+        .present {{ color: var(--gold); font-weight: 900; }}
+        .absent {{ color: var(--red); font-weight: 900; }}
+        .nodata {{ color: var(--sub); }}
+        .special {{ color: var(--red-dark); font-weight: 700; font-size: .85rem; }}
 
-        .rank {{ color: #94a3b8; font-weight: bold; }}
-        .name {{ font-weight: bold; color: #fff; text-align: left; padding-left: 16px; white-space: nowrap; }}
-        .chapter {{ color: #94a3b8; font-size: .9rem; }}
-        .total-score {{ color: var(--neon-gold); font-weight: bold; font-size: 1.05rem; }}
+        .rank {{ color: var(--sub); font-weight: 700; }}
+        .name {{ font-weight: 900; color: var(--ink); text-align: left; padding-left: 16px; white-space: nowrap; }}
+        .chapter {{ color: var(--sub); font-size: .9rem; }}
+        .total-score {{ color: var(--red); font-weight: 900; font-size: 1.05rem; }}
 
         .note-panel {{
-            width: 100%; max-width: 1000px; margin-top: 32px; background: #1a2333;
-            border-radius: 12px; border: 1px solid #2d3748; padding: 26px 32px; box-sizing: border-box;
+            width: 100%; max-width: 1000px; margin: 32px 20px 0; background: var(--white);
+            border-radius: 4px; border: 1px solid var(--line); padding: 26px 32px; box-sizing: border-box;
         }}
-        .note-panel h2 {{ color: var(--neon-gold); font-size: 1.05rem; letter-spacing: 2px; margin: 0 0 16px 0; border-bottom: 1px dashed #475569; padding-bottom: 10px; }}
-        .note-panel p {{ color: #e2e8f0; line-height: 1.9; margin: 0 0 12px 0; font-size: .92rem; }}
+        .note-panel h2 {{ color: var(--ink); font-weight: 900; font-size: 1.05rem; letter-spacing: 1px; margin: 0 0 16px 0; border-bottom: 1px solid var(--line); padding-bottom: 10px; }}
+        .note-panel p {{ color: var(--sub); line-height: 1.9; margin: 0 0 12px 0; font-size: .9rem; }}
 
         @media (max-width: 600px) {{
-            body {{ padding: 20px 8px; }}
-            h1 {{ font-size: 1.3rem; }}
+            .header-container {{ padding: 36px 16px 30px; }}
+            h1 {{ font-size: 1.4rem; }}
+            .stats-row, .controls, .table-wrapper, .note-panel {{ padding-left: 12px; padding-right: 12px; margin-left: 0; margin-right: 0; }}
         }}
     </style>
 </head>
 <body>
     <div class="header-container">
-        <p style="margin:0 0 10px 0;"><a href="index.html" style="color:#00f0ff;text-decoration:none;font-size:.9rem;">← 回全區培訓總覽</a></p>
+        <p style="margin:0 0 10px 0;"><a href="index.html" style="color:var(--gold);text-decoration:none;font-size:.85rem;font-weight:700;letter-spacing:1px;">← 回全區培訓總覽</a></p>
         <h1>BNI 培訓紀錄總資料庫</h1>
         <p class="subtitle">大樹教練 MSP初階/進階培訓出席戰情儀表板　2026年1月起｜共6場次</p>
     </div>
