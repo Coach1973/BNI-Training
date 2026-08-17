@@ -67,6 +67,58 @@ def build_msp_records():
     return records
 
 
+# ---- 種子講師歷史補值(2026-08-17教練裁示) ----
+# 教練說明：陳佩君(真誠分會種子講師)從入會以來每月都有上MSP/進階MSP，但只有今年4月起6場
+# 有留下逐場紀錄。教練的規則：「Excel裡本來就有標註MSP/進階MSP的月份不重複計算，沒寫的月份才補」。
+# MSP=BNI官方「Member Success Program」，對應官方報表裡的「會員成功專案」事件類型——
+# 這個推論是本次判斷，非教練逐字確認，若跟教練理解不同要再對一次。
+# 做法：以「會員成功專案」(官方) + MSP初階/進階(教練自訂6場) 兩邊合起來算「已覆蓋的月份」，
+# 只在真的沒有任何來源覆蓋的月份，才補1筆估算值(每月15日，標「MSP(估算)」跟真實日期做區隔)。
+SEED_TEACHER_FILL = {
+    "陳佩君": {
+        "chapter": "真誠",
+        "start": "2025-05",  # 教練提供的入會月份(BNI Connect Induction Date=2025-05-08)
+        "end": "2026-08",    # 涵蓋到資料最新月份
+        "covered_event_type": "會員成功專案",  # 官方報表裡視同MSP的類別
+    },
+}
+
+
+def month_range(start_ym, end_ym):
+    y, m = map(int, start_ym.split("-"))
+    ey, em = map(int, end_ym.split("-"))
+    out = []
+    while (y, m) <= (ey, em):
+        out.append("%04d-%02d" % (y, m))
+        m += 1
+        if m > 12:
+            m = 1
+            y += 1
+    return out
+
+
+def build_seed_teacher_fill(official_records, msp_records):
+    records = []
+    for name, cfg in SEED_TEACHER_FILL.items():
+        covered_months = set()
+        for r in official_records:
+            if r["name"] == name and r["event_type"] == cfg["covered_event_type"]:
+                covered_months.add(r["event_date"][:7])
+        for r in msp_records:
+            if r["name"] == name:
+                covered_months.add(r["event_date"][:7])
+        for ym in month_range(cfg["start"], cfg["end"]):
+            if ym in covered_months:
+                continue
+            records.append({
+                "chapter": cfg["chapter"],
+                "name": name,
+                "event_date": "%s-15" % ym,
+                "event_type": "MSP(估算)",
+            })
+    return records
+
+
 def main():
     if not os.path.exists(RAW_PATH):
         raise SystemExit("私有原始資料找不到：%s（這份資料含電話/email，只放在私有大腦repo，不會進這個公開repo的git歷史）" % RAW_PATH)
@@ -98,7 +150,8 @@ def main():
                 r["chapter"] = ochapter
                 break
 
-    all_records = official_records + msp_records
+    seed_fill_records = build_seed_teacher_fill(official_records, msp_records)
+    all_records = official_records + msp_records + seed_fill_records
 
     # 已離會會員先拿掉，再套分會白名單——分會不明(兩邊資料都對不到)的紀錄也一併排除，
     # 因為沒辦法確認他是不是真鑫/真誠/真鑽，寧可不顯示也不要顯示錯分會
@@ -134,8 +187,8 @@ def main():
     }
     with io.open("data.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
-    print("data.json done, %d records (%d official + %d MSP), %d chapters" % (
-        len(public_records), len(official_records), len(msp_records), len(chapters)))
+    print("data.json done, %d records (%d official + %d MSP + %d seed-teacher-fill), %d chapters" % (
+        len(public_records), len(official_records), len(msp_records), len(seed_fill_records), len(chapters)))
 
 
 if __name__ == "__main__":

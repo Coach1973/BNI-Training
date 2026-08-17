@@ -7,6 +7,7 @@
  ],
  "event_types": [
   "BNI台灣會員大會",
+  "MSP(估算)",
   "Workshop",
   "主題培訓",
   "初階MSP",
@@ -4981,6 +4982,42 @@
    "name": "郭馨文",
    "event_date": "2026-07-20",
    "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2025-05-15",
+   "event_type": "MSP(估算)"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2025-06-15",
+   "event_type": "MSP(估算)"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2025-07-15",
+   "event_type": "MSP(估算)"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2025-08-15",
+   "event_type": "MSP(估算)"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2025-09-15",
+   "event_type": "MSP(估算)"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2025-12-15",
+   "event_type": "MSP(估算)"
   }
  ],
  "roster": [
