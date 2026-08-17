@@ -11,6 +11,9 @@
   "Workshop",
   "主題培訓",
   "初階MSP",
+  "引薦+1對1工作坊",
+  "曜董DnA季度培訓",
+  "曜董主題培訓",
   "會員成功專案",
   "董事培訓 - Taiwan",
   "進階MSP",
@@ -421,7 +424,7 @@
    "chapter": "真誠",
    "name": "楊在珍",
    "event_date": "2026-07-06",
-   "event_type": "董事培訓 - Taiwan"
+   "event_type": "引薦+1對1工作坊"
   },
   {
    "chapter": "真誠",
@@ -445,7 +448,7 @@
    "chapter": "真誠",
    "name": "楊在珍",
    "event_date": "2026-03-12",
-   "event_type": "Workshop"
+   "event_type": "曜董主題培訓"
   },
   {
    "chapter": "真誠",
@@ -458,12 +461,6 @@
    "name": "楊在珍",
    "event_date": "2025-11-20",
    "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真誠",
-   "name": "楊在珍",
-   "event_date": "2026-07-17",
-   "event_type": "領導團隊培訓"
   },
   {
    "chapter": "真誠",
@@ -5083,7 +5080,13 @@
    "name": "陳佩君",
    "chapter": "真誠",
    "event_date": "2026-03-12",
-   "event_type": "Workshop"
+   "event_type": "曜董主題培訓"
+  },
+  {
+   "name": "陳佩君",
+   "chapter": "真誠",
+   "event_date": "2026-03-13",
+   "event_type": "曜董DnA季度培訓"
   },
   {
    "name": "陳佩君",
@@ -5094,14 +5097,14 @@
   {
    "name": "陳佩君",
    "chapter": "真誠",
-   "event_date": "2026-07-06",
-   "event_type": "董事培訓 - Taiwan"
+   "event_date": "2026-06-12",
+   "event_type": "曜董DnA季度培訓"
   },
   {
    "name": "陳佩君",
    "chapter": "真誠",
-   "event_date": "2026-07-17",
-   "event_type": "領導團隊培訓"
+   "event_date": "2026-07-06",
+   "event_type": "引薦+1對1工作坊"
   }
  ],
  "roster": [

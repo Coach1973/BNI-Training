@@ -85,14 +85,31 @@ SEED_TEACHER_FILL = {
 }
 
 
-# ---- 教練口頭更正：官方報表漏登記的真實出席(2026-08-17) ----
-# 教練核對「在珍近6個月多上的4場」後親口確認：這4場佩君都有實際到場，只是官方報表沒登記到。
-# 這不是估算，是教練指名的真實出席事實，逐筆列出日期+培訓類型直接併入正式記錄。
+# ---- 教練逐月核對月曆後更正：楊在珍自己key單類別選錯+官方報表沒有的真實出席(2026-08-17) ----
+# 教練親自比對 https://tainan-calender.netlify.app/ 全年度行事曆後確認：
+# 這不是官方報表漏登記，是楊在珍key單時類別選錯，佩君這幾場其實都有出席，只是完全沒被登記。
+# 教練並補充規則：①M1/M2培訓在系統上官方類別就叫「董事培訓」②LTRT沒有分數，不能算培訓。
+#
+# 楊在珍原始記錄類別更正(官方報表裡她自己key的類別是錯的)：
+# - 2026-03-12 原key「Workshop」，行事曆真實場次是「曜董主題培訓」14:00-17:00 @安平路176號
+# - 2026-07-06 原key「董事培訓 - Taiwan」，行事曆真實場次是「引薦+1對1工作坊(台北)」@集思北科大
+# - 2026-07-17 原key「領導團隊培訓」，行事曆當天是「LTRT」20:00-21:30 @ZOOM，LTRT不計分，整筆移除不算培訓
+# (2026-03-14 原key「董事培訓 - Taiwan」保留不動：行事曆當天是M2培訓，M2官方類別本來就是「董事培訓」，這筆本來就沒錯)
+RECORD_TYPE_CORRECTIONS = {
+    ("楊在珍", "2026-03-12", "Workshop"): "曜董主題培訓",
+    ("楊在珍", "2026-07-06", "董事培訓 - Taiwan"): "引薦+1對1工作坊",
+    ("楊在珍", "2026-07-17", "領導團隊培訓"): None,  # LTRT無分數，不能算培訓，整筆排除
+}
+
+# 教練通則(2026-08-17)：從2月起，只要地點是「安平路176號」的場次，佩君每一場都有出席(她是種子講師)，
+# 但在珍不一定每場都有去；比對月曆後找出「地點=安平路176號、但佩君官方報表完全沒被登記」的場次逐筆補上。
+# event_type採官方對應類別(M1/M2→董事培訓)，無對應官方類別的場次(曜董系列)用行事曆原始名稱。
 MANUAL_ATTENDANCE_CORRECTIONS = [
-    {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-03-12", "event_type": "Workshop"},
+    {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-03-12", "event_type": "曜董主題培訓"},
+    {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-03-13", "event_type": "曜董DnA季度培訓"},
     {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-03-14", "event_type": "董事培訓 - Taiwan"},
-    {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-07-06", "event_type": "董事培訓 - Taiwan"},
-    {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-07-17", "event_type": "領導團隊培訓"},
+    {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-06-12", "event_type": "曜董DnA季度培訓"},
+    {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-07-06", "event_type": "引薦+1對1工作坊"},
 ]
 
 
@@ -145,6 +162,19 @@ def main():
         }
         for r in raw
     ]
+
+    # 套用楊在珍key單類別更正：對到(姓名,日期,原類別)就改類別，改成None代表整筆移除(LTRT不計分)
+    corrected_records = []
+    for r in official_records:
+        key = (r["name"], r["event_date"], r["event_type"])
+        if key in RECORD_TYPE_CORRECTIONS:
+            new_type = RECORD_TYPE_CORRECTIONS[key]
+            if new_type is None:
+                continue  # 整筆排除，不算培訓
+            r = dict(r, event_type=new_type)
+        corrected_records.append(r)
+    official_records = corrected_records
+
     msp_records = build_msp_records()
 
     # MSP名單裡分會欄位大多是None(教練原始資料只標了6人的分會)，
