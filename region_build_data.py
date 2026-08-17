@@ -119,6 +119,24 @@ MANUAL_ATTENDANCE_CORRECTIONS = [
     # 教練2026-08-18指出：張羽家6/15、8/17擔任講師，講師身份原本就該算培訓，官方報表/MSP名單都沒登記到
     {"name": "張羽家", "chapter": "真誠", "event_date": "2026-06-15", "event_type": "進階MSP"},
     {"name": "張羽家", "chapter": "真誠", "event_date": "2026-08-17", "event_type": "主題培訓"},
+    # 教練2026-08-18提供6/27 BNI台灣20週年年會出席名單(教練本人吳大樹不列入評比，排除)
+    {"name": "朱正文", "chapter": "真富", "event_date": "2026-06-27", "event_type": "BNI台灣會員大會"},
+    {"name": "李美花", "chapter": "真誠", "event_date": "2026-06-27", "event_type": "BNI台灣會員大會"},
+    {"name": "林佳伶", "chapter": "真誠", "event_date": "2026-06-27", "event_type": "BNI台灣會員大會"},
+    {"name": "楊在珍", "chapter": "真誠", "event_date": "2026-06-27", "event_type": "BNI台灣會員大會"},
+    {"name": "王彤", "chapter": "真誠", "event_date": "2026-06-27", "event_type": "BNI台灣會員大會"},
+    {"name": "傅恩平", "chapter": "真鑽", "event_date": "2026-06-27", "event_type": "BNI台灣會員大會"},
+    {"name": "李紫妤", "chapter": "真鑽", "event_date": "2026-06-27", "event_type": "BNI台灣會員大會"},
+    {"name": "林仁超", "chapter": "真鑽", "event_date": "2026-06-27", "event_type": "BNI台灣會員大會"},
+    {"name": "林宜宏", "chapter": "真鑽", "event_date": "2026-06-27", "event_type": "BNI台灣會員大會"},
+    {"name": "柯朝陽", "chapter": "真鑽", "event_date": "2026-06-27", "event_type": "BNI台灣會員大會"},
+    {"name": "鄭樫峯", "chapter": "真鑽", "event_date": "2026-06-27", "event_type": "BNI台灣會員大會"},
+    # 教練2026-08-18提供6/28-29 DnA培訓(台北寒舍艾美酒店)出席名單，教練指定寫成「董事培訓」
+    {"name": "朱正文", "chapter": "真富", "event_date": "2026-06-28", "event_type": "董事培訓 - Taiwan"},
+    {"name": "楊在珍", "chapter": "真誠", "event_date": "2026-06-28", "event_type": "董事培訓 - Taiwan"},
+    {"name": "張敬雍", "chapter": "真鑽", "event_date": "2026-06-28", "event_type": "董事培訓 - Taiwan"},
+    {"name": "邱南寅", "chapter": "真鑽", "event_date": "2026-06-28", "event_type": "董事培訓 - Taiwan"},
+    {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-06-28", "event_type": "董事培訓 - Taiwan"},
 ]
 
 # ---- DnA團隊季度培訓真實出席名單(2026-08-17，教練指定對照 https://coach1973.github.io/bni-dna/) ----
