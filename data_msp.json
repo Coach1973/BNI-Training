@@ -282,10 +282,10 @@
         "0511": "absent",
         "0611": "absent",
         "0615": "present",
-        "0720": "absent",
+        "0720": "present",
         "0817": "nodata"
       },
-      "attended_count": 2
+      "attended_count": 3
     },
     {
       "name": "蔡瑞穠",
@@ -667,19 +667,6 @@
     {
       "name": "柯宗佑",
       "chapter": "真鑫",
-      "attendance": {
-        "0413": "nodata",
-        "0511": "nodata",
-        "0611": "nodata",
-        "0615": "nodata",
-        "0720": "present",
-        "0817": "nodata"
-      },
-      "attended_count": 1
-    },
-    {
-      "name": "許超尊",
-      "chapter": null,
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
