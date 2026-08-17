@@ -15,6 +15,7 @@
   "曜董DnA季度培訓",
   "曜董主題培訓",
   "會員成功專案",
+  "簡報+PT工作坊",
   "董事培訓 - Taiwan",
   "進階MSP",
   "領導團隊培訓"
@@ -208,7 +209,7 @@
    "chapter": "真誠",
    "name": "陳佩君",
    "event_date": "2026-06-08",
-   "event_type": "董事培訓 - Taiwan"
+   "event_type": "簡報+PT工作坊"
   },
   {
    "chapter": "真誠",
@@ -322,7 +323,7 @@
    "chapter": "真誠",
    "name": "林佳伶 Lavi",
    "event_date": "2026-07-06",
-   "event_type": "董事培訓 - Taiwan"
+   "event_type": "引薦+1對1工作坊"
   },
   {
    "chapter": "真誠",
@@ -382,7 +383,7 @@
    "chapter": "真誠",
    "name": "楊在珍",
    "event_date": "2026-06-08",
-   "event_type": "董事培訓 - Taiwan"
+   "event_type": "簡報+PT工作坊"
   },
   {
    "chapter": "真誠",
@@ -623,18 +624,6 @@
    "name": "黃笛軒",
    "event_date": "2026-01-05",
    "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真誠",
-   "name": "郭素玲",
-   "event_date": "2026-03-09",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真誠",
-   "name": "郭素玲",
-   "event_date": "2023-11-20",
-   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真誠",
@@ -5434,10 +5423,6 @@
   },
   {
    "name": "郭展鴻",
-   "chapter": "真誠"
-  },
-  {
-   "name": "郭素玲",
    "chapter": "真誠"
   },
   {
