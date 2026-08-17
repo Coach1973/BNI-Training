@@ -91,11 +91,13 @@ SEED_TEACHER_FILL = {
 # 教練並補充規則：①M1/M2培訓在系統上官方類別就叫「董事培訓」②LTRT沒有分數，不能算培訓。
 #
 # 楊在珍原始記錄類別更正(官方報表裡她自己key的類別是錯的)：
+# - 2026-02-13 原key「領導團隊培訓」，教練確認當天其實是「LTRT」(過年提前1週場)，LTRT不計分，整筆移除
 # - 2026-03-12 原key「Workshop」，行事曆真實場次是「曜董主題培訓」14:00-17:00 @安平路176號
 # - 2026-07-06 原key「董事培訓 - Taiwan」，行事曆真實場次是「引薦+1對1工作坊(台北)」@集思北科大
 # - 2026-07-17 原key「領導團隊培訓」，行事曆當天是「LTRT」20:00-21:30 @ZOOM，LTRT不計分，整筆移除不算培訓
 # (2026-03-14 原key「董事培訓 - Taiwan」保留不動：行事曆當天是M2培訓，M2官方類別本來就是「董事培訓」，這筆本來就沒錯)
 RECORD_TYPE_CORRECTIONS = {
+    ("楊在珍", "2026-02-13", "領導團隊培訓"): None,  # LTRT無分數，教練確認不能算培訓，整筆排除
     ("楊在珍", "2026-03-12", "Workshop"): "曜董主題培訓",
     ("楊在珍", "2026-07-06", "董事培訓 - Taiwan"): "引薦+1對1工作坊",
     ("楊在珍", "2026-07-17", "領導團隊培訓"): None,  # LTRT無分數，不能算培訓，整筆排除
@@ -104,13 +106,50 @@ RECORD_TYPE_CORRECTIONS = {
 # 教練通則(2026-08-17)：從2月起，只要地點是「安平路176號」的場次，佩君每一場都有出席(她是種子講師)，
 # 但在珍不一定每場都有去；比對月曆後找出「地點=安平路176號、但佩君官方報表完全沒被登記」的場次逐筆補上。
 # event_type採官方對應類別(M1/M2→董事培訓)，無對應官方類別的場次(曜董系列)用行事曆原始名稱。
+# (3/13、6/12「曜董DnA季度培訓」改用下方DNA_QUARTERLY_ATTENDANCE整個DnA團隊的真實名單處理，不在這裡重複列)
 MANUAL_ATTENDANCE_CORRECTIONS = [
     {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-03-12", "event_type": "曜董主題培訓"},
-    {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-03-13", "event_type": "曜董DnA季度培訓"},
     {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-03-14", "event_type": "董事培訓 - Taiwan"},
-    {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-06-12", "event_type": "曜董DnA季度培訓"},
     {"name": "陳佩君", "chapter": "真誠", "event_date": "2026-07-06", "event_type": "引薦+1對1工作坊"},
 ]
+
+# ---- DnA團隊季度培訓真實出席名單(2026-08-17，教練指定對照 https://coach1973.github.io/bni-dna/) ----
+# 「曜董季度培訓」＝DnA團隊戰情儀表板裡3/6/9/12月那一次(該月剛好是安平路176號實體場，其餘月份是ZOOM月例會)。
+# 教練原話：「這個網址上面有出現的人，都要算培訓」——不限佩君/在珍，DnA團隊19人只要當月標「出席」就算。
+# 9月/12月尚未發生(資料範圍到今天2026-08-17)，故只處理3/13、6/12兩場已發生的。
+DNA_TEAM_CHAPTER = {
+    "郭政輝": "真鑽", "邱南寅": "真鑽", "陳佩君": "真誠", "李孟哲": "真鑽",
+    "傅恩平": "真鑽", "林佳伶": "真誠", "柯朝陽": "真鑽", "蔡丞弘": "真鑽",
+    "楊仁豪": "真鑽", "許朝竣": "真鑽", "羅琳": "真鑽", "謝緯翔": "真鑽",
+    "顏淳峯": "真鑽", "楊尚儒": "真鑽", "楊在珍": "真誠", "張敬雍": "真鑽",
+    "王彤": "真誠", "莊弼翔": "真鑽", "張騰文": "真鑽",
+}
+DNA_QUARTERLY_ATTENDANCE = {
+    "2026-03-13": [  # 謝緯翔、顏淳峯該月缺席，莊弼翔/張騰文8月才入隊尚未存在
+        "郭政輝", "邱南寅", "陳佩君", "李孟哲", "傅恩平", "林佳伶", "柯朝陽", "蔡丞弘",
+        "楊仁豪", "許朝竣", "羅琳", "楊尚儒", "楊在珍", "張敬雍", "王彤",
+    ],
+    "2026-06-12": [  # 蔡丞弘、許朝竣該月缺席
+        "郭政輝", "邱南寅", "陳佩君", "李孟哲", "傅恩平", "林佳伶", "柯朝陽",
+        "楊仁豪", "羅琳", "謝緯翔", "顏淳峯", "楊尚儒", "楊在珍", "張敬雍", "王彤",
+    ],
+}
+
+
+def build_dna_quarterly_records(existing_records):
+    covered = set((r["name"], r["event_date"]) for r in existing_records)
+    records = []
+    for date, names in DNA_QUARTERLY_ATTENDANCE.items():
+        for name in names:
+            if (name, date) in covered:
+                continue
+            records.append({
+                "chapter": DNA_TEAM_CHAPTER[name],
+                "name": name,
+                "event_date": date,
+                "event_type": "曜董DnA季度培訓",
+            })
+    return records
 
 
 def month_range(start_ym, end_ym):
@@ -193,7 +232,13 @@ def main():
                 break
 
     seed_fill_records = build_seed_teacher_fill(official_records, msp_records)
-    all_records = official_records + msp_records + seed_fill_records + MANUAL_ATTENDANCE_CORRECTIONS
+    dna_quarterly_records = build_dna_quarterly_records(
+        official_records + msp_records + seed_fill_records + MANUAL_ATTENDANCE_CORRECTIONS
+    )
+    all_records = (
+        official_records + msp_records + seed_fill_records
+        + MANUAL_ATTENDANCE_CORRECTIONS + dna_quarterly_records
+    )
 
     # 已離會會員先拿掉，再套分會白名單——分會不明(兩邊資料都對不到)的紀錄也一併排除，
     # 因為沒辦法確認他是不是真鑫/真誠/真鑽，寧可不顯示也不要顯示錯分會
@@ -229,9 +274,9 @@ def main():
     }
     with io.open("data.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
-    print("data.json done, %d records (%d official + %d MSP + %d seed-teacher-fill + %d manual-correction), %d chapters" % (
+    print("data.json done, %d records (%d official + %d MSP + %d seed-teacher-fill + %d manual-correction + %d dna-quarterly), %d chapters" % (
         len(public_records), len(official_records), len(msp_records), len(seed_fill_records),
-        len(MANUAL_ATTENDANCE_CORRECTIONS), len(chapters)))
+        len(MANUAL_ATTENDANCE_CORRECTIONS), len(dna_quarterly_records), len(chapters)))
 
 
 if __name__ == "__main__":

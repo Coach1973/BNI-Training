@@ -399,12 +399,6 @@
   {
    "chapter": "真誠",
    "name": "楊在珍",
-   "event_date": "2026-02-13",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真誠",
-   "name": "楊在珍",
    "event_date": "2026-03-14",
    "event_type": "董事培訓 - Taiwan"
   },
@@ -5085,26 +5079,194 @@
   {
    "name": "陳佩君",
    "chapter": "真誠",
-   "event_date": "2026-03-13",
-   "event_type": "曜董DnA季度培訓"
-  },
-  {
-   "name": "陳佩君",
-   "chapter": "真誠",
    "event_date": "2026-03-14",
    "event_type": "董事培訓 - Taiwan"
   },
   {
    "name": "陳佩君",
    "chapter": "真誠",
+   "event_date": "2026-07-06",
+   "event_type": "引薦+1對1工作坊"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2026-03-13",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2026-03-13",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2026-03-13",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "李孟哲",
+   "event_date": "2026-03-13",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "傅恩平",
+   "event_date": "2026-03-13",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "林佳伶",
+   "event_date": "2026-03-13",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "柯朝陽",
+   "event_date": "2026-03-13",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2026-03-13",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊仁豪",
+   "event_date": "2026-03-13",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "許朝竣",
+   "event_date": "2026-03-13",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "羅琳",
+   "event_date": "2026-03-13",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊尚儒",
+   "event_date": "2026-03-13",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2026-03-13",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張敬雍",
+   "event_date": "2026-03-13",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "王彤",
+   "event_date": "2026-03-13",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
    "event_date": "2026-06-12",
    "event_type": "曜董DnA季度培訓"
   },
   {
-   "name": "陳佩君",
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2026-06-12",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
    "chapter": "真誠",
-   "event_date": "2026-07-06",
-   "event_type": "引薦+1對1工作坊"
+   "name": "陳佩君",
+   "event_date": "2026-06-12",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "李孟哲",
+   "event_date": "2026-06-12",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "傅恩平",
+   "event_date": "2026-06-12",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "林佳伶",
+   "event_date": "2026-06-12",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "柯朝陽",
+   "event_date": "2026-06-12",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊仁豪",
+   "event_date": "2026-06-12",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "羅琳",
+   "event_date": "2026-06-12",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "謝緯翔",
+   "event_date": "2026-06-12",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "顏淳峯",
+   "event_date": "2026-06-12",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊尚儒",
+   "event_date": "2026-06-12",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2026-06-12",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張敬雍",
+   "event_date": "2026-06-12",
+   "event_type": "曜董DnA季度培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "王彤",
+   "event_date": "2026-06-12",
+   "event_type": "曜董DnA季度培訓"
   }
  ],
  "roster": [
