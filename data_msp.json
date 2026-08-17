@@ -353,32 +353,6 @@
       "attended_count": 2
     },
     {
-      "name": "陳欣佑",
-      "chapter": null,
-      "attendance": {
-        "0413": "absent",
-        "0511": "absent",
-        "0611": "present",
-        "0615": "absent",
-        "0720": "absent",
-        "0817": "nodata"
-      },
-      "attended_count": 1
-    },
-    {
-      "name": "陳家煖",
-      "chapter": null,
-      "attendance": {
-        "0413": "absent",
-        "0511": "absent",
-        "0611": "present",
-        "0615": "absent",
-        "0720": "absent",
-        "0817": "nodata"
-      },
-      "attended_count": 1
-    },
-    {
       "name": "楊智帆",
       "chapter": "真鑽",
       "attendance": {
@@ -407,19 +381,6 @@
     {
       "name": "宋映璇",
       "chapter": "真鑽",
-      "attendance": {
-        "0413": "present",
-        "0511": "nodata",
-        "0611": "nodata",
-        "0615": "nodata",
-        "0720": "nodata",
-        "0817": "nodata"
-      },
-      "attended_count": 1
-    },
-    {
-      "name": "江紫緹",
-      "chapter": null,
       "attendance": {
         "0413": "present",
         "0511": "nodata",
@@ -549,7 +510,7 @@
     },
     {
       "name": "林尹渟",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "nodata",
         "0511": "present",
@@ -575,7 +536,7 @@
     },
     {
       "name": "謝盛峰",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "nodata",
         "0511": "present",
@@ -587,8 +548,8 @@
       "attended_count": 1
     },
     {
-      "name": "范郁斌",
-      "chapter": null,
+      "name": "范郁琪",
+      "chapter": "真鑫",
       "attendance": {
         "0413": "nodata",
         "0511": "present",
@@ -601,7 +562,7 @@
     },
     {
       "name": "葉彤黎",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
@@ -614,7 +575,7 @@
     },
     {
       "name": "伍芬群",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
@@ -627,7 +588,7 @@
     },
     {
       "name": "吳三貴",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
@@ -653,7 +614,7 @@
     },
     {
       "name": "徐偉倫",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
@@ -679,7 +640,7 @@
     },
     {
       "name": "楊凱為",
-      "chapter": null,
+      "chapter": "真鑫",
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
@@ -693,19 +654,6 @@
     {
       "name": "薛如媛",
       "chapter": "真鑫",
-      "attendance": {
-        "0413": "nodata",
-        "0511": "nodata",
-        "0611": "nodata",
-        "0615": "nodata",
-        "0720": "present",
-        "0817": "nodata"
-      },
-      "attended_count": 1
-    },
-    {
-      "name": "蔡佩彤",
-      "chapter": null,
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
@@ -796,7 +744,7 @@
     },
     {
       "name": "杜泱畯",
-      "chapter": null,
+      "chapter": "真鑽",
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",

@@ -4924,10 +4924,46 @@
    "event_type": "初階MSP"
   },
   {
+   "chapter": "真鑫",
+   "name": "林尹渟",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
    "chapter": "真鑽",
    "name": "楊尚儒",
    "event_date": "2026-05-11",
    "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "謝盛峰",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "范郁琪",
+   "event_date": "2026-05-11",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "葉彤黎",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "伍芬群",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "吳三貴",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
   },
   {
    "chapter": "真鑽",
@@ -4937,7 +4973,19 @@
   },
   {
    "chapter": "真鑫",
+   "name": "徐偉倫",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑫",
    "name": "柯炫任",
+   "event_date": "2026-06-15",
+   "event_type": "進階MSP"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "楊凱為",
    "event_date": "2026-06-15",
    "event_type": "進階MSP"
   },
@@ -4974,6 +5022,12 @@
   {
    "chapter": "真鑽",
    "name": "傅恩平",
+   "event_date": "2026-07-20",
+   "event_type": "初階MSP"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "杜泱畯",
    "event_date": "2026-07-20",
    "event_type": "初階MSP"
   },
@@ -5106,11 +5160,19 @@
    "chapter": "真鑫"
   },
   {
+   "name": "徐偉倫",
+   "chapter": "真鑫"
+  },
+  {
    "name": "杜亞洛",
    "chapter": "真鑫"
   },
   {
    "name": "林佳慧",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "林尹渟",
    "chapter": "真鑫"
   },
   {
@@ -5126,11 +5188,19 @@
    "chapter": "真鑫"
   },
   {
+   "name": "楊凱為",
+   "chapter": "真鑫"
+  },
+  {
    "name": "楊博丞",
    "chapter": "真鑫"
   },
   {
    "name": "王聖凱",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "范郁琪",
    "chapter": "真鑫"
   },
   {
@@ -5147,6 +5217,10 @@
   },
   {
    "name": "謝盛峯",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "謝盛峰",
    "chapter": "真鑫"
   },
   {
@@ -5170,11 +5244,19 @@
    "chapter": "真鑫"
   },
   {
+   "name": "伍芬群",
+   "chapter": "真鑽"
+  },
+  {
    "name": "傅恩平",
    "chapter": "真鑽"
   },
   {
    "name": "古禹澤",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "吳三貴",
    "chapter": "真鑽"
   },
   {
@@ -5207,6 +5289,10 @@
   },
   {
    "name": "杜泱峻",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "杜泱畯",
    "chapter": "真鑽"
   },
   {
@@ -5263,6 +5349,10 @@
   },
   {
    "name": "莊弼翔",
+   "chapter": "真鑽"
+  },
+  {
+   "name": "葉彤黎",
    "chapter": "真鑽"
   },
   {
