@@ -21,7 +21,7 @@
   "領導團隊培訓"
  ],
  "date_range": [
-  "2018-04-13",
+  "2018-08-17",
   "2026-08-17"
  ],
  "records": [
@@ -34,56 +34,14 @@
   {
    "chapter": "真誠",
    "name": "陳佩君",
-   "event_date": "2025-12-18",
-   "event_type": "Workshop"
-  },
-  {
-   "chapter": "真誠",
-   "name": "陳佩君",
-   "event_date": "2025-06-25",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真誠",
-   "name": "陳佩君",
-   "event_date": "2024-09-14",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真誠",
-   "name": "陳佩君",
-   "event_date": "2026-03-07",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真誠",
-   "name": "陳佩君",
-   "event_date": "2024-04-22",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真誠",
-   "name": "陳佩君",
-   "event_date": "2026-01-07",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真誠",
-   "name": "陳佩君",
-   "event_date": "2025-10-25",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真誠",
-   "name": "陳佩君",
-   "event_date": "2024-11-11",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真誠",
-   "name": "陳佩君",
    "event_date": "2025-04-19",
    "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2026-08-17",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真誠",
@@ -136,6 +94,12 @@
   {
    "chapter": "真誠",
    "name": "陳佩君",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
    "event_date": "2024-05-11",
    "event_type": "董事培訓 - Taiwan"
   },
@@ -162,6 +126,12 @@
    "name": "陳佩君",
    "event_date": "2025-05-16",
    "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2026-06-28",
+   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真誠",
@@ -220,6 +190,12 @@
   {
    "chapter": "真誠",
    "name": "陳佩君",
+   "event_date": "2026-06-11",
+   "event_type": "Workshop"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
    "event_date": "2024-05-20",
    "event_type": "董事培訓 - Taiwan"
   },
@@ -237,15 +213,69 @@
   },
   {
    "chapter": "真誠",
-   "name": "林佳伶 Lavi",
-   "event_date": "2023-04-28",
+   "name": "陳佩君",
+   "event_date": "2025-12-18",
    "event_type": "Workshop"
   },
   {
    "chapter": "真誠",
-   "name": "林佳伶 Lavi",
-   "event_date": "2024-10-26",
+   "name": "陳佩君",
+   "event_date": "2025-06-25",
    "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2026-04-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2024-09-14",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2026-03-07",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2024-04-22",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2026-01-07",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2025-10-25",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真誠",
+   "name": "陳佩君",
+   "event_date": "2024-11-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "林佳伶 Lavi",
+   "event_date": "2026-06-27",
+   "event_type": "BNI台灣會員大會"
   },
   {
    "chapter": "真誠",
@@ -294,6 +324,12 @@
    "name": "林佳伶 Lavi",
    "event_date": "2023-08-28",
    "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "林佳伶 Lavi",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真誠",
@@ -352,6 +388,12 @@
   {
    "chapter": "真誠",
    "name": "林佳伶 Lavi",
+   "event_date": "2026-06-11",
+   "event_type": "Workshop"
+  },
+  {
+   "chapter": "真誠",
+   "name": "林佳伶 Lavi",
    "event_date": "2026-03-07",
    "event_type": "董事培訓 - Taiwan"
   },
@@ -369,62 +411,26 @@
   },
   {
    "chapter": "真誠",
-   "name": "楊在珍",
-   "event_date": "2026-03-09",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真誠",
-   "name": "楊在珍",
-   "event_date": "2025-12-18",
+   "name": "林佳伶 Lavi",
+   "event_date": "2023-04-28",
    "event_type": "Workshop"
   },
   {
    "chapter": "真誠",
-   "name": "楊在珍",
-   "event_date": "2026-06-08",
-   "event_type": "簡報+PT工作坊"
+   "name": "林佳伶 Lavi",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真誠",
-   "name": "楊在珍",
-   "event_date": "2026-02-02",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真誠",
-   "name": "楊在珍",
-   "event_date": "2025-11-14",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真誠",
-   "name": "楊在珍",
-   "event_date": "2026-03-14",
+   "name": "林佳伶 Lavi",
+   "event_date": "2024-10-26",
    "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真誠",
    "name": "楊在珍",
-   "event_date": "2025-10-09",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真誠",
-   "name": "楊在珍",
-   "event_date": "2025-11-10",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真誠",
-   "name": "楊在珍",
-   "event_date": "2026-07-06",
-   "event_type": "引薦+1對1工作坊"
-  },
-  {
-   "chapter": "真誠",
-   "name": "楊在珍",
-   "event_date": "2026-02-02",
+   "event_date": "2026-06-15",
    "event_type": "會員成功專案"
   },
   {
@@ -442,13 +448,25 @@
   {
    "chapter": "真誠",
    "name": "楊在珍",
+   "event_date": "2026-01-05",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2026-06-28",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
    "event_date": "2026-03-12",
    "event_type": "曜董主題培訓"
   },
   {
    "chapter": "真誠",
    "name": "楊在珍",
-   "event_date": "2026-01-05",
+   "event_date": "2026-02-09",
    "event_type": "會員成功專案"
   },
   {
@@ -460,7 +478,91 @@
   {
    "chapter": "真誠",
    "name": "楊在珍",
-   "event_date": "2026-02-09",
+   "event_date": "2026-06-11",
+   "event_type": "Workshop"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2026-03-09",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2025-12-18",
+   "event_type": "Workshop"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2026-02-02",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2026-04-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2026-06-08",
+   "event_type": "簡報+PT工作坊"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2025-11-14",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2026-06-27",
+   "event_type": "BNI台灣會員大會"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2026-03-14",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2025-10-09",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2026-02-02",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2025-11-10",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "楊在珍",
+   "event_date": "2026-07-06",
+   "event_type": "引薦+1對1工作坊"
+  },
+  {
+   "chapter": "真誠",
+   "name": "盧尚政",
+   "event_date": "2026-01-05",
    "event_type": "會員成功專案"
   },
   {
@@ -483,8 +585,26 @@
   },
   {
    "chapter": "真誠",
-   "name": "盧尚政",
+   "name": "郭展鴻",
+   "event_date": "2025-11-10",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "郭展鴻",
    "event_date": "2026-01-05",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "郭展鴻",
+   "event_date": "2026-04-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "郭展鴻",
+   "event_date": "2024-10-11",
    "event_type": "會員成功專案"
   },
   {
@@ -519,30 +639,6 @@
   },
   {
    "chapter": "真誠",
-   "name": "郭展鴻",
-   "event_date": "2025-11-10",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真誠",
-   "name": "郭展鴻",
-   "event_date": "2026-01-05",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真誠",
-   "name": "郭展鴻",
-   "event_date": "2026-04-13",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真誠",
-   "name": "郭展鴻",
-   "event_date": "2024-10-11",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真誠",
    "name": "葉建葳",
    "event_date": "2026-04-13",
    "event_type": "會員成功專案"
@@ -551,6 +647,18 @@
    "chapter": "真誠",
    "name": "王彤",
    "event_date": "2026-02-02",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "王彤",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "王彤",
+   "event_date": "2026-04-13",
    "event_type": "會員成功專案"
   },
   {
@@ -568,6 +676,12 @@
   {
    "chapter": "真誠",
    "name": "王彤",
+   "event_date": "2026-08-17",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "王彤",
    "event_date": "2025-09-08",
    "event_type": "會員成功專案"
   },
@@ -576,6 +690,18 @@
    "name": "王彤",
    "event_date": "2026-02-02",
    "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "王彤",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "王彤",
+   "event_date": "2026-06-27",
+   "event_type": "BNI台灣會員大會"
   },
   {
    "chapter": "真誠",
@@ -592,24 +718,18 @@
   {
    "chapter": "真誠",
    "name": "鄭禮昂",
+   "event_date": "2024-04-27",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真誠",
+   "name": "鄭禮昂",
    "event_date": "2024-10-11",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真誠",
    "name": "鄭禮昂",
-   "event_date": "2026-02-13",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真誠",
-   "name": "鄭禮昂",
-   "event_date": "2024-04-27",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真誠",
-   "name": "黃笛軒",
    "event_date": "2026-02-13",
    "event_type": "領導團隊培訓"
   },
@@ -624,6 +744,30 @@
    "name": "黃笛軒",
    "event_date": "2026-01-05",
    "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "黃笛軒",
+   "event_date": "2026-02-13",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "鄭綉美",
+   "event_date": "2026-02-02",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "鄭綉美",
+   "event_date": "2024-04-27",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真誠",
+   "name": "鄭綉美",
+   "event_date": "2025-10-25",
+   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真誠",
@@ -657,33 +801,9 @@
   },
   {
    "chapter": "真誠",
-   "name": "鄭綉美",
-   "event_date": "2026-02-02",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真誠",
-   "name": "鄭綉美",
-   "event_date": "2024-04-27",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真誠",
-   "name": "鄭綉美",
-   "event_date": "2025-10-25",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真誠",
    "name": "李美花",
-   "event_date": "2026-02-02",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真誠",
-   "name": "李美花",
-   "event_date": "2018-09-20",
-   "event_type": "領導團隊培訓"
+   "event_date": "2026-06-11",
+   "event_type": "Workshop"
   },
   {
    "chapter": "真誠",
@@ -700,14 +820,20 @@
   {
    "chapter": "真誠",
    "name": "李美花",
+   "event_date": "2020-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "李美花",
    "event_date": "2026-03-14",
    "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真誠",
    "name": "李美花",
-   "event_date": "2020-07-20",
-   "event_type": "會員成功專案"
+   "event_date": "2026-06-27",
+   "event_type": "BNI台灣會員大會"
   },
   {
    "chapter": "真誠",
@@ -724,14 +850,20 @@
   {
    "chapter": "真誠",
    "name": "李美花",
-   "event_date": "2018-04-13",
+   "event_date": "2020-07-20",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "李美花",
+   "event_date": "2026-06-15",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真誠",
    "name": "李美花",
-   "event_date": "2020-07-20",
-   "event_type": "領導團隊培訓"
+   "event_date": "2026-04-13",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真誠",
@@ -741,15 +873,27 @@
   },
   {
    "chapter": "真誠",
-   "name": "張羽家",
-   "event_date": "2025-12-18",
-   "event_type": "Workshop"
+   "name": "李美花",
+   "event_date": "2018-09-20",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真誠",
+   "name": "李美花",
+   "event_date": "2026-02-02",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真誠",
    "name": "張羽家",
    "event_date": "2018-08-31",
    "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "張羽家",
+   "event_date": "2025-12-18",
+   "event_type": "Workshop"
   },
   {
    "chapter": "真誠",
@@ -766,7 +910,7 @@
   {
    "chapter": "真誠",
    "name": "張羽家",
-   "event_date": "2018-06-20",
+   "event_date": "2026-06-15",
    "event_type": "會員成功專案"
   },
   {
@@ -802,14 +946,20 @@
   {
    "chapter": "真誠",
    "name": "張羽家",
-   "event_date": "2025-12-15",
-   "event_type": "董事培訓 - Taiwan"
+   "event_date": "2018-08-17",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真誠",
    "name": "張羽家",
-   "event_date": "2018-08-17",
+   "event_date": "2026-08-17",
    "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真誠",
+   "name": "張羽家",
+   "event_date": "2025-12-15",
+   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真誠",
@@ -838,19 +988,49 @@
   {
    "chapter": "真鑫",
    "name": "吳亞平",
-   "event_date": "2025-10-09",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "吳亞平",
    "event_date": "2025-09-08",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑫",
    "name": "吳亞平",
+   "event_date": "2026-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "吳亞平",
+   "event_date": "2026-06-11",
+   "event_type": "Workshop"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "吳亞平",
    "event_date": "2025-11-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "吳亞平",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "吳亞平",
+   "event_date": "2025-10-09",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "吳亞平",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "杜亞洛",
+   "event_date": "2026-06-15",
    "event_type": "會員成功專案"
   },
   {
@@ -861,8 +1041,38 @@
   },
   {
    "chapter": "真鑫",
+   "name": "杜亞洛",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "林佳慧",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
    "name": "林佳慧",
    "event_date": "2026-04-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "陳俊源",
+   "event_date": "2025-02-17",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "陳俊源",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "陳俊源",
+   "event_date": "2025-02-14",
    "event_type": "會員成功專案"
   },
   {
@@ -879,14 +1089,26 @@
   },
   {
    "chapter": "真鑫",
-   "name": "陳俊源",
-   "event_date": "2025-02-17",
-   "event_type": "領導團隊培訓"
+   "name": "徐偉倫",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑫",
-   "name": "陳俊源",
-   "event_date": "2025-02-14",
+   "name": "徐偉倫",
+   "event_date": "2026-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "楊博丞",
+   "event_date": "2025-10-25",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "楊博丞",
+   "event_date": "2026-07-20",
    "event_type": "會員成功專案"
   },
   {
@@ -898,8 +1120,14 @@
   {
    "chapter": "真鑫",
    "name": "楊博丞",
-   "event_date": "2025-10-25",
-   "event_type": "董事培訓 - Taiwan"
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "薛如媛",
+   "event_date": "2026-07-20",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑫",
@@ -915,8 +1143,8 @@
   },
   {
    "chapter": "真鑫",
-   "name": "林尹渰",
-   "event_date": "2025-08-22",
+   "name": "柯宗佑",
+   "event_date": "2026-07-20",
    "event_type": "會員成功專案"
   },
   {
@@ -930,6 +1158,30 @@
    "name": "林尹渰",
    "event_date": "2025-03-13",
    "event_type": "Workshop"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "林尹渰",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "林尹渰",
+   "event_date": "2025-08-22",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "劉彥彬",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "劉彥彬",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑫",
@@ -940,12 +1192,6 @@
   {
    "chapter": "真鑫",
    "name": "吳志煒",
-   "event_date": "2025-08-22",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "吳志煒",
    "event_date": "2025-10-25",
    "event_type": "董事培訓 - Taiwan"
   },
@@ -957,6 +1203,24 @@
   },
   {
    "chapter": "真鑫",
+   "name": "吳志煒",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "吳志煒",
+   "event_date": "2025-08-22",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "莊政川",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
    "name": "莊政川",
    "event_date": "2026-04-13",
    "event_type": "會員成功專案"
@@ -964,8 +1228,20 @@
   {
    "chapter": "真鑫",
    "name": "張晴晴",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "張晴晴",
    "event_date": "2025-08-22",
    "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "張晴晴",
+   "event_date": "2026-06-11",
+   "event_type": "Workshop"
   },
   {
    "chapter": "真鑫",
@@ -982,19 +1258,49 @@
   {
    "chapter": "真鑫",
    "name": "柯炫任",
-   "event_date": "2025-09-08",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "柯炫任",
    "event_date": "2025-09-06",
    "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑫",
+   "name": "柯炫任",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "柯炫任",
+   "event_date": "2025-09-08",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "楊為凱",
+   "event_date": "2026-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "楊為凱",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
    "name": "吳玫萱",
    "event_date": "2026-04-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "吳玫萱",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "連皓宇",
+   "event_date": "2026-06-15",
    "event_type": "會員成功專案"
   },
   {
@@ -1005,14 +1311,74 @@
   },
   {
    "chapter": "真鑫",
+   "name": "連皓宇",
+   "event_date": "2026-06-11",
+   "event_type": "Workshop"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "連皓宇",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "連皓宇",
+   "event_date": "2026-08-17",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
    "name": "謝盛峯",
    "event_date": "2026-04-13",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑫",
+   "name": "謝盛峯",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "王聖凱",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
    "name": "王聖凱",
    "event_date": "2025-02-14",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "姵彤蔡",
+   "event_date": "2026-08-17",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "姵彤蔡",
+   "event_date": "2026-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "范郁琪",
+   "event_date": "2026-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "范郁琪",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "黃鑫豊",
+   "event_date": "2026-05-11",
    "event_type": "會員成功專案"
   },
   {
@@ -1024,7 +1390,55 @@
   {
    "chapter": "真鑫",
    "name": "買駿航",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "買駿航",
+   "event_date": "2026-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "買駿航",
+   "event_date": "2026-06-11",
+   "event_type": "Workshop"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "買駿航",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑫",
+   "name": "買駿航",
    "event_date": "2026-04-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "黃一恭",
+   "event_date": "2026-06-11",
+   "event_type": "Workshop"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "黃一恭",
+   "event_date": "2026-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "黃一恭",
+   "event_date": "2026-04-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "黃一恭",
+   "event_date": "2026-05-11",
    "event_type": "會員成功專案"
   },
   {
@@ -1035,122 +1449,14 @@
   },
   {
    "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2026-01-05",
+   "name": "吳三貴",
+   "event_date": "2026-07-20",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2024-03-15",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2021-11-12",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2022-09-02",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2026-02-09",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2025-02-17",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2025-10-25",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2023-12-27",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2021-07-09",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2026-02-02",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2024-09-07",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2022-01-14",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2022-11-11",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2020-12-30",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2026-03-07",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2025-04-19",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2025-11-10",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2024-03-09",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2021-09-27",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡丞弘",
-   "event_date": "2026-02-02",
+   "name": "吳三貴",
+   "event_date": "2026-06-15",
    "event_type": "會員成功專案"
   },
   {
@@ -1168,6 +1474,18 @@
   {
    "chapter": "真鑽",
    "name": "蔡丞弘",
+   "event_date": "2026-02-02",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2025-08-22",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
    "event_date": "2023-01-13",
    "event_type": "會員成功專案"
   },
@@ -1180,7 +1498,139 @@
   {
    "chapter": "真鑽",
    "name": "蔡丞弘",
-   "event_date": "2025-08-22",
+   "event_date": "2021-11-12",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2026-01-05",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2024-03-15",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2025-02-17",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2022-09-02",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2026-02-09",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2021-07-09",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2025-10-25",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2023-12-27",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2024-09-07",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2022-01-14",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2026-02-02",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2026-03-07",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2025-04-19",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2022-11-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2020-12-30",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2021-09-27",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2025-11-10",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡丞弘",
+   "event_date": "2024-03-09",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊仁豪",
+   "event_date": "2025-09-06",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊仁豪",
+   "event_date": "2022-12-22",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊仁豪",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊仁豪",
+   "event_date": "2023-01-13",
    "event_type": "會員成功專案"
   },
   {
@@ -1192,14 +1642,20 @@
   {
    "chapter": "真鑽",
    "name": "楊仁豪",
+   "event_date": "2025-10-25",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊仁豪",
    "event_date": "2022-12-09",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
    "name": "楊仁豪",
-   "event_date": "2025-10-25",
-   "event_type": "董事培訓 - Taiwan"
+   "event_date": "2026-08-17",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
@@ -1216,37 +1672,25 @@
   {
    "chapter": "真鑽",
    "name": "楊仁豪",
+   "event_date": "2026-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊仁豪",
    "event_date": "2022-11-11",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
    "name": "楊仁豪",
+   "event_date": "2026-04-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊仁豪",
    "event_date": "2023-12-27",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "楊仁豪",
-   "event_date": "2022-12-22",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "楊仁豪",
-   "event_date": "2025-09-06",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "楊仁豪",
-   "event_date": "2023-01-13",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "林仁超",
-   "event_date": "2025-02-14",
    "event_type": "會員成功專案"
   },
   {
@@ -1263,26 +1707,26 @@
   },
   {
    "chapter": "真鑽",
-   "name": "陳佳玲",
-   "event_date": "2023-12-27",
-   "event_type": "會員成功專案"
+   "name": "林仁超",
+   "event_date": "2026-06-27",
+   "event_type": "BNI台灣會員大會"
   },
   {
    "chapter": "真鑽",
-   "name": "陳佳玲",
-   "event_date": "2024-09-07",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳佳玲",
-   "event_date": "2021-05-20",
+   "name": "林仁超",
+   "event_date": "2025-02-14",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
    "name": "陳佳玲",
    "event_date": "2025-09-08",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳佳玲",
+   "event_date": "2021-05-20",
    "event_type": "會員成功專案"
   },
   {
@@ -1306,19 +1750,25 @@
   {
    "chapter": "真鑽",
    "name": "陳佳玲",
-   "event_date": "2023-10-13",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳佳玲",
    "event_date": "2025-09-06",
    "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
    "name": "陳佳玲",
+   "event_date": "2023-10-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳佳玲",
    "event_date": "2024-04-22",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳佳玲",
+   "event_date": "2025-04-19",
    "event_type": "董事培訓 - Taiwan"
   },
   {
@@ -1330,7 +1780,19 @@
   {
    "chapter": "真鑽",
    "name": "陳佳玲",
-   "event_date": "2025-04-19",
+   "event_date": "2026-08-17",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳佳玲",
+   "event_date": "2023-12-27",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳佳玲",
+   "event_date": "2024-09-07",
    "event_type": "董事培訓 - Taiwan"
   },
   {
@@ -1344,120 +1806,6 @@
    "name": "林信宏",
    "event_date": "2025-09-08",
    "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2024-03-09",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2026-02-02",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2023-07-14",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2025-03-22",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2022-07-08",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2024-10-28",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2024-12-09",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2024-05-25",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2026-03-07",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2023-08-14",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2025-10-25",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2022-12-09",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2026-01-07",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2023-04-15",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2025-03-07",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2022-03-11",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2024-09-07",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2023-12-08",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2024-05-11",
-   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
@@ -1492,20 +1840,8 @@
   {
    "chapter": "真鑽",
    "name": "邱南寅",
-   "event_date": "2022-11-11",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2025-01-13",
+   "event_date": "2024-05-11",
    "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2021-12-17",
-   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
@@ -1534,20 +1870,20 @@
   {
    "chapter": "真鑽",
    "name": "邱南寅",
-   "event_date": "2024-03-08",
+   "event_date": "2022-11-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2025-01-13",
    "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
    "name": "邱南寅",
-   "event_date": "2026-03-12",
-   "event_type": "Workshop"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2023-05-29",
-   "event_type": "董事培訓 - Taiwan"
+   "event_date": "2021-12-17",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
@@ -1570,13 +1906,19 @@
   {
    "chapter": "真鑽",
    "name": "邱南寅",
-   "event_date": "2024-11-11",
-   "event_type": "會員成功專案"
+   "event_date": "2024-03-08",
+   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
    "name": "邱南寅",
-   "event_date": "2024-05-17",
+   "event_date": "2026-03-12",
+   "event_type": "Workshop"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2023-05-29",
    "event_type": "董事培訓 - Taiwan"
   },
   {
@@ -1606,6 +1948,42 @@
   {
    "chapter": "真鑽",
    "name": "邱南寅",
+   "event_date": "2024-11-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2024-05-17",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2022-01-25",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2024-08-03",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2026-06-11",
+   "event_type": "Workshop"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2023-12-27",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
    "event_date": "2026-01-05",
    "event_type": "會員成功專案"
   },
@@ -1624,19 +2002,121 @@
   {
    "chapter": "真鑽",
    "name": "邱南寅",
-   "event_date": "2022-01-25",
-   "event_type": "會員成功專案"
+   "event_date": "2023-07-14",
+   "event_type": "領導團隊培訓"
   },
   {
    "chapter": "真鑽",
    "name": "邱南寅",
-   "event_date": "2024-08-03",
+   "event_date": "2025-03-22",
    "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
    "name": "邱南寅",
-   "event_date": "2023-12-27",
+   "event_date": "2022-07-08",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2024-10-28",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2024-03-09",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2026-02-02",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2024-05-25",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2026-03-07",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2023-08-14",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2025-10-25",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2022-12-09",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2024-12-09",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2025-03-07",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2022-03-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2024-09-07",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2026-06-28",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2023-12-08",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2026-01-07",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "邱南寅",
+   "event_date": "2023-04-15",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "洪嘉妘",
+   "event_date": "2026-07-20",
    "event_type": "會員成功專案"
   },
   {
@@ -1648,6 +2128,72 @@
   {
    "chapter": "真鑽",
    "name": "洪嘉妘",
+   "event_date": "2023-10-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "洪嘉鴻",
+   "event_date": "2020-11-09",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "洪嘉鴻",
+   "event_date": "2020-03-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "洪嘉鴻",
+   "event_date": "2022-11-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "洪嘉鴻",
+   "event_date": "2021-07-09",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "洪嘉鴻",
+   "event_date": "2019-10-31",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "洪嘉鴻",
+   "event_date": "2019-12-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "洪嘉鴻",
+   "event_date": "2022-06-17",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "洪嘉鴻",
+   "event_date": "2020-08-10",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "洪嘉鴻",
+   "event_date": "2021-01-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "洪嘉鴻",
+   "event_date": "2020-04-17",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "洪嘉鴻",
    "event_date": "2023-10-13",
    "event_type": "會員成功專案"
   },
@@ -1666,12 +2212,6 @@
   {
    "chapter": "真鑽",
    "name": "洪嘉鴻",
-   "event_date": "2022-09-02",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "洪嘉鴻",
    "event_date": "2020-09-14",
    "event_type": "會員成功專案"
   },
@@ -1684,7 +2224,7 @@
   {
    "chapter": "真鑽",
    "name": "洪嘉鴻",
-   "event_date": "2019-10-04",
+   "event_date": "2022-09-02",
    "event_type": "會員成功專案"
   },
   {
@@ -1702,6 +2242,12 @@
   {
    "chapter": "真鑽",
    "name": "洪嘉鴻",
+   "event_date": "2019-10-04",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "洪嘉鴻",
    "event_date": "2022-01-14",
    "event_type": "會員成功專案"
   },
@@ -1713,69 +2259,27 @@
   },
   {
    "chapter": "真鑽",
-   "name": "洪嘉鴻",
-   "event_date": "2020-03-13",
+   "name": "陳坤成",
+   "event_date": "2020-12-14",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
-   "name": "洪嘉鴻",
-   "event_date": "2022-11-11",
+   "name": "陳坤成",
+   "event_date": "2019-04-18",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
-   "name": "洪嘉鴻",
-   "event_date": "2020-11-09",
-   "event_type": "會員成功專案"
+   "name": "陳坤成",
+   "event_date": "2020-03-09",
+   "event_type": "領導團隊培訓"
   },
   {
    "chapter": "真鑽",
-   "name": "洪嘉鴻",
-   "event_date": "2021-07-09",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "洪嘉鴻",
-   "event_date": "2019-10-31",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "洪嘉鴻",
-   "event_date": "2022-06-17",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "洪嘉鴻",
-   "event_date": "2020-08-10",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "洪嘉鴻",
-   "event_date": "2019-12-13",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "洪嘉鴻",
-   "event_date": "2020-04-17",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "洪嘉鴻",
-   "event_date": "2023-10-13",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "洪嘉鴻",
-   "event_date": "2021-01-11",
-   "event_type": "會員成功專案"
+   "name": "陳坤成",
+   "event_date": "2024-09-07",
+   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
@@ -1798,6 +2302,12 @@
   {
    "chapter": "真鑽",
    "name": "陳坤成",
+   "event_date": "2020-04-30",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳坤成",
    "event_date": "2019-12-11",
    "event_type": "領導團隊培訓"
   },
@@ -1816,8 +2326,8 @@
   {
    "chapter": "真鑽",
    "name": "陳坤成",
-   "event_date": "2020-04-30",
-   "event_type": "領導團隊培訓"
+   "event_date": "2021-03-08",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
@@ -1840,7 +2350,7 @@
   {
    "chapter": "真鑽",
    "name": "陳坤成",
-   "event_date": "2021-03-08",
+   "event_date": "2019-10-31",
    "event_type": "會員成功專案"
   },
   {
@@ -1864,8 +2374,8 @@
   {
    "chapter": "真鑽",
    "name": "陳坤成",
-   "event_date": "2019-10-31",
-   "event_type": "會員成功專案"
+   "event_date": "2020-11-02",
+   "event_type": "領導團隊培訓"
   },
   {
    "chapter": "真鑽",
@@ -1888,12 +2398,6 @@
   {
    "chapter": "真鑽",
    "name": "陳坤成",
-   "event_date": "2020-11-02",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳坤成",
    "event_date": "2021-05-17",
    "event_type": "領導團隊培訓"
   },
@@ -1908,6 +2412,12 @@
    "name": "陳坤成",
    "event_date": "2019-10-04",
    "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳坤成",
+   "event_date": "2019-06-17",
+   "event_type": "領導團隊培訓"
   },
   {
    "chapter": "真鑽",
@@ -1929,42 +2439,6 @@
   },
   {
    "chapter": "真鑽",
-   "name": "陳坤成",
-   "event_date": "2019-06-17",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳坤成",
-   "event_date": "2019-04-18",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳坤成",
-   "event_date": "2020-03-09",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳坤成",
-   "event_date": "2024-09-07",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳坤成",
-   "event_date": "2020-12-14",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "李孟哲",
-   "event_date": "2024-11-11",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
    "name": "李孟哲",
    "event_date": "2025-09-08",
    "event_type": "會員成功專案"
@@ -1977,9 +2451,39 @@
   },
   {
    "chapter": "真鑽",
+   "name": "李孟哲",
+   "event_date": "2024-11-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
    "name": "林宜宏",
-   "event_date": "2025-09-06",
-   "event_type": "董事培訓 - Taiwan"
+   "event_date": "2022-03-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "林宜宏",
+   "event_date": "2020-04-17",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "林宜宏",
+   "event_date": "2026-06-27",
+   "event_type": "BNI台灣會員大會"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "林宜宏",
+   "event_date": "2022-09-02",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "林宜宏",
+   "event_date": "2020-08-10",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
@@ -1990,13 +2494,19 @@
   {
    "chapter": "真鑽",
    "name": "林宜宏",
-   "event_date": "2020-05-08",
-   "event_type": "會員成功專案"
+   "event_date": "2025-09-06",
+   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
    "name": "林宜宏",
    "event_date": "2022-05-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "林宜宏",
+   "event_date": "2020-05-08",
    "event_type": "會員成功專案"
   },
   {
@@ -2020,13 +2530,19 @@
   {
    "chapter": "真鑽",
    "name": "林宜宏",
-   "event_date": "2020-07-13",
+   "event_date": "2026-06-15",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
    "name": "林宜宏",
    "event_date": "2022-07-08",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "林宜宏",
+   "event_date": "2020-07-13",
    "event_type": "會員成功專案"
   },
   {
@@ -2043,26 +2559,8 @@
   },
   {
    "chapter": "真鑽",
-   "name": "林宜宏",
-   "event_date": "2020-04-17",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "林宜宏",
-   "event_date": "2022-03-11",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "林宜宏",
-   "event_date": "2022-09-02",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "林宜宏",
-   "event_date": "2020-08-10",
+   "name": "林富郎",
+   "event_date": "2023-10-13",
    "event_type": "會員成功專案"
   },
   {
@@ -2080,7 +2578,7 @@
   {
    "chapter": "真鑽",
    "name": "林富郎",
-   "event_date": "2023-10-13",
+   "event_date": "2026-07-20",
    "event_type": "會員成功專案"
   },
   {
@@ -2094,6 +2592,12 @@
    "name": "楊尚儒",
    "event_date": "2025-05-24",
    "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊尚儒",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
@@ -2115,8 +2619,26 @@
   },
   {
    "chapter": "真鑽",
+   "name": "楊尚儒",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
    "name": "郭峯志",
    "event_date": "2023-10-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳建清",
+   "event_date": "2023-10-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳建清",
+   "event_date": "2023-09-06",
    "event_type": "會員成功專案"
   },
   {
@@ -2127,50 +2649,14 @@
   },
   {
    "chapter": "真鑽",
-   "name": "陳建清",
-   "event_date": "2023-10-13",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳建清",
+   "name": "莊弼翔",
    "event_date": "2023-09-06",
    "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "莊弼翔",
-   "event_date": "2025-01-13",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "莊弼翔",
-   "event_date": "2025-10-25",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "莊弼翔",
-   "event_date": "2024-05-11",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "莊弼翔",
-   "event_date": "2025-03-07",
-   "event_type": "領導團隊培訓"
   },
   {
    "chapter": "真鑽",
    "name": "莊弼翔",
    "event_date": "2025-11-10",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "莊弼翔",
-   "event_date": "2023-09-06",
    "event_type": "會員成功專案"
   },
   {
@@ -2199,15 +2685,39 @@
   },
   {
    "chapter": "真鑽",
-   "name": "蘇志揚",
+   "name": "莊弼翔",
+   "event_date": "2025-01-13",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "莊弼翔",
    "event_date": "2025-10-25",
    "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
-   "name": "蘇志揚",
-   "event_date": "2025-07-14",
+   "name": "莊弼翔",
+   "event_date": "2024-05-11",
    "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "莊弼翔",
+   "event_date": "2025-03-07",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "葉彤黎",
+   "event_date": "2026-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "葉彤黎",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
@@ -2229,9 +2739,15 @@
   },
   {
    "chapter": "真鑽",
-   "name": "許怡如",
-   "event_date": "2024-04-04",
-   "event_type": "會員成功專案"
+   "name": "蘇志揚",
+   "event_date": "2025-10-25",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蘇志揚",
+   "event_date": "2025-07-14",
+   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
@@ -2243,6 +2759,12 @@
    "chapter": "真鑽",
    "name": "許怡如",
    "event_date": "2025-09-08",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "許怡如",
+   "event_date": "2024-04-04",
    "event_type": "會員成功專案"
   },
   {
@@ -2254,241 +2776,31 @@
   {
    "chapter": "真鑽",
    "name": "傅恩平",
+   "event_date": "2026-06-27",
+   "event_type": "BNI台灣會員大會"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "傅恩平",
    "event_date": "2025-09-06",
    "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2020-03-09",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2022-03-11",
+   "name": "傅恩平",
+   "event_date": "2026-07-20",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
    "name": "郭政輝",
-   "event_date": "2021-05-10",
+   "event_date": "2019-12-13",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
    "name": "郭政輝",
-   "event_date": "2026-01-05",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2020-07-13",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2023-06-29",
-   "event_type": "BNI台灣會員大會"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2020-09-14",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2024-09-07",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2019-10-31",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2022-09-02",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2021-09-10",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2021-11-12",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2021-01-11",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2025-09-08",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2020-05-08",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2022-11-11",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2019-12-11",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2023-12-27",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2020-04-17",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2022-05-13",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2021-05-17",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2026-03-07",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2020-08-10",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2020-10-12",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2024-07-12",
-   "event_type": "BNI台灣會員大會"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2020-01-31",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2022-10-19",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2021-09-27",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2021-12-17",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2021-03-08",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2025-10-25",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2020-06-12",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2023-01-13",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2019-10-18",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2024-03-09",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2019-10-30",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2022-07-08",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2021-08-13",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "郭政輝",
-   "event_date": "2020-07-20",
+   "event_date": "2021-10-15",
    "event_type": "會員成功專案"
   },
   {
@@ -2518,19 +2830,277 @@
   {
    "chapter": "真鑽",
    "name": "郭政輝",
-   "event_date": "2019-12-13",
+   "event_date": "2020-07-13",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
    "name": "郭政輝",
-   "event_date": "2021-10-15",
+   "event_date": "2023-06-29",
+   "event_type": "BNI台灣會員大會"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2020-03-09",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2022-03-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2021-05-10",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2026-01-05",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2021-09-10",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2020-09-14",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2024-09-07",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2019-10-31",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2022-09-02",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2022-11-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2019-12-11",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2021-11-12",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2021-01-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2025-09-08",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2020-05-08",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2026-03-07",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2020-08-10",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2023-12-27",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2020-04-17",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2022-05-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2021-05-17",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2021-09-27",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2020-10-12",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2024-07-12",
+   "event_type": "BNI台灣會員大會"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2020-01-31",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2022-10-19",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2023-01-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2019-10-18",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2021-12-17",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2021-03-08",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2025-10-25",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2020-06-12",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2026-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2020-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2024-03-09",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2019-10-30",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2022-07-08",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "郭政輝",
+   "event_date": "2021-08-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張敬雍",
+   "event_date": "2026-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張敬雍",
+   "event_date": "2026-06-28",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張敬雍",
+   "event_date": "2025-11-10",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
    "name": "張敬雍",
    "event_date": "2026-02-09",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張敬雍",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張敬雍",
+   "event_date": "2026-04-13",
    "event_type": "會員成功專案"
   },
   {
@@ -2548,6 +3118,12 @@
   {
    "chapter": "真鑽",
    "name": "張敬雍",
+   "event_date": "2026-06-11",
+   "event_type": "Workshop"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張敬雍",
    "event_date": "2025-09-08",
    "event_type": "會員成功專案"
   },
@@ -2556,18 +3132,6 @@
    "name": "張敬雍",
    "event_date": "2026-02-02",
    "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "張敬雍",
-   "event_date": "2025-11-10",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "康文彬",
-   "event_date": "2021-05-29",
-   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
@@ -2626,7 +3190,7 @@
   {
    "chapter": "真鑽",
    "name": "康文彬",
-   "event_date": "2022-08-05",
+   "event_date": "2021-05-29",
    "event_type": "會員成功專案"
   },
   {
@@ -2634,6 +3198,12 @@
    "name": "康文彬",
    "event_date": "2020-04-30",
    "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "康文彬",
+   "event_date": "2026-08-17",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
@@ -2675,6 +3245,12 @@
    "chapter": "真鑽",
    "name": "康文彬",
    "event_date": "2020-06-12",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "康文彬",
+   "event_date": "2022-08-05",
    "event_type": "會員成功專案"
   },
   {
@@ -2729,6 +3305,12 @@
    "chapter": "真鑽",
    "name": "康文彬",
    "event_date": "2019-11-22",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "康文彬",
+   "event_date": "2026-05-11",
    "event_type": "會員成功專案"
   },
   {
@@ -2896,6 +3478,12 @@
   {
    "chapter": "真鑽",
    "name": "康文彬",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "康文彬",
    "event_date": "2021-08-13",
    "event_type": "會員成功專案"
   },
@@ -2950,12 +3538,6 @@
   {
    "chapter": "真鑽",
    "name": "康文彬",
-   "event_date": "2020-07-13",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "康文彬",
    "event_date": "2022-08-20",
    "event_type": "會員成功專案"
   },
@@ -3003,8 +3585,20 @@
   },
   {
    "chapter": "真鑽",
+   "name": "康文彬",
+   "event_date": "2020-07-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
    "name": "宋映璇",
    "event_date": "2026-03-09",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "宋映璇",
+   "event_date": "2026-04-13",
    "event_type": "會員成功專案"
   },
   {
@@ -3016,20 +3610,8 @@
   {
    "chapter": "真鑽",
    "name": "黃智宏",
-   "event_date": "2025-10-25",
+   "event_date": "2023-08-11",
    "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "黃智宏",
-   "event_date": "2024-04-22",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "黃智宏",
-   "event_date": "2022-09-02",
-   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
@@ -3046,8 +3628,8 @@
   {
    "chapter": "真鑽",
    "name": "黃智宏",
-   "event_date": "2023-08-11",
-   "event_type": "董事培訓 - Taiwan"
+   "event_date": "2025-06-20",
+   "event_type": "BNI台灣會員大會"
   },
   {
    "chapter": "真鑽",
@@ -3060,12 +3642,6 @@
    "name": "黃智宏",
    "event_date": "2022-08-05",
    "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "黃智宏",
-   "event_date": "2025-06-20",
-   "event_type": "BNI台灣會員大會"
   },
   {
    "chapter": "真鑽",
@@ -3118,6 +3694,12 @@
   {
    "chapter": "真鑽",
    "name": "黃智宏",
+   "event_date": "2023-07-29",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "黃智宏",
    "event_date": "2025-10-09",
    "event_type": "會員成功專案"
   },
@@ -3130,8 +3712,8 @@
   {
    "chapter": "真鑽",
    "name": "黃智宏",
-   "event_date": "2023-07-29",
-   "event_type": "董事培訓 - Taiwan"
+   "event_date": "2025-02-14",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
@@ -3142,14 +3724,20 @@
   {
    "chapter": "真鑽",
    "name": "黃智宏",
-   "event_date": "2025-02-14",
-   "event_type": "會員成功專案"
+   "event_date": "2025-10-25",
+   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
-   "name": "楊智帆",
-   "event_date": "2025-09-06",
+   "name": "黃智宏",
+   "event_date": "2024-04-22",
    "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "黃智宏",
+   "event_date": "2022-09-02",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
@@ -3178,7 +3766,37 @@
   {
    "chapter": "真鑽",
    "name": "楊智帆",
+   "event_date": "2026-06-11",
+   "event_type": "Workshop"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊智帆",
    "event_date": "2022-11-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊智帆",
+   "event_date": "2025-09-06",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊朝欽",
+   "event_date": "2020-07-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊朝欽",
+   "event_date": "2019-10-04",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊朝欽",
+   "event_date": "2019-07-26",
    "event_type": "會員成功專案"
   },
   {
@@ -3196,8 +3814,8 @@
   {
    "chapter": "真鑽",
    "name": "楊朝欽",
-   "event_date": "2019-07-26",
-   "event_type": "會員成功專案"
+   "event_date": "2019-08-02",
+   "event_type": "領導團隊培訓"
   },
   {
    "chapter": "真鑽",
@@ -3214,12 +3832,6 @@
   {
    "chapter": "真鑽",
    "name": "楊朝欽",
-   "event_date": "2019-08-02",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "楊朝欽",
    "event_date": "2020-10-12",
    "event_type": "會員成功專案"
   },
@@ -3227,6 +3839,12 @@
    "chapter": "真鑽",
    "name": "楊朝欽",
    "event_date": "2019-07-12",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "楊朝欽",
+   "event_date": "2019-11-08",
    "event_type": "會員成功專案"
   },
   {
@@ -3244,7 +3862,7 @@
   {
    "chapter": "真鑽",
    "name": "楊朝欽",
-   "event_date": "2019-11-08",
+   "event_date": "2020-08-10",
    "event_type": "會員成功專案"
   },
   {
@@ -3262,7 +3880,7 @@
   {
    "chapter": "真鑽",
    "name": "楊朝欽",
-   "event_date": "2020-08-10",
+   "event_date": "2019-08-09",
    "event_type": "會員成功專案"
   },
   {
@@ -3280,8 +3898,8 @@
   {
    "chapter": "真鑽",
    "name": "楊朝欽",
-   "event_date": "2019-08-09",
-   "event_type": "會員成功專案"
+   "event_date": "2020-04-30",
+   "event_type": "領導團隊培訓"
   },
   {
    "chapter": "真鑽",
@@ -3294,30 +3912,6 @@
    "name": "楊朝欽",
    "event_date": "2021-07-09",
    "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "楊朝欽",
-   "event_date": "2020-04-30",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "楊朝欽",
-   "event_date": "2020-07-13",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "楊朝欽",
-   "event_date": "2019-10-04",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "許朝竣",
-   "event_date": "2025-09-06",
-   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
@@ -3334,14 +3928,14 @@
   {
    "chapter": "真鑽",
    "name": "許朝竣",
-   "event_date": "2024-07-12",
-   "event_type": "BNI台灣會員大會"
+   "event_date": "2026-03-07",
+   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
    "name": "許朝竣",
-   "event_date": "2026-03-07",
-   "event_type": "董事培訓 - Taiwan"
+   "event_date": "2024-07-12",
+   "event_type": "BNI台灣會員大會"
   },
   {
    "chapter": "真鑽",
@@ -3376,6 +3970,12 @@
   {
    "chapter": "真鑽",
    "name": "許朝竣",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "許朝竣",
    "event_date": "2025-11-10",
    "event_type": "會員成功專案"
   },
@@ -3399,9 +3999,33 @@
   },
   {
    "chapter": "真鑽",
+   "name": "許朝竣",
+   "event_date": "2025-09-06",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "許朝竣",
+   "event_date": "2026-04-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
    "name": "柯朝陽",
    "event_date": "2025-05-24",
    "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "柯朝陽",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "柯朝陽",
+   "event_date": "2026-04-13",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
@@ -3424,8 +4048,20 @@
   {
    "chapter": "真鑽",
    "name": "柯朝陽",
+   "event_date": "2026-06-11",
+   "event_type": "Workshop"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "柯朝陽",
    "event_date": "2025-12-15",
    "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "柯朝陽",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
@@ -3442,8 +4078,26 @@
   {
    "chapter": "真鑽",
    "name": "柯朝陽",
+   "event_date": "2026-06-27",
+   "event_type": "BNI台灣會員大會"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "柯朝陽",
    "event_date": "2026-03-07",
    "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "鄭樫峯",
+   "event_date": "2022-10-19",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "鄭樫峯",
+   "event_date": "2021-05-29",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
@@ -3472,19 +4126,13 @@
   {
    "chapter": "真鑽",
    "name": "鄭樫峯",
+   "event_date": "2026-06-27",
+   "event_type": "BNI台灣會員大會"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "鄭樫峯",
    "event_date": "2022-03-11",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "鄭樫峯",
-   "event_date": "2022-10-19",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "鄭樫峯",
-   "event_date": "2021-05-29",
    "event_type": "會員成功專案"
   },
   {
@@ -3508,43 +4156,13 @@
   {
    "chapter": "真鑽",
    "name": "杜泱峻",
+   "event_date": "2026-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "杜泱峻",
    "event_date": "2025-05-26",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳淑玲",
-   "event_date": "2022-08-18",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳淑玲",
-   "event_date": "2022-09-02",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳淑玲",
-   "event_date": "2024-05-11",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳淑玲",
-   "event_date": "2022-03-11",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳淑玲",
-   "event_date": "2022-08-20",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳淑玲",
-   "event_date": "2023-10-13",
    "event_type": "會員成功專案"
   },
   {
@@ -3579,44 +4197,50 @@
   },
   {
    "chapter": "真鑽",
-   "name": "顏淳峯",
-   "event_date": "2024-07-12",
-   "event_type": "BNI台灣會員大會"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "顏淳峯",
-   "event_date": "2020-09-14",
+   "name": "陳淑玲",
+   "event_date": "2026-07-20",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
-   "name": "顏淳峯",
-   "event_date": "2021-01-11",
+   "name": "陳淑玲",
+   "event_date": "2022-08-18",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳淑玲",
+   "event_date": "2022-09-02",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
-   "name": "顏淳峯",
-   "event_date": "2024-04-22",
+   "name": "陳淑玲",
+   "event_date": "2024-05-11",
    "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
-   "name": "顏淳峯",
-   "event_date": "2020-08-10",
+   "name": "陳淑玲",
+   "event_date": "2022-03-11",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
-   "name": "顏淳峯",
-   "event_date": "2025-09-06",
-   "event_type": "董事培訓 - Taiwan"
+   "name": "陳淑玲",
+   "event_date": "2026-08-17",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
-   "name": "顏淳峯",
-   "event_date": "2020-10-12",
+   "name": "陳淑玲",
+   "event_date": "2022-08-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳淑玲",
+   "event_date": "2023-10-13",
    "event_type": "會員成功專案"
   },
   {
@@ -3640,14 +4264,14 @@
   {
    "chapter": "真鑽",
    "name": "顏淳峯",
-   "event_date": "2026-03-07",
-   "event_type": "董事培訓 - Taiwan"
+   "event_date": "2020-11-09",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
    "name": "顏淳峯",
-   "event_date": "2020-11-09",
-   "event_type": "會員成功專案"
+   "event_date": "2026-03-07",
+   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
@@ -3657,9 +4281,51 @@
   },
   {
    "chapter": "真鑽",
-   "name": "黃玠瑛",
-   "event_date": "2023-06-07",
+   "name": "顏淳峯",
+   "event_date": "2024-07-12",
+   "event_type": "BNI台灣會員大會"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "顏淳峯",
+   "event_date": "2020-09-14",
    "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "顏淳峯",
+   "event_date": "2021-01-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "顏淳峯",
+   "event_date": "2026-04-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "顏淳峯",
+   "event_date": "2024-04-22",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "顏淳峯",
+   "event_date": "2020-08-10",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "顏淳峯",
+   "event_date": "2020-10-12",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "顏淳峯",
+   "event_date": "2025-09-06",
+   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
@@ -3705,6 +4371,12 @@
   },
   {
    "chapter": "真鑽",
+   "name": "黃玠瑛",
+   "event_date": "2023-06-07",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
    "name": "羅琳",
    "event_date": "2021-07-09",
    "event_type": "會員成功專案"
@@ -3732,6 +4404,24 @@
    "name": "羅琳",
    "event_date": "2021-11-12",
    "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡瑞穠",
+   "event_date": "2022-12-04",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡瑞穠",
+   "event_date": "2024-05-25",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡瑞穠",
+   "event_date": "2023-07-14",
+   "event_type": "領導團隊培訓"
   },
   {
    "chapter": "真鑽",
@@ -3779,6 +4469,12 @@
    "chapter": "真鑽",
    "name": "蔡瑞穠",
    "event_date": "2022-09-07",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡瑞穠",
+   "event_date": "2026-07-20",
    "event_type": "會員成功專案"
   },
   {
@@ -3832,6 +4528,12 @@
   {
    "chapter": "真鑽",
    "name": "蔡瑞穠",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "蔡瑞穠",
    "event_date": "2023-12-27",
    "event_type": "會員成功專案"
   },
@@ -3849,32 +4551,26 @@
   },
   {
    "chapter": "真鑽",
-   "name": "蔡瑞穠",
-   "event_date": "2022-12-04",
+   "name": "古禹澤",
+   "event_date": "2026-02-02",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "古禹澤",
+   "event_date": "2026-06-11",
+   "event_type": "Workshop"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "古禹澤",
+   "event_date": "2026-02-02",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
-   "name": "蔡瑞穠",
-   "event_date": "2024-05-25",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡瑞穠",
-   "event_date": "2023-07-14",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
    "name": "古禹澤",
-   "event_date": "2026-02-02",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "古禹澤",
-   "event_date": "2026-02-02",
+   "event_date": "2026-04-13",
    "event_type": "會員成功專案"
   },
   {
@@ -3882,6 +4578,30 @@
    "name": "古禹澤",
    "event_date": "2025-08-22",
    "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "古禹澤",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳穗青",
+   "event_date": "2024-10-23",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳穗青",
+   "event_date": "2026-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "陳穗青",
+   "event_date": "2025-04-19",
+   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
@@ -3897,38 +4617,8 @@
   },
   {
    "chapter": "真鑽",
-   "name": "陳穗青",
-   "event_date": "2024-10-23",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳穗青",
-   "event_date": "2025-04-19",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
    "name": "李紫妤",
-   "event_date": "2023-04-15",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "李紫妤",
-   "event_date": "2021-10-15",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "李紫妤",
-   "event_date": "2020-07-13",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "李紫妤",
-   "event_date": "2020-04-17",
+   "event_date": "2020-11-09",
    "event_type": "會員成功專案"
   },
   {
@@ -3958,24 +4648,6 @@
   {
    "chapter": "真鑽",
    "name": "李紫妤",
-   "event_date": "2020-11-09",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "李紫妤",
-   "event_date": "2021-08-13",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "李紫妤",
-   "event_date": "2020-08-10",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "李紫妤",
    "event_date": "2019-12-11",
    "event_type": "領導團隊培訓"
   },
@@ -3988,13 +4660,13 @@
   {
    "chapter": "真鑽",
    "name": "李紫妤",
-   "event_date": "2023-06-29",
-   "event_type": "BNI台灣會員大會"
+   "event_date": "2021-08-13",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
    "name": "李紫妤",
-   "event_date": "2021-11-12",
+   "event_date": "2020-08-10",
    "event_type": "會員成功專案"
   },
   {
@@ -4012,13 +4684,13 @@
   {
    "chapter": "真鑽",
    "name": "李紫妤",
-   "event_date": "2019-05-24",
-   "event_type": "會員成功專案"
+   "event_date": "2023-06-29",
+   "event_type": "BNI台灣會員大會"
   },
   {
    "chapter": "真鑽",
    "name": "李紫妤",
-   "event_date": "2019-11-08",
+   "event_date": "2021-11-12",
    "event_type": "會員成功專案"
   },
   {
@@ -4036,13 +4708,19 @@
   {
    "chapter": "真鑽",
    "name": "李紫妤",
-   "event_date": "2021-09-27",
-   "event_type": "領導團隊培訓"
+   "event_date": "2019-05-24",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
    "name": "李紫妤",
-   "event_date": "2020-07-20",
+   "event_date": "2026-06-27",
+   "event_type": "BNI台灣會員大會"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "李紫妤",
+   "event_date": "2019-11-08",
    "event_type": "會員成功專案"
   },
   {
@@ -4055,6 +4733,30 @@
    "chapter": "真鑽",
    "name": "李紫妤",
    "event_date": "2022-12-09",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "李紫妤",
+   "event_date": "2021-09-27",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "李紫妤",
+   "event_date": "2020-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "李紫妤",
+   "event_date": "2020-10-12",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "李紫妤",
+   "event_date": "2019-06-20",
    "event_type": "會員成功專案"
   },
   {
@@ -4078,13 +4780,13 @@
   {
    "chapter": "真鑽",
    "name": "李紫妤",
-   "event_date": "2020-10-12",
+   "event_date": "2022-09-07",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
    "name": "李紫妤",
-   "event_date": "2019-06-20",
+   "event_date": "2021-05-10",
    "event_type": "會員成功專案"
   },
   {
@@ -4102,13 +4804,115 @@
   {
    "chapter": "真鑽",
    "name": "李紫妤",
-   "event_date": "2022-09-07",
+   "event_date": "2020-04-17",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
    "name": "李紫妤",
-   "event_date": "2021-05-10",
+   "event_date": "2023-04-15",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "李紫妤",
+   "event_date": "2021-10-15",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "李紫妤",
+   "event_date": "2020-07-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "謝緯翔",
+   "event_date": "2024-05-25",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "謝緯翔",
+   "event_date": "2021-12-17",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "謝緯翔",
+   "event_date": "2021-01-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "謝緯翔",
+   "event_date": "2020-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "謝緯翔",
+   "event_date": "2025-04-19",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "謝緯翔",
+   "event_date": "2022-07-08",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "謝緯翔",
+   "event_date": "2021-05-17",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "謝緯翔",
+   "event_date": "2021-09-27",
+   "event_type": "領導團隊培訓"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "謝緯翔",
+   "event_date": "2020-11-09",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "謝緯翔",
+   "event_date": "2026-07-20",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "謝緯翔",
+   "event_date": "2024-03-09",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "謝緯翔",
+   "event_date": "2024-09-02",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "謝緯翔",
+   "event_date": "2022-03-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "謝緯翔",
+   "event_date": "2021-03-08",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "謝緯翔",
+   "event_date": "2020-07-13",
    "event_type": "會員成功專案"
   },
   {
@@ -4132,8 +4936,8 @@
   {
    "chapter": "真鑽",
    "name": "謝緯翔",
-   "event_date": "2020-07-13",
-   "event_type": "會員成功專案"
+   "event_date": "2021-12-20",
+   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
@@ -4150,7 +4954,7 @@
   {
    "chapter": "真鑽",
    "name": "謝緯翔",
-   "event_date": "2021-12-20",
+   "event_date": "2024-09-07",
    "event_type": "董事培訓 - Taiwan"
   },
   {
@@ -4168,8 +4972,14 @@
   {
    "chapter": "真鑽",
    "name": "謝緯翔",
-   "event_date": "2024-09-07",
-   "event_type": "董事培訓 - Taiwan"
+   "event_date": "2021-09-10",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "謝緯翔",
+   "event_date": "2020-09-14",
+   "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
@@ -4185,98 +4995,20 @@
   },
   {
    "chapter": "真鑽",
-   "name": "謝緯翔",
-   "event_date": "2021-09-10",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "謝緯翔",
-   "event_date": "2020-09-14",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "謝緯翔",
-   "event_date": "2021-01-11",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "謝緯翔",
-   "event_date": "2024-05-25",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "謝緯翔",
-   "event_date": "2021-12-17",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "謝緯翔",
-   "event_date": "2022-07-08",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "謝緯翔",
-   "event_date": "2021-05-17",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "謝緯翔",
-   "event_date": "2020-07-20",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "謝緯翔",
-   "event_date": "2025-04-19",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "謝緯翔",
-   "event_date": "2020-11-09",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "謝緯翔",
-   "event_date": "2024-03-09",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "謝緯翔",
-   "event_date": "2021-09-27",
-   "event_type": "領導團隊培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "謝緯翔",
-   "event_date": "2022-03-11",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "謝緯翔",
-   "event_date": "2021-03-08",
-   "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "謝緯翔",
-   "event_date": "2024-09-02",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
    "name": "郭育銘",
    "event_date": "2023-10-13",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "伍芬群",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "伍芬群",
+   "event_date": "2026-07-20",
    "event_type": "會員成功專案"
   },
   {
@@ -4300,13 +5032,13 @@
   {
    "chapter": "真鑽",
    "name": "王靖雯",
-   "event_date": "2025-08-27",
+   "event_date": "2025-09-08",
    "event_type": "會員成功專案"
   },
   {
    "chapter": "真鑽",
    "name": "王靖雯",
-   "event_date": "2025-09-08",
+   "event_date": "2025-08-27",
    "event_type": "會員成功專案"
   },
   {
@@ -4318,26 +5050,8 @@
   {
    "chapter": "真鑽",
    "name": "張騰文",
-   "event_date": "2025-09-06",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "張騰文",
-   "event_date": "2023-12-27",
+   "event_date": "2026-04-13",
    "event_type": "會員成功專案"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "張騰文",
-   "event_date": "2026-03-07",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "張騰文",
-   "event_date": "2025-04-19",
-   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
@@ -4360,6 +5074,12 @@
   {
    "chapter": "真鑽",
    "name": "張騰文",
+   "event_date": "2026-06-11",
+   "event_type": "Workshop"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張騰文",
    "event_date": "2025-08-22",
    "event_type": "會員成功專案"
   },
@@ -4378,7 +5098,49 @@
   {
    "chapter": "真鑽",
    "name": "張騰文",
+   "event_date": "2026-05-11",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張騰文",
    "event_date": "2024-09-07",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張騰文",
+   "event_date": "2026-08-17",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張騰文",
+   "event_date": "2025-09-06",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張騰文",
+   "event_date": "2026-03-07",
+   "event_type": "董事培訓 - Taiwan"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張騰文",
+   "event_date": "2023-12-27",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張騰文",
+   "event_date": "2026-06-15",
+   "event_type": "會員成功專案"
+  },
+  {
+   "chapter": "真鑽",
+   "name": "張騰文",
+   "event_date": "2025-04-19",
    "event_type": "董事培訓 - Taiwan"
   },
   {
@@ -4412,66 +5174,6 @@
    "event_type": "主題培訓"
   },
   {
-   "chapter": "真鑽",
-   "name": "張騰文",
-   "event_date": "2026-04-13",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "張騰文",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "張騰文",
-   "event_date": "2026-06-11",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "張騰文",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "張騰文",
-   "event_date": "2026-08-17",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "康文彬",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "康文彬",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "康文彬",
-   "event_date": "2026-08-17",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳淑玲",
-   "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳淑玲",
-   "event_date": "2026-08-17",
-   "event_type": "主題培訓"
-  },
-  {
    "chapter": "真鑫",
    "name": "蔡珮彤",
    "event_date": "2026-07-20",
@@ -4484,232 +5186,10 @@
    "event_type": "主題培訓"
   },
   {
-   "chapter": "真鑽",
-   "name": "陳佳玲",
-   "event_date": "2026-08-17",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "買駿航",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "買駿航",
-   "event_date": "2026-06-11",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "買駿航",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "買駿航",
-   "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "柯朝陽",
-   "event_date": "2026-04-13",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "柯朝陽",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "柯朝陽",
-   "event_date": "2026-06-11",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "柯朝陽",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "吳亞平",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "吳亞平",
-   "event_date": "2026-06-11",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "吳亞平",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "吳亞平",
-   "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "古禹澤",
-   "event_date": "2026-04-13",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "古禹澤",
-   "event_date": "2026-06-11",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "古禹澤",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真誠",
-   "name": "李美花",
-   "event_date": "2026-04-13",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真誠",
-   "name": "李美花",
-   "event_date": "2026-06-11",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真誠",
-   "name": "李美花",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "黃一恭",
-   "event_date": "2026-04-13",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "黃一恭",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "黃一恭",
-   "event_date": "2026-06-11",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "張敬雍",
-   "event_date": "2026-04-13",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "張敬雍",
-   "event_date": "2026-06-11",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "張敬雍",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "張敬雍",
-   "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "張晴晴",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "張晴晴",
-   "event_date": "2026-06-11",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真誠",
-   "name": "陳佩君",
-   "event_date": "2026-04-13",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真誠",
-   "name": "陳佩君",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真誠",
-   "name": "陳佩君",
-   "event_date": "2026-06-11",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真誠",
-   "name": "陳佩君",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
    "chapter": "真誠",
    "name": "陳佩君",
    "event_date": "2026-07-20",
    "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真誠",
-   "name": "陳佩君",
-   "event_date": "2026-08-17",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真誠",
-   "name": "楊在珍",
-   "event_date": "2026-04-13",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真誠",
-   "name": "楊在珍",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真誠",
-   "name": "楊在珍",
-   "event_date": "2026-06-11",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真誠",
-   "name": "楊在珍",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
   },
   {
    "chapter": "真誠",
@@ -4740,89 +5220,17 @@
    "name": "林佳伶",
    "event_date": "2026-07-20",
    "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "杜亞洛",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "杜亞洛",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "劉彥彬",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "劉彥彬",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
   },
   {
    "chapter": "真鑽",
    "name": "許朝竣",
-   "event_date": "2026-04-13",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "許朝竣",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "許朝竣",
-   "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡瑞穠",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "蔡瑞穠",
    "event_date": "2026-07-20",
    "event_type": "初階MSP"
   },
   {
    "chapter": "真鑫",
    "name": "莊政川",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "莊政川",
    "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "楊博丞",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "楊博丞",
-   "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "陳俊源",
-   "event_date": "2026-05-11",
    "event_type": "初階MSP"
   },
   {
@@ -4834,97 +5242,7 @@
   {
    "chapter": "真鑫",
    "name": "林佳慧",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "林佳慧",
    "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "楊智帆",
-   "event_date": "2026-06-11",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "邱南寅",
-   "event_date": "2026-06-11",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "宋映璇",
-   "event_date": "2026-04-13",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真誠",
-   "name": "郭展鴻",
-   "event_date": "2026-04-13",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真誠",
-   "name": "葉建葳",
-   "event_date": "2026-04-13",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "顏淳峯",
-   "event_date": "2026-04-13",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "楊仁豪",
-   "event_date": "2026-04-13",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "楊仁豪",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "楊仁豪",
-   "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "楊仁豪",
-   "event_date": "2026-08-17",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "王聖凱",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "吳玫萱",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "黃鑫豊",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "吳志煒",
-   "event_date": "2026-05-11",
    "event_type": "初階MSP"
   },
   {
@@ -4934,18 +5252,6 @@
    "event_type": "初階MSP"
   },
   {
-   "chapter": "真鑽",
-   "name": "楊尚儒",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "楊尚儒",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
    "chapter": "真鑫",
    "name": "謝盛峰",
    "event_date": "2026-05-11",
@@ -4953,93 +5259,9 @@
   },
   {
    "chapter": "真鑫",
-   "name": "范郁琪",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "葉彤黎",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "伍芬群",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "吳三貴",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "林宜宏",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "徐偉倫",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "柯炫任",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑫",
    "name": "楊凱為",
    "event_date": "2026-06-15",
    "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "薛如媛",
-   "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑫",
-   "name": "柯宗佑",
-   "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "林富郎",
-   "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "陳穗青",
-   "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "洪嘉妘",
-   "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "傅恩平",
-   "event_date": "2026-07-20",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真鑽",
-   "name": "杜泱峻",
-   "event_date": "2026-07-20",
-   "event_type": "初階MSP"
   },
   {
    "chapter": "真鑽",
@@ -5050,44 +5272,8 @@
   {
    "chapter": "真誠",
    "name": "王彤",
-   "event_date": "2026-04-13",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真誠",
-   "name": "王彤",
-   "event_date": "2026-05-11",
-   "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真誠",
-   "name": "王彤",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真誠",
-   "name": "王彤",
    "event_date": "2026-07-20",
    "event_type": "初階MSP"
-  },
-  {
-   "chapter": "真誠",
-   "name": "王彤",
-   "event_date": "2026-08-17",
-   "event_type": "主題培訓"
-  },
-  {
-   "chapter": "真誠",
-   "name": "張羽家",
-   "event_date": "2026-06-15",
-   "event_type": "進階MSP"
-  },
-  {
-   "chapter": "真誠",
-   "name": "張羽家",
-   "event_date": "2026-08-17",
-   "event_type": "主題培訓"
   },
   {
    "chapter": "真誠",
@@ -5144,88 +5330,10 @@
    "event_type": "引薦+1對1工作坊"
   },
   {
-   "name": "李美花",
-   "chapter": "真誠",
-   "event_date": "2026-06-27",
-   "event_type": "BNI台灣會員大會"
-  },
-  {
    "name": "林佳伶",
    "chapter": "真誠",
    "event_date": "2026-06-27",
    "event_type": "BNI台灣會員大會"
-  },
-  {
-   "name": "楊在珍",
-   "chapter": "真誠",
-   "event_date": "2026-06-27",
-   "event_type": "BNI台灣會員大會"
-  },
-  {
-   "name": "王彤",
-   "chapter": "真誠",
-   "event_date": "2026-06-27",
-   "event_type": "BNI台灣會員大會"
-  },
-  {
-   "name": "傅恩平",
-   "chapter": "真鑽",
-   "event_date": "2026-06-27",
-   "event_type": "BNI台灣會員大會"
-  },
-  {
-   "name": "李紫妤",
-   "chapter": "真鑽",
-   "event_date": "2026-06-27",
-   "event_type": "BNI台灣會員大會"
-  },
-  {
-   "name": "林仁超",
-   "chapter": "真鑽",
-   "event_date": "2026-06-27",
-   "event_type": "BNI台灣會員大會"
-  },
-  {
-   "name": "林宜宏",
-   "chapter": "真鑽",
-   "event_date": "2026-06-27",
-   "event_type": "BNI台灣會員大會"
-  },
-  {
-   "name": "柯朝陽",
-   "chapter": "真鑽",
-   "event_date": "2026-06-27",
-   "event_type": "BNI台灣會員大會"
-  },
-  {
-   "name": "鄭樫峯",
-   "chapter": "真鑽",
-   "event_date": "2026-06-27",
-   "event_type": "BNI台灣會員大會"
-  },
-  {
-   "name": "楊在珍",
-   "chapter": "真誠",
-   "event_date": "2026-06-28",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "name": "張敬雍",
-   "chapter": "真鑽",
-   "event_date": "2026-06-28",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "name": "邱南寅",
-   "chapter": "真鑽",
-   "event_date": "2026-06-28",
-   "event_type": "董事培訓 - Taiwan"
-  },
-  {
-   "name": "陳佩君",
-   "chapter": "真誠",
-   "event_date": "2026-06-28",
-   "event_type": "董事培訓 - Taiwan"
   },
   {
    "chapter": "真鑽",
@@ -5600,6 +5708,10 @@
    "chapter": "真鑫"
   },
   {
+   "name": "姵彤蔡",
+   "chapter": "真鑫"
+  },
+  {
    "name": "張晴晴",
    "chapter": "真鑫"
   },
@@ -5637,6 +5749,10 @@
   },
   {
    "name": "楊博丞",
+   "chapter": "真鑫"
+  },
+  {
+   "name": "楊為凱",
    "chapter": "真鑫"
   },
   {

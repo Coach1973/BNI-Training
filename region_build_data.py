@@ -162,6 +162,22 @@ DNA_QUARTERLY_ATTENDANCE = {
 }
 
 
+def dedup_against_official(records, official_records, label):
+    """教練陸續在BNI Connect官方系統補登出席後，官方報表重新匯出時可能已經涵蓋
+    先前MSP_records/MANUAL_ATTENDANCE_CORRECTIONS裡估算/手動補的同一天記錄，
+    以(姓名,日期)為準，官方報表優先，避免同一場培訓被算兩次。"""
+    official_name_date = set((r["name"], r["event_date"]) for r in official_records)
+    kept, dropped = [], []
+    for r in records:
+        if (r["name"], r["event_date"]) in official_name_date:
+            dropped.append(r)
+        else:
+            kept.append(r)
+    if dropped:
+        print("dedup %s: %d 筆已被官方報表涵蓋，自動排除避免重複計算" % (label, len(dropped)))
+    return kept
+
+
 def build_dna_quarterly_records(existing_records):
     covered = set((r["name"], r["event_date"]) for r in existing_records)
     records = []
@@ -317,18 +333,26 @@ def main():
                 r["chapter"] = ochapter
                 break
 
+    # 教練陸續在BNI Connect官方系統補登出席(2026-08-18大量補登)，
+    # 官方報表重新匯出後，MSP自訂名單+手動補值裡的部分記錄現在已經有官方對應，
+    # 以(姓名,日期)去重，官方報表優先，避免同一場培訓被算兩次。
+    msp_records = dedup_against_official(msp_records, official_records, "MSP自訂名單")
+    manual_corrections = dedup_against_official(
+        MANUAL_ATTENDANCE_CORRECTIONS, official_records, "MANUAL_ATTENDANCE_CORRECTIONS"
+    )
+
     seed_fill_records = build_seed_teacher_fill(official_records, msp_records)
     dna_quarterly_records = build_dna_quarterly_records(
-        official_records + msp_records + seed_fill_records + MANUAL_ATTENDANCE_CORRECTIONS
+        official_records + msp_records + seed_fill_records + manual_corrections
     )
     invoice_jan_mar_records = build_invoice_jan_mar_records(
         official_records + msp_records + seed_fill_records
-        + MANUAL_ATTENDANCE_CORRECTIONS + dna_quarterly_records,
+        + manual_corrections + dna_quarterly_records,
         official_chapter,
     )
     all_records = (
         official_records + msp_records + seed_fill_records
-        + MANUAL_ATTENDANCE_CORRECTIONS + dna_quarterly_records + invoice_jan_mar_records
+        + manual_corrections + dna_quarterly_records + invoice_jan_mar_records
     )
 
     # 已離會會員先拿掉，再套分會白名單——分會不明(兩邊資料都對不到)的紀錄也一併排除，

@@ -17,10 +17,14 @@ body {
     margin: 0; padding: 0 0 40px; display: flex; flex-direction: column; align-items: center;
 }
 .header-container { width: 100%; background: var(--ink); color: var(--white); text-align: center; padding: 48px 20px 40px; margin-bottom: 32px; }
-h1 { color: var(--white); font-size: 2.4rem; font-weight: 900; letter-spacing: 2px; margin: 0; }
-p.subtitle { color: var(--line); font-size: 1rem; margin-top: 12px; }
+h1 { color: var(--white); font-size: 48px; font-weight: 900; letter-spacing: 2px; margin: 0; }
+p.subtitle { color: var(--line); font-size: 1rem; margin-top: 14px; }
+p.subtitle-note { color: var(--line); font-size: .82rem; margin-top: 6px; opacity: .8; }
+p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-top: 10px; }
 .nav-link { color: var(--gold); text-decoration: none; font-size: .85rem; font-weight: 700; letter-spacing: 1px; }
 .nav-link:hover { color: var(--white); }
+.footer-nav { width: 100%; max-width: 1200px; margin: 8px 20px 0; padding: 24px 20px; text-align: center; border-top: 1px solid var(--line); }
+.footer-nav .nav-link:hover { color: var(--red-dark); }
 
 .tabs { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1200px; margin: 0 20px 24px; padding: 0 20px; }
 .tab-btn {
@@ -137,9 +141,10 @@ tbody tr:hover { background: var(--paper); }
 </head>
 <body>
     <div class="header-container">
-        <p style="margin:0 0 10px 0;"><a class="nav-link" href="msp.html">MSP初階/進階培訓紀錄 →</a></p>
         <h1>BNI大台南南區 培訓總覽</h1>
-        <p class="subtitle">大樹教練｜__DATE_RANGE__｜共__TOTAL_RECORDS__筆培訓紀錄｜真鑫・真誠・真鑽</p>
+        <p class="subtitle">｜__DATE_RANGE__｜共__TOTAL_RECORDS__筆培訓紀錄｜真鑫・真誠・真鑽</p>
+        <p class="subtitle-note">(翻轉中的分會或沒有每週進行會議的分會暫不列入計算)</p>
+        <p class="subtitle-warn">如果會員發現培訓的次數與您計算不同，請直接反應給執行董事</p>
     </div>
 
     <div class="tabs" id="tabs">
@@ -198,6 +203,10 @@ tbody tr:hover { background: var(--paper); }
 
     <div class="note-panel">
         <p>資料來源：BNI Connect官方「地區會員培訓報告」+ 教練自訂MSP初階/進階/主題培訓，僅涵蓋真鑫/真誠/真鑽3個分會。時間窗以「今天」往回算，也可以在上方輸入任意月數自訂查詢區間，各分頁切換即時重新計算排行榜與分會排名，不需重新整理頁面。培訓類型含：會員成功專案、董事培訓、領導團隊培訓、Workshop、BNI台灣會員大會、初階/進階MSP、主題培訓。</p>
+    </div>
+
+    <div class="footer-nav">
+        <a class="nav-link" href="msp.html">MSP初階/進階培訓紀錄 →</a>
     </div>
 
     <script>
