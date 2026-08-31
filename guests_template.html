@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BNI大台南南區 來賓邀約查詢</title>
+<style>
+/* 色系/字型取自 chapters.bymyway.com/sincere（BNI官方Brand Standards Manual指定色） */
+:root {
+    --red: #CF2030; --red-dark: #9B1F27; --ink: #000000; --paper: #FAF7F2;
+    --line: #E5DFD3; --gold: #B08D57; --sub: #6B665D; --white: #FFFFFF;
+}
+* { box-sizing: border-box; }
+body {
+    background: var(--paper); color: var(--ink);
+    font-family: 'Helvetica Neue', Arial, 'PingFang TC', 'Microsoft JhengHei', 'Noto Sans TC', sans-serif;
+    margin: 0; padding: 0 0 40px; display: flex; flex-direction: column; align-items: center;
+}
+.header-container { width: 100%; background: var(--ink); color: var(--white); text-align: center; padding: 48px 20px 40px; margin-bottom: 32px; }
+h1 { color: var(--white); font-size: 48px; font-weight: 900; letter-spacing: 2px; margin: 0; }
+p.subtitle { color: var(--line); font-size: 1rem; margin-top: 14px; }
+p.subtitle-note { color: var(--line); font-size: .82rem; margin-top: 6px; opacity: .8; }
+p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-top: 10px; }
+.nav-link { color: var(--gold); text-decoration: none; font-size: .85rem; font-weight: 700; letter-spacing: 1px; }
+.nav-link:hover { color: var(--white); }
+.footer-nav { width: 100%; max-width: 1200px; margin: 8px 20px 0; padding: 24px 20px; text-align: center; border-top: 1px solid var(--line); }
+.footer-nav .nav-link:hover { color: var(--red-dark); }
+
+.tabs { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1200px; margin: 0 20px 24px; padding: 0 20px; }
+.tab-btn {
+    background: var(--white); border: 1px solid var(--line); color: var(--sub);
+    padding: 11px 22px; border-radius: 4px; cursor: pointer; font-size: .9rem; font-weight: 700;
+    letter-spacing: 1px; transition: all .15s ease;
+}
+.tab-btn.active { color: var(--white); background: var(--red); border-color: var(--red); }
+.tab-btn:hover:not(.active) { border-color: var(--red); color: var(--red-dark); }
+
+.custom-months {
+    display: flex; align-items: center; gap: 8px; justify-content: center; flex-wrap: wrap;
+    width: 100%; max-width: 1200px; margin: 0 20px 28px; padding: 14px 20px;
+    background: var(--white); border: 1px solid var(--line); border-radius: 4px; font-size: .9rem; color: var(--sub);
+}
+.custom-months input[type=number] {
+    width: 80px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 4px;
+    font-size: .95rem; color: var(--ink); text-align: center;
+}
+.custom-months input[type=number]:focus { outline: none; border-color: var(--red); }
+.custom-months button { padding: 8px 18px; font-size: .85rem; }
+
+.stats-row { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1200px; margin: 0 20px 28px; padding: 0 20px; }
+.stat-card { background: var(--white); border: 1px solid var(--line); border-radius: 4px; padding: 18px 28px; text-align: center; min-width: 140px; }
+.stat-card .num { font-size: 2rem; font-weight: 900; color: var(--red-dark); }
+.stat-card .lbl { font-size: .85rem; color: var(--sub); margin-top: 4px; letter-spacing: 1px; }
+
+.section { width: 100%; max-width: 1200px; margin-bottom: 36px; padding: 0 20px; }
+.section-title { color: var(--ink); font-size: 1.4rem; font-weight: 900; letter-spacing: 1px; text-align: center; margin: 0 0 6px 0; }
+.section-sub { color: var(--sub); text-align: center; font-size: .86rem; margin: 0 0 24px 0; }
+.section-title.warn { color: var(--red); }
+
+.table-wrapper { width: 100%; overflow-x: auto; background: var(--white); border: 1px solid var(--line); border-radius: 4px; }
+table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+th { background: var(--ink); color: var(--white); padding: 12px 14px; text-align: left; font-weight: 700; letter-spacing: 1px; font-size: .85rem; }
+td { padding: 10px 14px; border-bottom: 1px solid var(--line); color: var(--ink); }
+tr.warn td { background: #FFF3F3; }
+tr.warn td.months { color: var(--red); font-weight: 700; }
+tr:last-child td { border-bottom: none; }
+.empty { color: var(--sub); text-align: center; padding: 40px; font-size: .95rem; }
+
+.note-panel { width: 100%; max-width: 1200px; margin: 8px 20px 0; background: var(--white); border-radius: 4px; border: 1px solid var(--line); padding: 22px 28px; }
+.note-panel p { color: var(--sub); line-height: 1.8; margin: 0; font-size: .86rem; }
+
+@media (max-width: 600px) {
+    .header-container { padding: 36px 16px 30px; }
+    h1 { font-size: 1.5rem; }
+    .tabs, .stats-row, .section, .custom-months, .table-wrapper, .note-panel { padding-left: 12px; padding-right: 12px; margin-left: 0; margin-right: 0; }
+}
+</style>
+</head>
+<body>
+    <div class="header-container">
+        <h1>BNI大台南南區 來賓邀約查詢</h1>
+        <p class="subtitle">｜2018-08-08 ~ 2026-09-01｜共__TOTAL_RECORDS__筆來賓造訪紀錄｜__CHAPTERS__</p>
+        <p class="subtitle-note">(依「邀請人 + 分會」分組，找每個會員最近一次邀約來賓的日期)</p>
+        <p class="subtitle-warn">如果會員發現邀約日期與您計算不同，請直接反應給執行董事</p>
+    </div>
+
+    <div class="tabs" id="tabs">
+        <button class="tab-btn" data-months="3">近3個月</button>
+        <button class="tab-btn active" data-months="6">近6個月</button>
+        <button class="tab-btn" data-months="12">近12個月</button>
+        <button class="tab-btn" data-months="18">近18個月</button>
+        <button class="tab-btn" data-months="24">近24個月</button>
+        <button class="tab-btn" data-months="36">近36個月</button>
+        <button class="tab-btn" data-months="48">近48個月</button>
+        <button class="tab-btn" data-months="60">近60個月</button>
+        <button class="tab-btn" data-months="all">全部(8年+)</button>
+    </div>
+
+    <div class="custom-months">
+        <label for="customMonths">自訂查詢：近</label>
+        <input type="number" id="customMonths" min="1" max="200" placeholder="例如 15">
+        <label for="customMonths">個月沒邀約來賓</label>
+        <button id="customMonthsBtn" class="tab-btn">查詢</button>
+    </div>
+
+    <div class="stats-row" id="statsRow"></div>
+
+    <div class="section">
+        <div class="section-title warn">⚠️ 超過所選門檻未邀約來賓的會員名單</div>
+        <div class="section-sub" id="rankSub"></div>
+        <div class="table-wrapper">
+            <table id="rankTable">
+                <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>邀請人</th>
+                        <th>分會</th>
+                        <th>最近一次邀約來賓</th>
+                        <th>距今月數</th>
+                    </tr>
+                </thead>
+                <tbody id="rankTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="note-panel">
+        <p>資料來源：BNI Connect官方「地區-查看來賓」報表，2018-08-08 ~ 2026-09-01，3718筆造訪紀錄。分組依「邀請人姓名 + 分會」找出每組最近一次邀約日期（MAX 訪問日期），用今天減去該日期算出「距今幾個月」。公開頁只顯示邀請人姓名/分會/日期，來賓個資（電話/Email/地址/公司/職業）一律不公開，跟培訓總�的揭露原則一致。時間窗預設近6個月，可在上面點按鈕或輸入任意月數自訂查詢。</p>
+    </div>
+
+    <div class="footer-nav">
+        <a class="nav-link" href="index.html">← 培訓總覽</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a class="nav-link" href="msp.html">MSP初階/進階培訓紀錄 →</a>
+    </div>
+
+    <script>
+        const GROUPS = __GROUPS_JSON__;
+        const STATS = __STATS_JSON__;
+
+        // 計算「距今幾個月」
+        function monthsSince(visit_date) {
+            const visit = new Date(visit_date);
+            const now = new Date();
+            const yearsDiff = now.getFullYear() - visit.getFullYear();
+            const monthsDiff = now.getMonth() - visit.getMonth();
+            let totalMonths = yearsDiff * 12 + monthsDiff;
+            if (now.getDate() < visit.getDate()) totalMonths -= 1;
+            return Math.max(0, totalMonths);
+        }
+
+        // 預先算好每個組合的「距今月數」，存進 record
+        const ENRICHED = GROUPS.map(g => ({
+            ...g,
+            months_ago: monthsSince(g.visit_date)
+        }));
+
+        // 過�：months_ago >= N
+        function filterByWindow(months) {
+            if (months === 'all') return ENRICHED.slice();
+            const n = parseInt(months, 10);
+            return ENRICHED.filter(r => r.months_ago >= n);
+        }
+
+        // 排序：距今月數由大到小（最久沒邀約在最上面）
+        function renderList(filtered) {
+            const sorted = filtered.slice().sort((a, b) => b.months_ago - a.months_ago);
+            const tbody = document.getElementById('rankTableBody');
+            if (sorted.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5" class="empty">這個門�下沒有會員（每位會員最近都有邀約來賓）</td></tr>';
+                return;
+            }
+            const html = sorted.map((r, i) => {
+                const isWarn = r.months_ago >= 12;
+                const cls = isWarn ? 'warn' : '';
+                return `<tr class="${cls}">
+                    <td>${i + 1}</td>
+                    <td>${r.inviter}</td>
+                    <td>${r.chapter}</td>
+                    <td>${r.visit_date}</td>
+                    <td class="months">${r.months_ago} 個月</td>
+                </tr>`;
+            }).join('');
+            tbody.innerHTML = html;
+        }
+
+        function renderStats(filtered) {
+            const el = document.getElementById('statsRow');
+            el.innerHTML = `
+                <div class="stat-card"><div class="num">${filtered.length}</div><div class="lbl">超過門檻人數</div></div>
+                <div class="stat-card"><div class="num">${STATS.total_groups}</div><div class="lbl">(邀請人, 分會) 組合</div></div>
+                <div class="stat-card"><div class="num">${STATS.unique_inviters}</div><div class="lbl">獨立邀請人數</div></div>
+                <div class="stat-card"><div class="num">${STATS.chapters.length}</div><div class="lbl">涵蓋分會數</div></div>
+            `;
+        }
+
+        function renderSub(filtered, months) {
+            const sub = document.getElementById('rankSub');
+            const label = months === 'all' ? '全部 8 年+ 歷史紀錄' : `最近一次邀約已超過 ${months} 個月`;
+            sub.innerHTML = `${label}｜共 ${filtered.length} 個 (邀請人, 分會) 組合`;
+        }
+
+        let currentMonths = 6;
+        function apply(months) {
+            currentMonths = months;
+            const filtered = filterByWindow(months);
+            renderStats(filtered);
+            renderSub(filtered, months);
+            renderList(filtered);
+            // 更新 tab 樣式
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            if (typeof months === 'string') {
+                document.querySelector(`.tab-btn[data-months="${months}"]`)?.classList.add('active');
+            }
+        }
+
+        // tab 按鈕
+        document.querySelectorAll('#tabs .tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const m = btn.dataset.months === 'all' ? 'all' : parseInt(btn.dataset.months, 10);
+                apply(m);
+            });
+        });
+
+        // 自訂輸入框
+        document.getElementById('customMonthsBtn').addEventListener('click', () => {
+            const v = parseInt(document.getElementById('customMonths').value, 10);
+            if (!v || v < 1) {
+                alert('請輸入正整數月數');
+                return;
+            }
+            apply(v);
+        });
+
+        // 初始 render
+        apply(6);
+    </script>
+</body>
+</html>
