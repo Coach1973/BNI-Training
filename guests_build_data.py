@@ -36,8 +36,20 @@ NS = {"ss": "urn:schemas-microsoft-com:office:spreadsheet"}
 DOWNLOADS_GLOB = os.path.expanduser("~/Downloads/__-palms-*.xls")
 OUT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "guests_data.json")
 
-# "今天" 基準：跟教練匯出報表當下的「至」日期一致，避免月數計算隨執行當天日期漂移
+# "今天" 基準：跟教練匯出報表當下的「至」日期一致，避免月數計算隨執行當下日期漂移
 TODAY = date(2026, 9, 1)
+
+# 各分會實際成立月（2026-09-01教練親口逐一確認+資料本身交叉驗證）。有些PALMS
+# 報表的「從」日期比分會實際成立還早（例如真鑽報表填2018-01-01，但真鑽
+# 2018-08才成立），這種情況月數要以成立月封頂，不能照報表「從」日期機械算出
+# 虛高的月數。真鑽已用資料交叉驗證：97個月(從2018-08-01)與104個月
+# (從2018-01-01)總計皆為1624，證明2018-01~08這段本來就沒有資料，
+# 跟教練親口「2018年8月成立」完全吻合。
+CHAPTER_FOUNDING = {
+    "真鑽": date(2018, 8, 1),
+    "真誠": date(2020, 9, 1),
+    "真鑫": date(2026, 4, 1),
+}
 
 
 def _row_cells(row):
@@ -50,9 +62,13 @@ def _row_cells(row):
     return cells
 
 
-def months_back(from_date_str):
+def months_back(from_date_str, chapter):
     y, m, d = (int(x) for x in from_date_str[:10].split("-"))
-    return (TODAY.year - y) * 12 + (TODAY.month - m)
+    from_date = date(y, m, 1)
+    founding = CHAPTER_FOUNDING.get(chapter)
+    if founding and from_date < founding:
+        from_date = founding
+    return (TODAY.year - from_date.year) * 12 + (TODAY.month - from_date.month)
 
 
 def parse_palms_file(path):
@@ -65,7 +81,7 @@ def parse_palms_file(path):
     if not chapter or not date_from:
         return None
 
-    months = months_back(date_from)
+    months = months_back(date_from, chapter)
 
     members = []
     for row in rows[8:]:
