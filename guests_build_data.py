@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-BNI大台南南區「來賓邀約查詢」公開頁面（比照培訓總覽風格）- 資料源建置腳本
+BNI大台南南區「來賓邀約排行榜」公開頁面（比照培訓總覽 index.html 排行榜邏輯）- 資料源建置腳本
 
 資料來源：
   ~/Downloads/__-__-__-___31-08-2026_3-04_PM.xls
@@ -8,11 +8,12 @@ BNI大台南南區「來賓邀約查詢」公開頁面（比照培訓總覽風�
    範圍 2018-08-08 ~ 2026-09-01，原始資料涵蓋 真富/真愛/真誠/真鑫/真鑽 5 個分會，
    但只留目前有在營運的 真誠/真鑫/真鑽 3 分會，跟培訓總覽(index.html)範圍一致）
 
-計算邏輯：
-  依「Invited By + 分會」分組，取每組訪問日期最大值 = 該邀請人在該分會的最近一次邀約日期。
-  公開頁只顯示 邀請人姓名/分會/日期（不顯示來賓個資，符合培訓總覽隱私原則）。
+計算邏輯（2026-09-01教練親口指示：跟 index.html 一模一樣，不要自己另外發明邏輯）：
+  輸出每一筆原始造訪紀錄（不預先分組/不預先算最近一次），前端依「所選時間範圍」
+  篩選出落在範圍內的紀錄，再依「邀請人」統計次數排名，邏輯逐字對照
+  index.html 的 RECORDS → filterByWindow → renderRanking 這條路徑。
 
-產出：guests_data.json（前端 JS 動態計算月數、不預先算好12種門檻）
+產出：guests_data.json（前端 JS 動態依時間窗篩選並統計次數，不預先分組）
 """
 import json
 import os
@@ -26,11 +27,11 @@ XLS_PATH = os.path.expanduser("~/Downloads/__-__-__-___31-08-2026_3-04_PM.xls")
 # 輸出位置（跟 region_build_data.py 的 data.json 同層）
 OUT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "guests_data.json")
 
-# 公開頁只顯示的欄位（隱私原則：來賓個資不顯示）
-PUBLIC_FIELDS = ("inviter", "chapter", "visit_date", "guest_name", "type")
+# 公開頁只輸出的欄位（隱私原則：來賓姓名/公司/職業/電話/Email/地址一律不輸出）
+PUBLIC_FIELDS = ("inviter", "chapter", "visit_date")
 
 # 2026-09-01教練親口指示：只留目前有在營運的分會，跟培訓總覽(index.html)範圍一致。
-# 真富/真愛目前沒有在營運，不列入。
+# 真富/真愛目前翻轉中、連正式例會都沒有，不列入。
 OPERATING_CHAPTERS = {"真誠", "真鑫", "真鑽"}
 
 
@@ -69,9 +70,6 @@ def parse_xls_to_records(xls_path):
         chapter = cells.get(16, "").strip()
         visit_date_raw = cells.get(18, "").strip()
         inviter = cells.get(19, "").strip()
-        surname = cells.get(1, "").strip()
-        given = cells.get(2, "").strip()
-        type_ = cells.get(20, "").strip()
 
         if not chapter or not visit_date_raw or not inviter:
             continue
@@ -84,27 +82,12 @@ def parse_xls_to_records(xls_path):
         except Exception:
             continue
 
-        guest_name = (surname + " " + given).strip()
-
         records.append({
             "inviter": inviter,
             "chapter": chapter,
             "visit_date": visit_date,
-            "guest_name": guest_name,
-            "type": type_,
         })
     return records
-
-
-def build_groups(records):
-    """依「inviter + chapter」分組，每組只留訪問日期最大值（最近一次）。"""
-    groups = {}  # (inviter, chapter) -> dict
-    for r in records:
-        key = (r["inviter"], r["chapter"])
-        existing = groups.get(key)
-        if existing is None or r["visit_date"] > existing["visit_date"]:
-            groups[key] = r
-    return list(groups.values())
 
 
 def main():
@@ -118,25 +101,19 @@ def main():
     records = [r for r in records if r["chapter"] in OPERATING_CHAPTERS]
     print(f"  只留營運中分會（{'/'.join(sorted(OPERATING_CHAPTERS))}）後：{len(records)}")
 
-    print("依 (邀請人, 分會) 分組，取最近一次...")
-    groups = build_groups(records)
-    print(f"  分組後的 (邀請人, 分會) 組合：{len(groups)}")
-
-    # 計算一些統計資訊給前端顯示
-    chapters = sorted(set(g["chapter"] for g in groups))
-    inviters = sorted(set(g["inviter"] for g in groups))
+    # 計算一些統計資訊給前端顯示（全期間，不受時間窗篩選影響）
+    chapters = sorted(set(r["chapter"] for r in records))
+    inviters = sorted(set(r["inviter"] for r in records))
     stats = {
         "total_records": len(records),
-        "total_groups": len(groups),
         "chapters": chapters,
         "unique_inviters": len(inviters),
-        "inviter_sample": inviters[:5],  # 前 5 個範例
         "generated_at": datetime.now().isoformat(timespec="seconds"),
     }
 
     output = {
         "stats": stats,
-        "groups": groups,
+        "records": records,
     }
 
     print(f"寫出 {OUT_PATH}...")
@@ -146,24 +123,25 @@ def main():
     print(f"\n=== 完成 ===")
     print(f"  涵蓋分會：{', '.join(chapters)}")
     print(f"  獨立邀請人數：{len(inviters)}")
-    print(f"  範例邀請人：{', '.join(inviters[:5])}")
 
-    # 舉 2-3 個範例邀請人驗證
-    print(f"\n=== 驗證（3 個範例）===")
-    for name in ["吳 志煒", "謝 盛峯", "許 瀅瀅"]:
-        for g in groups:
-            if g["inviter"] == name:
-                print(f"  {g['inviter']} / {g['chapter']} → 最近一次邀約：{g['visit_date']}")
-                break
-
-    # 額外：同一邀請人出現在多個分會的狀況
-    multi_chapter_inviters = {}
-    for g in groups:
-        multi_chapter_inviters.setdefault(g["inviter"], set()).add(g["chapter"])
-    multi = {inv: chs for inv, chs in multi_chapter_inviters.items() if len(chs) > 1}
-    print(f"\n=== 額外統計：跨多分會的邀請人 {len(multi)} 位 ===")
-    for inv, chs in list(multi.items())[:5]:
-        print(f"  {inv}: {', '.join(sorted(chs))}")
+    # 驗證：模擬前端「近6個月」邏輯，看排行榜前3名是誰
+    print(f"\n=== 驗證（比照 index.html renderRanking 邏輯，近6個月TOP3）===")
+    from datetime import date
+    today = date.today()
+    y, m = today.year, today.month - 6
+    while m <= 0:
+        m += 12
+        y -= 1
+    cutoff = f"{y:04d}-{m:02d}-{today.day:02d}"
+    counts = {}
+    for r in records:
+        if r["visit_date"] >= cutoff:
+            key = r["inviter"]
+            counts.setdefault(key, {"chapter": r["chapter"], "count": 0})
+            counts[key]["count"] += 1
+    ranked = sorted(counts.items(), key=lambda kv: (-kv[1]["count"], kv[0]))
+    for name, info in ranked[:3]:
+        print(f"  {name}（{info['chapter']}）→ {info['count']} 位來賓")
 
 
 if __name__ == "__main__":
