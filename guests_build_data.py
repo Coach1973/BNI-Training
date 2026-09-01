@@ -4,8 +4,9 @@ BNI大台南南區「來賓邀約查詢」公開頁面（比照培訓總覽風�
 
 資料來源：
   ~/Downloads/__-__-__-___31-08-2026_3-04_PM.xls
-  （BNI Connect 官方「地區-查看來賓」SpreadsheetML XML，5.8MB，3718 筆，
-   範圍 2018-08-08 ~ 2026-09-01，涵蓋 真富/真愛/真誠/真鑫/真鑽 5 個分會）
+  （BNI Connect 官方「地區-查看來賓」SpreadsheetML XML，5.8MB，原始 3718 筆，
+   範圍 2018-08-08 ~ 2026-09-01，原始資料涵蓋 真富/真愛/真誠/真鑫/真鑽 5 個分會，
+   但只留目前有在營運的 真誠/真鑫/真鑽 3 分會，跟培訓總覽(index.html)範圍一致）
 
 計算邏輯：
   依「Invited By + 分會」分組，取每組訪問日期最大值 = 該邀請人在該分會的最近一次邀約日期。
@@ -27,6 +28,10 @@ OUT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "guests_data
 
 # 公開頁只顯示的欄位（隱私原則：來賓個資不顯示）
 PUBLIC_FIELDS = ("inviter", "chapter", "visit_date", "guest_name", "type")
+
+# 2026-09-01教練親口指示：只留目前有在營運的分會，跟培訓總覽(index.html)範圍一致。
+# 真富/真愛目前沒有在營運，不列入。
+OPERATING_CHAPTERS = {"真誠", "真鑫", "真鑽"}
 
 
 def parse_xls_to_records(xls_path):
@@ -109,6 +114,9 @@ def main():
     print(f"讀取 {XLS_PATH}...")
     records = parse_xls_to_records(XLS_PATH)
     print(f"  有效來賓紀錄：{len(records)}")
+
+    records = [r for r in records if r["chapter"] in OPERATING_CHAPTERS]
+    print(f"  只留營運中分會（{'/'.join(sorted(OPERATING_CHAPTERS))}）後：{len(records)}")
 
     print("依 (邀請人, 分會) 分組，取最近一次...")
     groups = build_groups(records)

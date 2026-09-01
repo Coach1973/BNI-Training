@@ -1,32 +1,23 @@
 {
   "stats": {
-    "total_records": 3718,
-    "total_groups": 318,
+    "total_records": 3515,
+    "total_groups": 273,
     "chapters": [
-      "真富",
-      "真愛",
       "真誠",
       "真鑫",
       "真鑽"
     ],
-    "unique_inviters": 303,
+    "unique_inviters": 267,
     "inviter_sample": [
       "BNI",
       "丁 郁軒",
       "于 洋",
       "何 宗穎",
-      "何 詩媛"
+      "來賓"
     ],
-    "generated_at": "2026-09-01T07:56:50"
+    "generated_at": "2026-09-01T08:26:58"
   },
   "groups": [
-    {
-      "inviter": "許 瀅瀅",
-      "chapter": "真富",
-      "visit_date": "2025-04-02",
-      "guest_name": "Nuril Amin",
-      "type": "第一次訪問"
-    },
     {
       "inviter": "李 紫妤",
       "chapter": "真鑽",
@@ -35,25 +26,11 @@
       "type": "第一次訪問"
     },
     {
-      "inviter": "吳 志煒",
-      "chapter": "真富",
-      "visit_date": "2025-09-24",
-      "guest_name": "Nuril Amin",
-      "type": "第一次訪問"
-    },
-    {
       "inviter": "周 國良",
       "chapter": "真鑽",
       "visit_date": "2019-02-19",
       "guest_name": "Mao Bruse",
       "type": ""
-    },
-    {
-      "inviter": "林 俊傑",
-      "chapter": "真愛",
-      "visit_date": "2025-09-12",
-      "guest_name": "Renato Cerqueira",
-      "type": "第一次訪問"
     },
     {
       "inviter": "陳 姿綺",
@@ -89,13 +66,6 @@
       "visit_date": "2025-08-07",
       "guest_name": "Jason 陶",
       "type": "來賓"
-    },
-    {
-      "inviter": "楊 博丞",
-      "chapter": "真富",
-      "visit_date": "2025-10-01",
-      "guest_name": "Beth Smith",
-      "type": "第一次訪問"
     },
     {
       "inviter": "楊 在珍",
@@ -196,31 +166,10 @@
       "type": "第一次訪問"
     },
     {
-      "inviter": "楊 宜佳",
-      "chapter": "真愛",
-      "visit_date": "2025-12-26",
-      "guest_name": "鄭 依貞",
-      "type": "第一次訪問"
-    },
-    {
-      "inviter": "羅 朝元",
-      "chapter": "真愛",
-      "visit_date": "2025-11-28",
-      "guest_name": "喬 三大",
-      "type": "第一次訪問"
-    },
-    {
       "inviter": "周 佳俊",
       "chapter": "真鑽",
       "visit_date": "2025-04-29",
       "guest_name": "志傑 凃",
-      "type": "第一次訪問"
-    },
-    {
-      "inviter": "洪 瑋澤",
-      "chapter": "真愛",
-      "visit_date": "2025-11-28",
-      "guest_name": "程 冠淵",
       "type": "第一次訪問"
     },
     {
@@ -348,13 +297,6 @@
       "visit_date": "2020-11-17",
       "guest_name": "梁 乃今",
       "type": ""
-    },
-    {
-      "inviter": "林 晃誼",
-      "chapter": "真富",
-      "visit_date": "2025-08-20",
-      "guest_name": "欣妤 侯",
-      "type": "來賓"
     },
     {
       "inviter": "許 又壬",
@@ -509,13 +451,6 @@
       "visit_date": "2023-09-05",
       "guest_name": "吳 奕德",
       "type": "第二次訪問"
-    },
-    {
-      "inviter": "蘇 子毓",
-      "chapter": "真愛",
-      "visit_date": "2025-09-19",
-      "guest_name": "蔡 伊宸",
-      "type": "第一次訪問"
     },
     {
       "inviter": "林 宏澧",
@@ -735,13 +670,6 @@
       "type": "第一次訪問"
     },
     {
-      "inviter": "梁 宜竹",
-      "chapter": "真富",
-      "visit_date": "2025-04-23",
-      "guest_name": "淑雯 莊",
-      "type": "第一次訪問"
-    },
-    {
       "inviter": "洪 嘉妘",
       "chapter": "真鑽",
       "visit_date": "2026-06-16",
@@ -789,13 +717,6 @@
       "visit_date": "2020-08-13",
       "guest_name": "韋 俊先",
       "type": ""
-    },
-    {
-      "inviter": "林 彥均",
-      "chapter": "真愛",
-      "visit_date": "2025-09-12",
-      "guest_name": "林 俊宏",
-      "type": "第一次訪問"
     },
     {
       "inviter": "陳 欣佑",
@@ -866,13 +787,6 @@
       "visit_date": "2019-01-29",
       "guest_name": "馮 素珠",
       "type": ""
-    },
-    {
-      "inviter": "陳 良進",
-      "chapter": "真富",
-      "visit_date": "2025-08-20",
-      "guest_name": "蔡 育昇",
-      "type": "來賓"
     },
     {
       "inviter": "沈 仲琪",
@@ -1036,13 +950,6 @@
       "type": "第一次訪問"
     },
     {
-      "inviter": "林 俊宏",
-      "chapter": "真愛",
-      "visit_date": "2025-10-31",
-      "guest_name": "張 譯",
-      "type": "第一次訪問"
-    },
-    {
       "inviter": "許 敦傑",
       "chapter": "真鑽",
       "visit_date": "2019-08-27",
@@ -1099,13 +1006,6 @@
       "type": "來賓"
     },
     {
-      "inviter": "吳 亞平",
-      "chapter": "真愛",
-      "visit_date": "2025-11-14",
-      "guest_name": "馮 凱芝",
-      "type": "第一次訪問"
-    },
-    {
       "inviter": "陳 宏恩",
       "chapter": "真誠",
       "visit_date": "2022-11-03",
@@ -1117,20 +1017,6 @@
       "chapter": "真鑽",
       "visit_date": "2022-09-13",
       "guest_name": "宗諺 劉",
-      "type": "第一次訪問"
-    },
-    {
-      "inviter": "陳 瑩臻",
-      "chapter": "真富",
-      "visit_date": "2025-04-02",
-      "guest_name": "進輝 劉",
-      "type": "第一次訪問"
-    },
-    {
-      "inviter": "潘 俊耀",
-      "chapter": "真富",
-      "visit_date": "2025-09-10",
-      "guest_name": "賴 玠廷",
       "type": "第一次訪問"
     },
     {
@@ -1174,13 +1060,6 @@
       "visit_date": "2020-10-22",
       "guest_name": "蕭 千瑩",
       "type": ""
-    },
-    {
-      "inviter": "黃 建輝",
-      "chapter": "真愛",
-      "visit_date": "2025-11-07",
-      "guest_name": "吳 吳鶯嫆",
-      "type": "第一次訪問"
     },
     {
       "inviter": "陳 郁勻",
@@ -1281,13 +1160,6 @@
       "type": "第一次訪問"
     },
     {
-      "inviter": "林 銀雪",
-      "chapter": "真富",
-      "visit_date": "2025-07-16",
-      "guest_name": "沈 孟賢",
-      "type": "第一次訪問"
-    },
-    {
       "inviter": "陳 再福",
       "chapter": "真鑽",
       "visit_date": "2023-07-18",
@@ -1379,13 +1251,6 @@
       "type": ""
     },
     {
-      "inviter": "余 珣伊",
-      "chapter": "真愛",
-      "visit_date": "2025-09-26",
-      "guest_name": "劉 國珠",
-      "type": "第一次訪問"
-    },
-    {
       "inviter": "楊 鎮豪",
       "chapter": "真鑽",
       "visit_date": "2025-07-22",
@@ -1421,20 +1286,6 @@
       "type": "第一次訪問"
     },
     {
-      "inviter": "王 聖凱",
-      "chapter": "真富",
-      "visit_date": "2025-07-30",
-      "guest_name": "陳 奕松",
-      "type": "第一次訪問"
-    },
-    {
-      "inviter": "紀 芝芹",
-      "chapter": "真愛",
-      "visit_date": "2025-10-17",
-      "guest_name": "黃 奕玲",
-      "type": "第二次訪問"
-    },
-    {
       "inviter": "許 金銘",
       "chapter": "真鑽",
       "visit_date": "2023-11-07",
@@ -1442,24 +1293,10 @@
       "type": "第一次訪問"
     },
     {
-      "inviter": "戴 源佑",
-      "chapter": "真愛",
-      "visit_date": "2025-12-26",
-      "guest_name": "劉 姿吟",
-      "type": "第一次訪問"
-    },
-    {
       "inviter": "王 耀立",
       "chapter": "真鑽",
       "visit_date": "2023-08-08",
       "guest_name": "建泰 鄭",
-      "type": "第一次訪問"
-    },
-    {
-      "inviter": "鄭 榆靜",
-      "chapter": "真富",
-      "visit_date": "2025-04-02",
-      "guest_name": "李 婕語",
       "type": "第一次訪問"
     },
     {
@@ -1484,25 +1321,11 @@
       "type": "第一次訪問"
     },
     {
-      "inviter": "李 育宗",
-      "chapter": "真富",
-      "visit_date": "2025-04-30",
-      "guest_name": "施 子微",
-      "type": "第一次訪問"
-    },
-    {
       "inviter": "傅 彩庭",
       "chapter": "真誠",
       "visit_date": "2024-11-28",
       "guest_name": "王 銘鴻",
       "type": "來賓"
-    },
-    {
-      "inviter": "陳 俊源",
-      "chapter": "真富",
-      "visit_date": "2025-04-23",
-      "guest_name": "王 蕙裙",
-      "type": "第一次訪問"
     },
     {
       "inviter": "章 加玫",
@@ -1516,20 +1339,6 @@
       "chapter": "真鑫",
       "visit_date": "2026-06-25",
       "guest_name": "澤邦 孫",
-      "type": "第一次訪問"
-    },
-    {
-      "inviter": "張 瑞峰",
-      "chapter": "真愛",
-      "visit_date": "2025-10-17",
-      "guest_name": "蘇 宇",
-      "type": "第一次訪問"
-    },
-    {
-      "inviter": "洪 正芬",
-      "chapter": "真愛",
-      "visit_date": "2025-09-26",
-      "guest_name": "黃 宇白",
       "type": "第一次訪問"
     },
     {
@@ -1568,13 +1377,6 @@
       "type": ""
     },
     {
-      "inviter": "林 睿承",
-      "chapter": "真富",
-      "visit_date": "2025-03-12",
-      "guest_name": "謝 宗豪",
-      "type": "第一次訪問"
-    },
-    {
       "inviter": "劉 乃菁",
       "chapter": "真誠",
       "visit_date": "2026-04-09",
@@ -1594,13 +1396,6 @@
       "visit_date": "2020-03-10",
       "guest_name": "許 宸琪",
       "type": ""
-    },
-    {
-      "inviter": "葉 秀維",
-      "chapter": "真富",
-      "visit_date": "2025-05-21",
-      "guest_name": "邱 梅芳",
-      "type": "第一次訪問"
     },
     {
       "inviter": "鄭 伊茹",
@@ -1708,13 +1503,6 @@
       "type": "第一次訪問"
     },
     {
-      "inviter": "穆 建源",
-      "chapter": "真富",
-      "visit_date": "2025-04-23",
-      "guest_name": "俊祐 李",
-      "type": "第一次訪問"
-    },
-    {
       "inviter": "邱 錦華",
       "chapter": "真鑽",
       "visit_date": "2024-12-03",
@@ -1727,13 +1515,6 @@
       "visit_date": "2019-02-26",
       "guest_name": "李 恆璋",
       "type": ""
-    },
-    {
-      "inviter": "林 鴻翔",
-      "chapter": "真愛",
-      "visit_date": "2025-09-19",
-      "guest_name": "林 惠卿",
-      "type": "第一次訪問"
     },
     {
       "inviter": "薛 如雲",
@@ -1778,20 +1559,6 @@
       "type": ""
     },
     {
-      "inviter": "謝 芯語",
-      "chapter": "真愛",
-      "visit_date": "2025-10-03",
-      "guest_name": "蔡 珵翰",
-      "type": "第二次訪問"
-    },
-    {
-      "inviter": "陳 新典",
-      "chapter": "真愛",
-      "visit_date": "2025-09-26",
-      "guest_name": "陳 新典",
-      "type": "第一次訪問"
-    },
-    {
       "inviter": "陳 麗蕙",
       "chapter": "真鑽",
       "visit_date": "2022-12-13",
@@ -1834,13 +1601,6 @@
       "type": ""
     },
     {
-      "inviter": "張 晴晴",
-      "chapter": "真富",
-      "visit_date": "2025-09-24",
-      "guest_name": "連 晧宇",
-      "type": "第一次訪問"
-    },
-    {
       "inviter": "梁 美珍",
       "chapter": "真鑽",
       "visit_date": "2019-11-05",
@@ -1866,13 +1626,6 @@
       "chapter": "真鑫",
       "visit_date": "2026-07-02",
       "guest_name": "承泰 林",
-      "type": "第一次訪問"
-    },
-    {
-      "inviter": "薛 如媛",
-      "chapter": "真富",
-      "visit_date": "2025-09-03",
-      "guest_name": "森山 未夢",
       "type": "第一次訪問"
     },
     {
@@ -1981,25 +1734,11 @@
       "type": "第一次訪問"
     },
     {
-      "inviter": "胡 志青",
-      "chapter": "真愛",
-      "visit_date": "2025-11-28",
-      "guest_name": "朱 洛毅",
-      "type": "第一次訪問"
-    },
-    {
       "inviter": "劉 彥彬",
       "chapter": "真鑫",
       "visit_date": "2026-05-28",
       "guest_name": "柏諺 賴",
       "type": "第一次訪問"
-    },
-    {
-      "inviter": "何 詩媛",
-      "chapter": "真富",
-      "visit_date": "2025-06-18",
-      "guest_name": "莊 淑雯",
-      "type": "來賓"
     },
     {
       "inviter": "葉 彤黎",
@@ -2021,13 +1760,6 @@
       "visit_date": "2018-09-04",
       "guest_name": "蔡 滋峰",
       "type": ""
-    },
-    {
-      "inviter": "王 靄華",
-      "chapter": "真愛",
-      "visit_date": "2025-12-26",
-      "guest_name": "陳 漢宗",
-      "type": "第一次訪問"
     },
     {
       "inviter": "郭 素玲",
@@ -2058,13 +1790,6 @@
       "type": ""
     },
     {
-      "inviter": "高 琬婷",
-      "chapter": "真富",
-      "visit_date": "2025-04-23",
-      "guest_name": "玟亭 陳",
-      "type": "第一次訪問"
-    },
-    {
       "inviter": "黃 慧英",
       "chapter": "真鑽",
       "visit_date": "2019-05-21",
@@ -2086,20 +1811,6 @@
       "type": "第一次訪問"
     },
     {
-      "inviter": "殷 資閔",
-      "chapter": "真愛",
-      "visit_date": "2025-09-26",
-      "guest_name": "蘇 紫茵",
-      "type": "第一次訪問"
-    },
-    {
-      "inviter": "李 勳婷",
-      "chapter": "真富",
-      "visit_date": "2025-03-19",
-      "guest_name": "邱 紹謙",
-      "type": "第一次訪問"
-    },
-    {
       "inviter": "楊 瓊瑤",
       "chapter": "真誠",
       "visit_date": "2025-12-04",
@@ -2112,13 +1823,6 @@
       "visit_date": "2019-08-27",
       "guest_name": "黃 羽振",
       "type": ""
-    },
-    {
-      "inviter": "李 俊廷",
-      "chapter": "真富",
-      "visit_date": "2025-04-02",
-      "guest_name": "世傑 翁",
-      "type": "第一次訪問"
     },
     {
       "inviter": "劉 庭汝",
@@ -2139,13 +1843,6 @@
       "chapter": "真誠",
       "visit_date": "2025-08-21",
       "guest_name": "少卜 胡",
-      "type": "第一次訪問"
-    },
-    {
-      "inviter": "楊 惠名",
-      "chapter": "真愛",
-      "visit_date": "2025-10-03",
-      "guest_name": "黃 菀崧",
       "type": "第一次訪問"
     },
     {
@@ -2184,13 +1881,6 @@
       "type": "第一次訪問"
     },
     {
-      "inviter": "許 馨方",
-      "chapter": "真愛",
-      "visit_date": "2025-12-12",
-      "guest_name": "蔡 阿峯",
-      "type": "第一次訪問"
-    },
-    {
       "inviter": "黃 俊文",
       "chapter": "真鑽",
       "visit_date": "2022-05-10",
@@ -2223,13 +1913,6 @@
       "chapter": "真鑽",
       "visit_date": "2021-12-07",
       "guest_name": "駱 鴻銘",
-      "type": "第一次訪問"
-    },
-    {
-      "inviter": "林 尹渰",
-      "chapter": "真富",
-      "visit_date": "2025-09-10",
-      "guest_name": "依婷 黃",
       "type": "第一次訪問"
     },
     {

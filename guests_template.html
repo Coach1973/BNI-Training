@@ -81,6 +81,7 @@ tr:last-child td { border-bottom: none; }
         <h1>BNI大台南南區 來賓邀約查詢</h1>
         <p class="subtitle">｜2018-08-08 ~ 2026-09-01｜共__TOTAL_RECORDS__筆來賓造訪紀錄｜__CHAPTERS__</p>
         <p class="subtitle-note">(依「邀請人 + 分會」分組，找每個會員最近一次邀約來賓的日期)</p>
+        <p class="subtitle-note">(翻轉中的分會或沒有每週進行會議的分會暫不列入計算)</p>
         <p class="subtitle-warn">如果會員發現邀約日期與您計算不同，請直接反應給執行董事</p>
     </div>
 
@@ -88,12 +89,12 @@ tr:last-child td { border-bottom: none; }
         <button class="tab-btn" data-months="3">近3個月</button>
         <button class="tab-btn active" data-months="6">近6個月</button>
         <button class="tab-btn" data-months="12">近12個月</button>
-        <button class="tab-btn" data-months="18">近18個月</button>
         <button class="tab-btn" data-months="24">近24個月</button>
         <button class="tab-btn" data-months="36">近36個月</button>
         <button class="tab-btn" data-months="48">近48個月</button>
         <button class="tab-btn" data-months="60">近60個月</button>
-        <button class="tab-btn" data-months="all">全部(8年+)</button>
+        <button class="tab-btn" data-months="72">近72個月</button>
+        <button class="tab-btn" data-months="84">近84個月</button>
     </div>
 
     <div class="custom-months">
@@ -157,14 +158,13 @@ tr:last-child td { border-bottom: none; }
 
         // 過�：months_ago >= N
         function filterByWindow(months) {
-            if (months === 'all') return ENRICHED.slice();
             const n = parseInt(months, 10);
             return ENRICHED.filter(r => r.months_ago >= n);
         }
 
-        // 排序：距今月數由大到小（最久沒邀約在最上面）
+        // 排序：距今月數由大到小（最久沒邀約在最上面），同月數比照培訓總覽排行榜慣例按姓名排序
         function renderList(filtered) {
-            const sorted = filtered.slice().sort((a, b) => b.months_ago - a.months_ago);
+            const sorted = filtered.slice().sort((a, b) => b.months_ago - a.months_ago || a.inviter.localeCompare(b.inviter));
             const tbody = document.getElementById('rankTableBody');
             if (sorted.length === 0) {
                 tbody.innerHTML = '<tr><td colspan="5" class="empty">這個門�下沒有會員（每位會員最近都有邀約來賓）</td></tr>';
@@ -196,8 +196,7 @@ tr:last-child td { border-bottom: none; }
 
         function renderSub(filtered, months) {
             const sub = document.getElementById('rankSub');
-            const label = months === 'all' ? '全部 8 年+ 歷史紀錄' : `最近一次邀約已超過 ${months} 個月`;
-            sub.innerHTML = `${label}｜共 ${filtered.length} 個 (邀請人, 分會) 組合`;
+            sub.innerHTML = `最近一次邀約已超過 ${months} 個月｜共 ${filtered.length} 個 (邀請人, 分會) 組合`;
         }
 
         let currentMonths = 6;
@@ -209,16 +208,13 @@ tr:last-child td { border-bottom: none; }
             renderList(filtered);
             // 更新 tab 樣式
             document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            if (typeof months === 'string') {
-                document.querySelector(`.tab-btn[data-months="${months}"]`)?.classList.add('active');
-            }
+            document.querySelector(`.tab-btn[data-months="${months}"]`)?.classList.add('active');
         }
 
         // tab 按鈕
         document.querySelectorAll('#tabs .tab-btn').forEach(btn => {
             btn.addEventListener('click', () => {
-                const m = btn.dataset.months === 'all' ? 'all' : parseInt(btn.dataset.months, 10);
-                apply(m);
+                apply(parseInt(btn.dataset.months, 10));
             });
         });
 
