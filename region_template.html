@@ -26,6 +26,15 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
 .footer-nav { width: 100%; max-width: 1200px; margin: 8px 20px 0; padding: 24px 20px; text-align: center; border-top: 1px solid var(--line); }
 .footer-nav .nav-link:hover { color: var(--red-dark); }
 
+.chapter-tabs { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1200px; margin: 0 20px 16px; padding: 0 20px; }
+.chapter-btn {
+    background: var(--ink); border: 2px solid var(--ink); color: var(--white);
+    padding: 13px 32px; border-radius: 4px; cursor: pointer; font-size: 1rem; font-weight: 900;
+    letter-spacing: 2px; transition: all .15s ease;
+}
+.chapter-btn.active { background: var(--red); border-color: var(--red); }
+.chapter-btn:hover:not(.active) { background: var(--red-dark); border-color: var(--red-dark); }
+
 .tabs { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1200px; margin: 0 20px 24px; padding: 0 20px; }
 .tab-btn {
     background: var(--white); border: 1px solid var(--line); color: var(--sub);
@@ -143,9 +152,11 @@ tbody tr:hover { background: var(--paper); }
     <div class="header-container">
         <h1>BNI大台南南區 培訓總覽</h1>
         <p class="subtitle">｜__DATE_RANGE__｜共__TOTAL_RECORDS__筆培訓紀錄｜真鑫・真誠・真鑽</p>
-        <p class="subtitle-note">(翻轉中的分會或沒有每週進行會議的分會暫不列入計算)</p>
+        <p class="subtitle-note">(預設顯示全區排名，也可切換單一分會；翻轉中的分會或沒有每週進行會議的分會暫不列入計算)</p>
         <p class="subtitle-warn">如果會員發現培訓的次數與您計算不同，請直接反應給執行董事</p>
     </div>
+
+    <div class="chapter-tabs" id="chapterTabs"></div>
 
     <div class="tabs" id="tabs">
         <button class="tab-btn" data-months="3">近3個月</button>
@@ -176,7 +187,7 @@ tbody tr:hover { background: var(--paper); }
         <div id="rankListArea"></div>
     </div>
 
-    <div class="section">
+    <div class="section" id="chapterRankSection">
         <div class="section-title">🏛️ 分會培訓排名</div>
         <div class="section-sub">各分會在所選期間內的培訓人次總量比較</div>
         <div class="chapter-rank" id="chapterRankArea"></div>
@@ -213,6 +224,10 @@ tbody tr:hover { background: var(--paper); }
         const RECORDS = __RECORDS_JSON__;
         const ROSTER = __ROSTER_JSON__;
         const MEDALS = ['🥇', '🥈', '🥉'];
+        const REGION_KEY = '大台南南區全區';
+        const CHAPTER_NAMES = [...new Set(ROSTER.map(p => p.chapter).filter(Boolean))].sort();
+
+        let currentChapter = REGION_KEY;
 
         // 每個人最後一次受訓日期(不受時間窗影響，看全部歷史)，反向查詢名單要顯示這個當參考
         const LAST_TRAINED = {};
@@ -221,6 +236,21 @@ tbody tr:hover { background: var(--paper); }
                 LAST_TRAINED[r.name] = r.event_date;
             }
         });
+
+        function renderChapterTabs() {
+            const el = document.getElementById('chapterTabs');
+            const allNames = [REGION_KEY, ...CHAPTER_NAMES];
+            el.innerHTML = allNames.map(name => `
+                <button class="chapter-btn${name === currentChapter ? ' active' : ''}" data-chapter="${name}">${name === REGION_KEY ? '🏆 ' + REGION_KEY : name + '分會'}</button>
+            `).join('');
+            el.querySelectorAll('.chapter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    currentChapter = btn.dataset.chapter;
+                    renderChapterTabs();
+                    renderAll(currentMonths);
+                });
+            });
+        }
 
         function monthsAgo(n) {
             const d = new Date();
@@ -233,9 +263,14 @@ tbody tr:hover { background: var(--paper); }
         }
 
         function filterByWindow(months) {
-            if (months === 'all') return RECORDS.slice();
+            const base = currentChapter === REGION_KEY ? RECORDS : RECORDS.filter(r => r.chapter === currentChapter);
+            if (months === 'all') return base.slice();
             const cutoff = fmtDate(monthsAgo(parseInt(months, 10)));
-            return RECORDS.filter(r => r.event_date >= cutoff);
+            return base.filter(r => r.event_date >= cutoff);
+        }
+
+        function currentRoster() {
+            return currentChapter === REGION_KEY ? ROSTER : ROSTER.filter(p => p.chapter === currentChapter);
         }
 
         function renderStats(filtered) {
@@ -298,6 +333,12 @@ tbody tr:hover { background: var(--paper); }
         }
 
         function renderChapterRank(filtered) {
+            const section = document.getElementById('chapterRankSection');
+            if (currentChapter !== REGION_KEY) {
+                section.style.display = 'none';
+                return;
+            }
+            section.style.display = '';
             const stats = {};
             filtered.forEach(r => {
                 if (!r.chapter) return; // 分會未知的紀錄不參與分會排名比較
@@ -329,19 +370,20 @@ tbody tr:hover { background: var(--paper); }
         }
 
         function renderAbsentees(filtered, months) {
+            const roster = currentRoster();
             const attendedNames = new Set(filtered.map(r => r.name));
-            const absentees = ROSTER.filter(p => !attendedNames.has(p.name));
+            const absentees = roster.filter(p => !attendedNames.has(p.name));
             const sub = document.getElementById('absentSub');
             const area = document.getElementById('absentArea');
             const windowLabel = months === 'all' ? '全部區間' : `近${months}個月`;
 
             if (absentees.length === 0) {
-                sub.textContent = `${windowLabel}內，全體 ${ROSTER.length} 位會員都至少上過一次課`;
+                sub.textContent = `${windowLabel}內，全體 ${roster.length} 位會員都至少上過一次課`;
                 area.innerHTML = '<div class="all-clear">🎉 全員達標，沒有人落後！</div>';
                 return;
             }
 
-            sub.textContent = `${windowLabel}內，共 ${absentees.length} / ${ROSTER.length} 位會員沒有任何培訓紀錄`;
+            sub.textContent = `${windowLabel}內，共 ${absentees.length} / ${roster.length} 位會員沒有任何培訓紀錄`;
             area.innerHTML = '<div class="absent-list">' + absentees.map(p => {
                 const last = LAST_TRAINED[p.name];
                 const lastHtml = last
@@ -378,8 +420,10 @@ tbody tr:hover { background: var(--paper); }
         }
 
         let currentFiltered = [];
+        let currentMonths = '6';
 
         function renderAll(months) {
+            currentMonths = months;
             currentFiltered = filterByWindow(months);
             renderStats(currentFiltered);
             renderRanking(currentFiltered);
@@ -417,6 +461,7 @@ tbody tr:hover { background: var(--paper); }
             renderDetail(currentFiltered, e.target.value);
         });
 
+        renderChapterTabs();
         renderAll('6');
     </script>
 </body>
