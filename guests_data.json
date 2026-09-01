@@ -3985,6 +3985,1555 @@
           }
         ]
       }
+    },
+    "真誠": {
+      "months_available": [
+        2,
+        4,
+        8,
+        13,
+        16,
+        25,
+        29,
+        32,
+        37,
+        44,
+        49,
+        55,
+        61,
+        67,
+        73,
+        79,
+        85
+      ],
+      "snapshots": {
+        "2": [
+          {
+            "name": "郭展鴻",
+            "count": 2
+          },
+          {
+            "name": "楊在珍",
+            "count": 1
+          },
+          {
+            "name": "張羽家",
+            "count": 0
+          },
+          {
+            "name": "李美花",
+            "count": 0
+          },
+          {
+            "name": "林佳伶 Lavi",
+            "count": 0
+          },
+          {
+            "name": "王彤",
+            "count": 0
+          },
+          {
+            "name": "盧尚政",
+            "count": 0
+          },
+          {
+            "name": "葉建葳",
+            "count": 0
+          },
+          {
+            "name": "郭素玲",
+            "count": 0
+          },
+          {
+            "name": "鄭禮昂",
+            "count": 0
+          },
+          {
+            "name": "鄭綉美",
+            "count": 0
+          },
+          {
+            "name": "陳佩君",
+            "count": 0
+          },
+          {
+            "name": "陳柔璇",
+            "count": 0
+          },
+          {
+            "name": "黃笛軒",
+            "count": 0
+          }
+        ],
+        "4": [
+          {
+            "name": "陳佩君",
+            "count": 27
+          },
+          {
+            "name": "王彤",
+            "count": 3
+          },
+          {
+            "name": "楊在珍",
+            "count": 2
+          },
+          {
+            "name": "郭展鴻",
+            "count": 2
+          },
+          {
+            "name": "葉建葳",
+            "count": 1
+          },
+          {
+            "name": "鄭禮昂",
+            "count": 1
+          },
+          {
+            "name": "陳柔璇",
+            "count": 1
+          },
+          {
+            "name": "張羽家",
+            "count": 0
+          },
+          {
+            "name": "李美花",
+            "count": 0
+          },
+          {
+            "name": "林佳伶 Lavi",
+            "count": 0
+          },
+          {
+            "name": "盧尚政",
+            "count": 0
+          },
+          {
+            "name": "郭素玲",
+            "count": 0
+          },
+          {
+            "name": "鄭綉美",
+            "count": 0
+          },
+          {
+            "name": "黃笛軒",
+            "count": 0
+          }
+        ],
+        "8": [
+          {
+            "name": "陳佩君",
+            "count": 79
+          },
+          {
+            "name": "盧尚政",
+            "count": 16
+          },
+          {
+            "name": "楊在珍",
+            "count": 14
+          },
+          {
+            "name": "張羽家",
+            "count": 6
+          },
+          {
+            "name": "林佳伶 Lavi",
+            "count": 5
+          },
+          {
+            "name": "陳柔璇",
+            "count": 5
+          },
+          {
+            "name": "李美花",
+            "count": 4
+          },
+          {
+            "name": "王彤",
+            "count": 4
+          },
+          {
+            "name": "郭展鴻",
+            "count": 3
+          },
+          {
+            "name": "鄭綉美",
+            "count": 2
+          },
+          {
+            "name": "葉建葳",
+            "count": 1
+          },
+          {
+            "name": "郭素玲",
+            "count": 1
+          },
+          {
+            "name": "鄭禮昂",
+            "count": 1
+          },
+          {
+            "name": "黃笛軒",
+            "count": 1
+          }
+        ],
+        "13": [
+          {
+            "name": "陳佩君",
+            "count": 120
+          },
+          {
+            "name": "楊在珍",
+            "count": 23
+          },
+          {
+            "name": "林佳伶 Lavi",
+            "count": 17
+          },
+          {
+            "name": "盧尚政",
+            "count": 17
+          },
+          {
+            "name": "張羽家",
+            "count": 13
+          },
+          {
+            "name": "王彤",
+            "count": 10
+          },
+          {
+            "name": "陳柔璇",
+            "count": 5
+          },
+          {
+            "name": "李美花",
+            "count": 4
+          },
+          {
+            "name": "郭展鴻",
+            "count": 3
+          },
+          {
+            "name": "鄭禮昂",
+            "count": 2
+          },
+          {
+            "name": "鄭綉美",
+            "count": 2
+          },
+          {
+            "name": "葉建葳",
+            "count": 1
+          },
+          {
+            "name": "郭素玲",
+            "count": 1
+          },
+          {
+            "name": "黃笛軒",
+            "count": 1
+          }
+        ],
+        "16": [
+          {
+            "name": "陳佩君",
+            "count": 161
+          },
+          {
+            "name": "楊在珍",
+            "count": 23
+          },
+          {
+            "name": "林佳伶 Lavi",
+            "count": 17
+          },
+          {
+            "name": "盧尚政",
+            "count": 17
+          },
+          {
+            "name": "張羽家",
+            "count": 13
+          },
+          {
+            "name": "王彤",
+            "count": 10
+          },
+          {
+            "name": "郭展鴻",
+            "count": 7
+          },
+          {
+            "name": "鄭禮昂",
+            "count": 6
+          },
+          {
+            "name": "李美花",
+            "count": 5
+          },
+          {
+            "name": "陳柔璇",
+            "count": 5
+          },
+          {
+            "name": "鄭綉美",
+            "count": 2
+          },
+          {
+            "name": "黃笛軒",
+            "count": 2
+          },
+          {
+            "name": "葉建葳",
+            "count": 1
+          },
+          {
+            "name": "郭素玲",
+            "count": 1
+          }
+        ],
+        "25": [
+          {
+            "name": "陳佩君",
+            "count": 161
+          },
+          {
+            "name": "楊在珍",
+            "count": 23
+          },
+          {
+            "name": "林佳伶 Lavi",
+            "count": 17
+          },
+          {
+            "name": "盧尚政",
+            "count": 17
+          },
+          {
+            "name": "張羽家",
+            "count": 14
+          },
+          {
+            "name": "王彤",
+            "count": 10
+          },
+          {
+            "name": "郭展鴻",
+            "count": 10
+          },
+          {
+            "name": "鄭綉美",
+            "count": 8
+          },
+          {
+            "name": "李美花",
+            "count": 7
+          },
+          {
+            "name": "鄭禮昂",
+            "count": 6
+          },
+          {
+            "name": "陳柔璇",
+            "count": 5
+          },
+          {
+            "name": "黃笛軒",
+            "count": 3
+          },
+          {
+            "name": "葉建葳",
+            "count": 1
+          },
+          {
+            "name": "郭素玲",
+            "count": 1
+          }
+        ],
+        "29": [
+          {
+            "name": "陳佩君",
+            "count": 161
+          },
+          {
+            "name": "楊在珍",
+            "count": 23
+          },
+          {
+            "name": "林佳伶 Lavi",
+            "count": 17
+          },
+          {
+            "name": "盧尚政",
+            "count": 17
+          },
+          {
+            "name": "張羽家",
+            "count": 14
+          },
+          {
+            "name": "王彤",
+            "count": 10
+          },
+          {
+            "name": "郭展鴻",
+            "count": 10
+          },
+          {
+            "name": "鄭綉美",
+            "count": 8
+          },
+          {
+            "name": "李美花",
+            "count": 7
+          },
+          {
+            "name": "鄭禮昂",
+            "count": 6
+          },
+          {
+            "name": "陳柔璇",
+            "count": 5
+          },
+          {
+            "name": "黃笛軒",
+            "count": 3
+          },
+          {
+            "name": "葉建葳",
+            "count": 1
+          },
+          {
+            "name": "郭素玲",
+            "count": 1
+          }
+        ],
+        "32": [
+          {
+            "name": "陳佩君",
+            "count": 161
+          },
+          {
+            "name": "楊在珍",
+            "count": 23
+          },
+          {
+            "name": "林佳伶 Lavi",
+            "count": 17
+          },
+          {
+            "name": "盧尚政",
+            "count": 17
+          },
+          {
+            "name": "張羽家",
+            "count": 14
+          },
+          {
+            "name": "王彤",
+            "count": 10
+          },
+          {
+            "name": "郭展鴻",
+            "count": 10
+          },
+          {
+            "name": "鄭綉美",
+            "count": 8
+          },
+          {
+            "name": "李美花",
+            "count": 7
+          },
+          {
+            "name": "鄭禮昂",
+            "count": 6
+          },
+          {
+            "name": "陳柔璇",
+            "count": 5
+          },
+          {
+            "name": "黃笛軒",
+            "count": 3
+          },
+          {
+            "name": "葉建葳",
+            "count": 1
+          },
+          {
+            "name": "郭素玲",
+            "count": 1
+          }
+        ],
+        "37": [
+          {
+            "name": "陳佩君",
+            "count": 161
+          },
+          {
+            "name": "楊在珍",
+            "count": 23
+          },
+          {
+            "name": "林佳伶 Lavi",
+            "count": 17
+          },
+          {
+            "name": "盧尚政",
+            "count": 17
+          },
+          {
+            "name": "張羽家",
+            "count": 14
+          },
+          {
+            "name": "王彤",
+            "count": 10
+          },
+          {
+            "name": "郭展鴻",
+            "count": 10
+          },
+          {
+            "name": "鄭綉美",
+            "count": 8
+          },
+          {
+            "name": "李美花",
+            "count": 7
+          },
+          {
+            "name": "鄭禮昂",
+            "count": 6
+          },
+          {
+            "name": "陳柔璇",
+            "count": 5
+          },
+          {
+            "name": "黃笛軒",
+            "count": 3
+          },
+          {
+            "name": "葉建葳",
+            "count": 1
+          },
+          {
+            "name": "郭素玲",
+            "count": 1
+          }
+        ],
+        "44": [
+          {
+            "name": "陳佩君",
+            "count": 161
+          },
+          {
+            "name": "楊在珍",
+            "count": 23
+          },
+          {
+            "name": "林佳伶 Lavi",
+            "count": 17
+          },
+          {
+            "name": "盧尚政",
+            "count": 17
+          },
+          {
+            "name": "張羽家",
+            "count": 14
+          },
+          {
+            "name": "王彤",
+            "count": 10
+          },
+          {
+            "name": "郭展鴻",
+            "count": 10
+          },
+          {
+            "name": "鄭綉美",
+            "count": 8
+          },
+          {
+            "name": "李美花",
+            "count": 7
+          },
+          {
+            "name": "鄭禮昂",
+            "count": 6
+          },
+          {
+            "name": "陳柔璇",
+            "count": 5
+          },
+          {
+            "name": "黃笛軒",
+            "count": 3
+          },
+          {
+            "name": "葉建葳",
+            "count": 1
+          },
+          {
+            "name": "郭素玲",
+            "count": 1
+          }
+        ],
+        "49": [
+          {
+            "name": "陳佩君",
+            "count": 161
+          },
+          {
+            "name": "楊在珍",
+            "count": 23
+          },
+          {
+            "name": "林佳伶 Lavi",
+            "count": 17
+          },
+          {
+            "name": "盧尚政",
+            "count": 17
+          },
+          {
+            "name": "張羽家",
+            "count": 14
+          },
+          {
+            "name": "李美花",
+            "count": 11
+          },
+          {
+            "name": "王彤",
+            "count": 10
+          },
+          {
+            "name": "郭展鴻",
+            "count": 10
+          },
+          {
+            "name": "鄭綉美",
+            "count": 8
+          },
+          {
+            "name": "鄭禮昂",
+            "count": 6
+          },
+          {
+            "name": "陳柔璇",
+            "count": 5
+          },
+          {
+            "name": "黃笛軒",
+            "count": 3
+          },
+          {
+            "name": "葉建葳",
+            "count": 1
+          },
+          {
+            "name": "郭素玲",
+            "count": 1
+          }
+        ],
+        "55": [
+          {
+            "name": "陳佩君",
+            "count": 161
+          },
+          {
+            "name": "楊在珍",
+            "count": 23
+          },
+          {
+            "name": "林佳伶 Lavi",
+            "count": 17
+          },
+          {
+            "name": "盧尚政",
+            "count": 17
+          },
+          {
+            "name": "張羽家",
+            "count": 14
+          },
+          {
+            "name": "李美花",
+            "count": 11
+          },
+          {
+            "name": "王彤",
+            "count": 10
+          },
+          {
+            "name": "郭展鴻",
+            "count": 10
+          },
+          {
+            "name": "鄭綉美",
+            "count": 8
+          },
+          {
+            "name": "鄭禮昂",
+            "count": 6
+          },
+          {
+            "name": "陳柔璇",
+            "count": 5
+          },
+          {
+            "name": "黃笛軒",
+            "count": 3
+          },
+          {
+            "name": "葉建葳",
+            "count": 1
+          },
+          {
+            "name": "郭素玲",
+            "count": 1
+          }
+        ],
+        "61": [
+          {
+            "name": "陳佩君",
+            "count": 161
+          },
+          {
+            "name": "楊在珍",
+            "count": 23
+          },
+          {
+            "name": "林佳伶 Lavi",
+            "count": 17
+          },
+          {
+            "name": "盧尚政",
+            "count": 17
+          },
+          {
+            "name": "張羽家",
+            "count": 14
+          },
+          {
+            "name": "李美花",
+            "count": 11
+          },
+          {
+            "name": "王彤",
+            "count": 10
+          },
+          {
+            "name": "郭展鴻",
+            "count": 10
+          },
+          {
+            "name": "鄭綉美",
+            "count": 8
+          },
+          {
+            "name": "鄭禮昂",
+            "count": 6
+          },
+          {
+            "name": "陳柔璇",
+            "count": 5
+          },
+          {
+            "name": "黃笛軒",
+            "count": 3
+          },
+          {
+            "name": "葉建葳",
+            "count": 1
+          },
+          {
+            "name": "郭素玲",
+            "count": 1
+          }
+        ],
+        "67": [
+          {
+            "name": "陳佩君",
+            "count": 161
+          },
+          {
+            "name": "楊在珍",
+            "count": 23
+          },
+          {
+            "name": "林佳伶 Lavi",
+            "count": 17
+          },
+          {
+            "name": "盧尚政",
+            "count": 17
+          },
+          {
+            "name": "張羽家",
+            "count": 14
+          },
+          {
+            "name": "李美花",
+            "count": 11
+          },
+          {
+            "name": "王彤",
+            "count": 10
+          },
+          {
+            "name": "郭展鴻",
+            "count": 10
+          },
+          {
+            "name": "鄭綉美",
+            "count": 8
+          },
+          {
+            "name": "鄭禮昂",
+            "count": 6
+          },
+          {
+            "name": "陳柔璇",
+            "count": 5
+          },
+          {
+            "name": "黃笛軒",
+            "count": 3
+          },
+          {
+            "name": "葉建葳",
+            "count": 1
+          },
+          {
+            "name": "郭素玲",
+            "count": 1
+          }
+        ],
+        "73": [
+          {
+            "name": "陳佩君",
+            "count": 161
+          },
+          {
+            "name": "楊在珍",
+            "count": 23
+          },
+          {
+            "name": "李美花",
+            "count": 20
+          },
+          {
+            "name": "林佳伶 Lavi",
+            "count": 17
+          },
+          {
+            "name": "盧尚政",
+            "count": 17
+          },
+          {
+            "name": "張羽家",
+            "count": 14
+          },
+          {
+            "name": "王彤",
+            "count": 10
+          },
+          {
+            "name": "郭展鴻",
+            "count": 10
+          },
+          {
+            "name": "鄭綉美",
+            "count": 8
+          },
+          {
+            "name": "鄭禮昂",
+            "count": 6
+          },
+          {
+            "name": "陳柔璇",
+            "count": 5
+          },
+          {
+            "name": "黃笛軒",
+            "count": 3
+          },
+          {
+            "name": "葉建葳",
+            "count": 1
+          },
+          {
+            "name": "郭素玲",
+            "count": 1
+          }
+        ],
+        "79": [
+          {
+            "name": "陳佩君",
+            "count": 161
+          },
+          {
+            "name": "楊在珍",
+            "count": 23
+          },
+          {
+            "name": "李美花",
+            "count": 20
+          },
+          {
+            "name": "林佳伶 Lavi",
+            "count": 17
+          },
+          {
+            "name": "盧尚政",
+            "count": 17
+          },
+          {
+            "name": "張羽家",
+            "count": 14
+          },
+          {
+            "name": "王彤",
+            "count": 10
+          },
+          {
+            "name": "郭展鴻",
+            "count": 10
+          },
+          {
+            "name": "鄭綉美",
+            "count": 8
+          },
+          {
+            "name": "鄭禮昂",
+            "count": 6
+          },
+          {
+            "name": "陳柔璇",
+            "count": 5
+          },
+          {
+            "name": "黃笛軒",
+            "count": 3
+          },
+          {
+            "name": "葉建葳",
+            "count": 1
+          },
+          {
+            "name": "郭素玲",
+            "count": 1
+          }
+        ],
+        "85": [
+          {
+            "name": "陳佩君",
+            "count": 161
+          },
+          {
+            "name": "楊在珍",
+            "count": 23
+          },
+          {
+            "name": "李美花",
+            "count": 20
+          },
+          {
+            "name": "林佳伶 Lavi",
+            "count": 17
+          },
+          {
+            "name": "盧尚政",
+            "count": 17
+          },
+          {
+            "name": "張羽家",
+            "count": 14
+          },
+          {
+            "name": "王彤",
+            "count": 10
+          },
+          {
+            "name": "郭展鴻",
+            "count": 10
+          },
+          {
+            "name": "鄭綉美",
+            "count": 8
+          },
+          {
+            "name": "鄭禮昂",
+            "count": 6
+          },
+          {
+            "name": "陳柔璇",
+            "count": 5
+          },
+          {
+            "name": "黃笛軒",
+            "count": 3
+          },
+          {
+            "name": "葉建葳",
+            "count": 1
+          },
+          {
+            "name": "郭素玲",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "真鑫": {
+      "months_available": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "snapshots": {
+        "1": [
+          {
+            "name": "王聖凱",
+            "count": 2
+          },
+          {
+            "name": "吳亞平",
+            "count": 1
+          },
+          {
+            "name": "吳志煒",
+            "count": 1
+          },
+          {
+            "name": "林尹渰",
+            "count": 1
+          },
+          {
+            "name": "柯炫任",
+            "count": 1
+          },
+          {
+            "name": "買駿航",
+            "count": 1
+          },
+          {
+            "name": "連皓宇",
+            "count": 1
+          },
+          {
+            "name": "劉彥彬",
+            "count": 0
+          },
+          {
+            "name": "吳玫萱",
+            "count": 0
+          },
+          {
+            "name": "姵彤蔡",
+            "count": 0
+          },
+          {
+            "name": "徐偉倫",
+            "count": 0
+          },
+          {
+            "name": "杜亞洛",
+            "count": 0
+          },
+          {
+            "name": "林佳慧",
+            "count": 0
+          },
+          {
+            "name": "柯宗佑",
+            "count": 0
+          },
+          {
+            "name": "楊博丞",
+            "count": 0
+          },
+          {
+            "name": "楊為凱",
+            "count": 0
+          },
+          {
+            "name": "范郁琪",
+            "count": 0
+          },
+          {
+            "name": "莊政川",
+            "count": 0
+          },
+          {
+            "name": "薛如媛",
+            "count": 0
+          },
+          {
+            "name": "謝盛峯",
+            "count": 0
+          },
+          {
+            "name": "陳俊源",
+            "count": 0
+          },
+          {
+            "name": "黃鑫豊",
+            "count": 0
+          }
+        ],
+        "2": [
+          {
+            "name": "柯宗佑",
+            "count": 9
+          },
+          {
+            "name": "莊政川",
+            "count": 6
+          },
+          {
+            "name": "薛如媛",
+            "count": 4
+          },
+          {
+            "name": "買駿航",
+            "count": 4
+          },
+          {
+            "name": "王聖凱",
+            "count": 2
+          },
+          {
+            "name": "范郁琪",
+            "count": 2
+          },
+          {
+            "name": "連皓宇",
+            "count": 2
+          },
+          {
+            "name": "吳亞平",
+            "count": 1
+          },
+          {
+            "name": "吳志煒",
+            "count": 1
+          },
+          {
+            "name": "林尹渰",
+            "count": 1
+          },
+          {
+            "name": "柯炫任",
+            "count": 1
+          },
+          {
+            "name": "謝盛峯",
+            "count": 1
+          },
+          {
+            "name": "劉彥彬",
+            "count": 0
+          },
+          {
+            "name": "吳玫萱",
+            "count": 0
+          },
+          {
+            "name": "姵彤蔡",
+            "count": 0
+          },
+          {
+            "name": "徐偉倫",
+            "count": 0
+          },
+          {
+            "name": "杜亞洛",
+            "count": 0
+          },
+          {
+            "name": "林佳慧",
+            "count": 0
+          },
+          {
+            "name": "楊博丞",
+            "count": 0
+          },
+          {
+            "name": "楊為凱",
+            "count": 0
+          },
+          {
+            "name": "陳俊源",
+            "count": 0
+          },
+          {
+            "name": "黃鑫豊",
+            "count": 0
+          }
+        ],
+        "3": [
+          {
+            "name": "柯宗佑",
+            "count": 9
+          },
+          {
+            "name": "柯炫任",
+            "count": 7
+          },
+          {
+            "name": "莊政川",
+            "count": 6
+          },
+          {
+            "name": "買駿航",
+            "count": 5
+          },
+          {
+            "name": "王聖凱",
+            "count": 4
+          },
+          {
+            "name": "薛如媛",
+            "count": 4
+          },
+          {
+            "name": "吳亞平",
+            "count": 2
+          },
+          {
+            "name": "范郁琪",
+            "count": 2
+          },
+          {
+            "name": "謝盛峯",
+            "count": 2
+          },
+          {
+            "name": "連皓宇",
+            "count": 2
+          },
+          {
+            "name": "吳志煒",
+            "count": 1
+          },
+          {
+            "name": "杜亞洛",
+            "count": 1
+          },
+          {
+            "name": "林尹渰",
+            "count": 1
+          },
+          {
+            "name": "楊博丞",
+            "count": 1
+          },
+          {
+            "name": "劉彥彬",
+            "count": 0
+          },
+          {
+            "name": "吳玫萱",
+            "count": 0
+          },
+          {
+            "name": "姵彤蔡",
+            "count": 0
+          },
+          {
+            "name": "徐偉倫",
+            "count": 0
+          },
+          {
+            "name": "林佳慧",
+            "count": 0
+          },
+          {
+            "name": "楊為凱",
+            "count": 0
+          },
+          {
+            "name": "陳俊源",
+            "count": 0
+          },
+          {
+            "name": "黃鑫豊",
+            "count": 0
+          }
+        ],
+        "5": [
+          {
+            "name": "林尹渰",
+            "count": 19
+          },
+          {
+            "name": "吳志煒",
+            "count": 15
+          },
+          {
+            "name": "王聖凱",
+            "count": 9
+          },
+          {
+            "name": "黃鑫豊",
+            "count": 9
+          },
+          {
+            "name": "柯宗佑",
+            "count": 7
+          },
+          {
+            "name": "楊博丞",
+            "count": 5
+          },
+          {
+            "name": "謝盛峯",
+            "count": 5
+          },
+          {
+            "name": "連皓宇",
+            "count": 5
+          },
+          {
+            "name": "買駿航",
+            "count": 4
+          },
+          {
+            "name": "陳俊源",
+            "count": 4
+          },
+          {
+            "name": "林佳慧",
+            "count": 3
+          },
+          {
+            "name": "莊政川",
+            "count": 2
+          },
+          {
+            "name": "薛如媛",
+            "count": 2
+          },
+          {
+            "name": "劉彥彬",
+            "count": 1
+          },
+          {
+            "name": "吳亞平",
+            "count": 1
+          },
+          {
+            "name": "杜亞洛",
+            "count": 1
+          },
+          {
+            "name": "吳玫萱",
+            "count": 0
+          },
+          {
+            "name": "徐偉倫",
+            "count": 0
+          },
+          {
+            "name": "柯炫任",
+            "count": 0
+          }
+        ],
+        "6": [
+          {
+            "name": "林尹渰",
+            "count": 22
+          },
+          {
+            "name": "吳志煒",
+            "count": 17
+          },
+          {
+            "name": "柯宗佑",
+            "count": 17
+          },
+          {
+            "name": "王聖凱",
+            "count": 14
+          },
+          {
+            "name": "買駿航",
+            "count": 10
+          },
+          {
+            "name": "黃鑫豊",
+            "count": 10
+          },
+          {
+            "name": "莊政川",
+            "count": 8
+          },
+          {
+            "name": "謝盛峯",
+            "count": 8
+          },
+          {
+            "name": "柯炫任",
+            "count": 7
+          },
+          {
+            "name": "楊博丞",
+            "count": 7
+          },
+          {
+            "name": "連皓宇",
+            "count": 7
+          },
+          {
+            "name": "薛如媛",
+            "count": 6
+          },
+          {
+            "name": "吳亞平",
+            "count": 5
+          },
+          {
+            "name": "陳俊源",
+            "count": 5
+          },
+          {
+            "name": "杜亞洛",
+            "count": 3
+          },
+          {
+            "name": "林佳慧",
+            "count": 3
+          },
+          {
+            "name": "范郁琪",
+            "count": 3
+          },
+          {
+            "name": "劉彥彬",
+            "count": 2
+          },
+          {
+            "name": "吳玫萱",
+            "count": 2
+          },
+          {
+            "name": "姵彤蔡",
+            "count": 0
+          },
+          {
+            "name": "徐偉倫",
+            "count": 0
+          },
+          {
+            "name": "楊為凱",
+            "count": 0
+          }
+        ],
+        "7": [
+          {
+            "name": "林尹渰",
+            "count": 22
+          },
+          {
+            "name": "吳志煒",
+            "count": 17
+          },
+          {
+            "name": "柯宗佑",
+            "count": 17
+          },
+          {
+            "name": "王聖凱",
+            "count": 14
+          },
+          {
+            "name": "買駿航",
+            "count": 10
+          },
+          {
+            "name": "黃鑫豊",
+            "count": 10
+          },
+          {
+            "name": "莊政川",
+            "count": 8
+          },
+          {
+            "name": "謝盛峯",
+            "count": 8
+          },
+          {
+            "name": "柯炫任",
+            "count": 7
+          },
+          {
+            "name": "楊博丞",
+            "count": 7
+          },
+          {
+            "name": "連皓宇",
+            "count": 7
+          },
+          {
+            "name": "薛如媛",
+            "count": 6
+          },
+          {
+            "name": "吳亞平",
+            "count": 5
+          },
+          {
+            "name": "陳俊源",
+            "count": 5
+          },
+          {
+            "name": "杜亞洛",
+            "count": 3
+          },
+          {
+            "name": "林佳慧",
+            "count": 3
+          },
+          {
+            "name": "范郁琪",
+            "count": 3
+          },
+          {
+            "name": "劉彥彬",
+            "count": 2
+          },
+          {
+            "name": "吳玫萱",
+            "count": 2
+          },
+          {
+            "name": "姵彤蔡",
+            "count": 0
+          },
+          {
+            "name": "徐偉倫",
+            "count": 0
+          },
+          {
+            "name": "楊為凱",
+            "count": 0
+          }
+        ]
+      }
     }
   }
 }
