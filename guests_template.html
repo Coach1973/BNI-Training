@@ -66,6 +66,8 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
 .podium-card.rank-1 .medal { font-size: 3rem; }
 .podium-name { font-weight: 900; color: var(--ink); font-size: 1.1rem; margin-bottom: 4px; }
 .podium-card.rank-1 .podium-name { color: var(--white); }
+.podium-chapter { color: var(--sub); font-size: .8rem; }
+.podium-card.rank-1 .podium-chapter { color: var(--line); }
 .podium-count { font-size: 1.6rem; font-weight: 900; color: var(--gold); margin-top: 8px; }
 .podium-card.rank-1 .podium-count { color: var(--white); }
 .podium-count-lbl { font-size: .72rem; color: var(--sub); letter-spacing: 1px; }
@@ -79,6 +81,7 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
     display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: .82rem; flex-shrink: 0;
 }
 .rank-row .rname { font-weight: 900; color: var(--ink); flex: 1; }
+.rank-row .rchapter { color: var(--sub); font-size: .82rem; }
 .rank-row .rcount { color: var(--red); font-weight: 900; font-size: 1rem; }
 .congrats { text-align: center; color: var(--red-dark); font-weight: 700; font-size: .95rem; margin: 0 0 22px 0; letter-spacing: 1px; }
 .empty-note { text-align: center; color: var(--sub); padding: 30px; }
@@ -99,7 +102,7 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
     <div class="header-container">
         <h1>BNI大台南南區 來賓邀約排行榜</h1>
         <p class="subtitle">｜資料來源：BNI Connect官方PALMS摘要報告｜__CHAPTERS__</p>
-        <p class="subtitle-note">(選分會、選時間範圍，統計該範圍內每人邀約來賓的次數，排行榜跟培訓總覽同一套邏輯)</p>
+        <p class="subtitle-note">(預設顯示全區總排名，也可切換單一分會，選時間範圍統計該範圍內每人邀約來賓的次數，排行榜跟培訓總覽同一套邏輯)</p>
         <p class="subtitle-note">(翻轉中的分會或沒有每週進行會議的分會暫不列入計算)</p>
         <p class="subtitle-warn">如果會員發現邀約次數與您計算不同，請直接反應給執行董事</p>
     </div>
@@ -116,7 +119,7 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
     </div>
 
     <div class="note-panel">
-        <p>資料來源：BNI Connect官方「分會 - PALMS摘要報告」，這是官方認證的準確數字（跟「地區-查看來賓」明細報表的統計口徑不同，PALMS才是官方績效指標）。每個時間範圍是教練實際匯出的官方快照，「近N個月」代表「從N個月前到現在」——時間範圍越大自然涵蓋越小的範圍，不是互斥的分段。目前只能查詢下方列出的時間節點，若需要其他月數，需要教練重新匯出對應的PALMS報表。</p>
+        <p>資料來源：BNI Connect官方「分會 - PALMS摘要報告」，這是官方認證的準確數字（跟「地區-查看來賓」明細報表的統計口徑不同，PALMS才是官方績效指標）。每個時間範圍是教練實際匯出的官方快照，「近N個月」代表「從N個月前到現在」——時間範圍越大自然涵蓋越小的範圍，不是互斥的分段。目前只能查詢下方列出的時間節點，若需要其他月數，需要教練重新匯出對應的PALMS報表。「大台南南區全區」排名是三分會資料合併統計，若某分會沒有剛好對應到所選月數的快照，會自動改用該分會歷史最長的既有快照（例如成立不久的分會歷史比較短，會用它全部的歷史資料）。</p>
     </div>
 
     <div class="footer-nav">
@@ -129,19 +132,32 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
         const CHAPTERS = __CHAPTERS_DATA_JSON__;
         const MEDALS = ['🥇', '🥈', '🥉'];
         const CHAPTER_NAMES = Object.keys(CHAPTERS).sort();
+        const REGION_KEY = '大台南南區全區';
 
-        let currentChapter = CHAPTER_NAMES[0];
+        // 全區可選月數＝三分會月數的聯集（教練要求：跟培訓總覽一樣要有整區總排名，
+        // 不是只有各分會各自的TOP10）。選到某個月數時，每個分會各自抓「不超過該月數
+        // 的最大可用快照」合併（分會歷史比選定月數短就用它自己的全部歷史，
+        // 跟培訓總覽index.html本來就是全地區RECORDS混在一起、新分會自然只貢獻
+        // 自己存在期間資料的邏輯一致，不會出錯，只是新分會佔比較小）。
+        const REGION_MONTHS = [...new Set(CHAPTER_NAMES.flatMap(c => CHAPTERS[c].months_available))].sort((a, b) => a - b);
+
+        let currentChapter = REGION_KEY;
         let currentMonths = null;
+
+        function monthsAvailableFor(chapterKey) {
+            return chapterKey === REGION_KEY ? REGION_MONTHS : CHAPTERS[chapterKey].months_available;
+        }
 
         function renderChapterTabs() {
             const el = document.getElementById('chapterTabs');
-            el.innerHTML = CHAPTER_NAMES.map(name => `
-                <button class="chapter-btn${name === currentChapter ? ' active' : ''}" data-chapter="${name}">${name}分會</button>
+            const allNames = [REGION_KEY, ...CHAPTER_NAMES];
+            el.innerHTML = allNames.map(name => `
+                <button class="chapter-btn${name === currentChapter ? ' active' : ''}" data-chapter="${name}">${name === REGION_KEY ? '🏆 ' + REGION_KEY : name + '分會'}</button>
             `).join('');
             el.querySelectorAll('.chapter-btn').forEach(btn => {
                 btn.addEventListener('click', () => {
                     currentChapter = btn.dataset.chapter;
-                    currentMonths = defaultMonths(CHAPTERS[currentChapter].months_available);
+                    currentMonths = defaultMonths(monthsAvailableFor(currentChapter));
                     renderChapterTabs();
                     renderMonthTabs();
                     renderAll();
@@ -150,7 +166,7 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
         }
 
         function renderMonthTabs() {
-            const months = CHAPTERS[currentChapter].months_available;
+            const months = monthsAvailableFor(currentChapter);
             const el = document.getElementById('tabs');
             el.innerHTML = months.map(m => `
                 <button class="tab-btn${m === currentMonths ? ' active' : ''}" data-months="${m}">近${m}個月</button>
@@ -164,8 +180,23 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
             });
         }
 
+        // 單一分會：直接查該月數的快照。全區：每個分會各自找「不超過所選月數的
+        // 最大可用快照」，合併成一個陣列（每筆member附上所屬分會），重新依count排序。
         function currentMembers() {
-            return CHAPTERS[currentChapter].snapshots[String(currentMonths)] || [];
+            if (currentChapter !== REGION_KEY) {
+                return CHAPTERS[currentChapter].snapshots[String(currentMonths)] || [];
+            }
+            let merged = [];
+            CHAPTER_NAMES.forEach(chapterName => {
+                const available = CHAPTERS[chapterName].months_available;
+                const usable = available.filter(m => m <= currentMonths);
+                if (usable.length === 0) return;
+                const bestMonth = usable[usable.length - 1];
+                const members = CHAPTERS[chapterName].snapshots[String(bestMonth)] || [];
+                merged = merged.concat(members.map(m => ({ ...m, chapter: chapterName })));
+            });
+            merged.sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+            return merged;
         }
 
         function renderStats(members) {
@@ -175,7 +206,7 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
             el.innerHTML = `
                 <div class="stat-card"><div class="num">${totalGuests}</div><div class="lbl">邀約來賓人次</div></div>
                 <div class="stat-card"><div class="num">${invited.length}</div><div class="lbl">有邀約的會員數</div></div>
-                <div class="stat-card"><div class="num">${members.length}</div><div class="lbl">分會會員總數</div></div>
+                <div class="stat-card"><div class="num">${members.length}</div><div class="lbl">${currentChapter === REGION_KEY ? '全區' : '分會'}會員總數</div></div>
             `;
         }
 
@@ -187,7 +218,7 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
             const podiumArea = document.getElementById('podiumArea');
             const listArea = document.getElementById('rankListArea');
 
-            sub.innerHTML = `${currentChapter}分會・近${currentMonths}個月`;
+            sub.innerHTML = `${currentChapter === REGION_KEY ? REGION_KEY : currentChapter + '分會'}・近${currentMonths}個月`;
 
             if (top10.length === 0) {
                 podiumArea.innerHTML = '<div class="empty-note">這個時間範圍內還沒有邀約來賓紀錄</div>';
@@ -195,12 +226,12 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
                 return;
             }
 
-            const congrats = document.createElement('div');
             const top3 = top10.slice(0, 3);
             podiumArea.innerHTML = '<div class="congrats">★ 恭喜以下夥伴，熱心邀約來賓、壯大分會 ★</div><div class="podium">' + top3.map((p, i) => `
                 <div class="podium-card rank-${i + 1}">
                     <div class="medal">${MEDALS[i]}</div>
                     <div class="podium-name">${p.name}</div>
+                    <div class="podium-chapter">${p.chapter || currentChapter}</div>
                     <div class="podium-count">${p.count}</div>
                     <div class="podium-count-lbl">位來賓</div>
                 </div>
@@ -214,6 +245,7 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
                     <div class="rank-row">
                         <div class="rank-badge">${i + 4}</div>
                         <div class="rname">${p.name}</div>
+                        <div class="rchapter">${p.chapter || currentChapter}</div>
                         <div class="rcount">${p.count} 位</div>
                     </div>
                 `).join('') + '</div>';
@@ -226,12 +258,12 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
             renderRanking(members);
         }
 
-        // 初始化：預設抓6個月門檻（跟培訓總覽index.html預設一致），沒有剛好6個月的快照就退而求其次選最接近的
+        // 預設抓6個月門檻（跟培訓總覽index.html預設一致），沒有剛好6個月的快照就退而求其次選最接近的
         function defaultMonths(months) {
             if (months.includes(6)) return 6;
             return months.reduce((best, m) => Math.abs(m - 6) < Math.abs(best - 6) ? m : best, months[0]);
         }
-        currentMonths = defaultMonths(CHAPTERS[currentChapter].months_available);
+        currentMonths = defaultMonths(monthsAvailableFor(currentChapter));
         renderChapterTabs();
         renderMonthTabs();
         renderAll();
