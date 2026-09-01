@@ -26,6 +26,15 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
 .footer-nav { width: 100%; max-width: 1200px; margin: 8px 20px 0; padding: 24px 20px; text-align: center; border-top: 1px solid var(--line); }
 .footer-nav .nav-link:hover { color: var(--red-dark); }
 
+.chapter-tabs { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1200px; margin: 0 20px 16px; padding: 0 20px; }
+.chapter-btn {
+    background: var(--ink); border: 2px solid var(--ink); color: var(--white);
+    padding: 13px 32px; border-radius: 4px; cursor: pointer; font-size: 1rem; font-weight: 900;
+    letter-spacing: 2px; transition: all .15s ease;
+}
+.chapter-btn.active { background: var(--red); border-color: var(--red); }
+.chapter-btn:hover:not(.active) { background: var(--red-dark); border-color: var(--red-dark); }
+
 .tabs { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1200px; margin: 0 20px 24px; padding: 0 20px; }
 .tab-btn {
     background: var(--white); border: 1px solid var(--line); color: var(--sub);
@@ -34,18 +43,6 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
 }
 .tab-btn.active { color: var(--white); background: var(--red); border-color: var(--red); }
 .tab-btn:hover:not(.active) { border-color: var(--red); color: var(--red-dark); }
-
-.custom-months {
-    display: flex; align-items: center; gap: 8px; justify-content: center; flex-wrap: wrap;
-    width: 100%; max-width: 1200px; margin: 0 20px 28px; padding: 14px 20px;
-    background: var(--white); border: 1px solid var(--line); border-radius: 4px; font-size: .9rem; color: var(--sub);
-}
-.custom-months input[type=number] {
-    width: 80px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 4px;
-    font-size: .95rem; color: var(--ink); text-align: center;
-}
-.custom-months input[type=number]:focus { outline: none; border-color: var(--red); }
-.custom-months button { padding: 8px 18px; font-size: .85rem; }
 
 .stats-row { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1200px; margin: 0 20px 28px; padding: 0 20px; }
 .stat-card { background: var(--white); border: 1px solid var(--line); border-radius: 4px; padding: 18px 28px; text-align: center; min-width: 140px; }
@@ -69,9 +66,7 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
 .podium-card.rank-1 .medal { font-size: 3rem; }
 .podium-name { font-weight: 900; color: var(--ink); font-size: 1.1rem; margin-bottom: 4px; }
 .podium-card.rank-1 .podium-name { color: var(--white); }
-.podium-chapter { color: var(--sub); font-size: .8rem; margin-bottom: 10px; }
-.podium-card.rank-1 .podium-chapter { color: var(--line); }
-.podium-count { font-size: 1.6rem; font-weight: 900; color: var(--gold); }
+.podium-count { font-size: 1.6rem; font-weight: 900; color: var(--gold); margin-top: 8px; }
 .podium-card.rank-1 .podium-count { color: var(--white); }
 .podium-count-lbl { font-size: .72rem; color: var(--sub); letter-spacing: 1px; }
 .podium-card.rank-1 .podium-count-lbl { color: var(--line); }
@@ -84,7 +79,6 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
     display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: .82rem; flex-shrink: 0;
 }
 .rank-row .rname { font-weight: 900; color: var(--ink); flex: 1; }
-.rank-row .rchapter { color: var(--sub); font-size: .82rem; }
 .rank-row .rcount { color: var(--red); font-weight: 900; font-size: 1rem; }
 .congrats { text-align: center; color: var(--red-dark); font-weight: 700; font-size: .95rem; margin: 0 0 22px 0; letter-spacing: 1px; }
 .empty-note { text-align: center; color: var(--sub); padding: 30px; }
@@ -95,7 +89,7 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
 @media (max-width: 600px) {
     .header-container { padding: 36px 16px 30px; }
     h1 { font-size: 1.5rem; }
-    .tabs, .stats-row, .section, .custom-months, .note-panel { padding-left: 12px; padding-right: 12px; margin-left: 0; margin-right: 0; }
+    .tabs, .chapter-tabs, .stats-row, .section, .note-panel { padding-left: 12px; padding-right: 12px; margin-left: 0; margin-right: 0; }
     .podium-card { width: 130px; padding: 14px 10px; }
     .podium-card.rank-1 { width: 150px; }
 }
@@ -104,31 +98,14 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
 <body>
     <div class="header-container">
         <h1>BNI大台南南區 來賓邀約排行榜</h1>
-        <p class="subtitle">｜2018-08-08 ~ 2026-09-01｜共__TOTAL_RECORDS__筆來賓造訪紀錄｜__CHAPTERS__</p>
-        <p class="subtitle-note">(依所選時間範圍內「邀請人 + 分會」統計每人邀約來賓的次數，排行榜跟培訓總覽同一套邏輯)</p>
+        <p class="subtitle">｜資料來源：BNI Connect官方PALMS摘要報告｜__CHAPTERS__</p>
+        <p class="subtitle-note">(選分會、選時間範圍，統計該範圍內每人邀約來賓的次數，排行榜跟培訓總覽同一套邏輯)</p>
         <p class="subtitle-note">(翻轉中的分會或沒有每週進行會議的分會暫不列入計算)</p>
         <p class="subtitle-warn">如果會員發現邀約次數與您計算不同，請直接反應給執行董事</p>
     </div>
 
-    <div class="tabs" id="tabs">
-        <button class="tab-btn" data-months="3">近3個月</button>
-        <button class="tab-btn active" data-months="6">近6個月</button>
-        <button class="tab-btn" data-months="12">近12個月</button>
-        <button class="tab-btn" data-months="24">近24個月</button>
-        <button class="tab-btn" data-months="36">近36個月</button>
-        <button class="tab-btn" data-months="48">近48個月</button>
-        <button class="tab-btn" data-months="60">近60個月</button>
-        <button class="tab-btn" data-months="72">近72個月</button>
-        <button class="tab-btn" data-months="84">近84個月</button>
-    </div>
-
-    <div class="custom-months">
-        <label for="customMonths">自訂查詢：近</label>
-        <input type="number" id="customMonths" min="1" max="200" placeholder="例如 15">
-        <label for="customMonths">個月邀約來賓次數</label>
-        <button id="customMonthsBtn" class="tab-btn">查詢</button>
-    </div>
-
+    <div class="chapter-tabs" id="chapterTabs"></div>
+    <div class="tabs" id="tabs"></div>
     <div class="stats-row" id="statsRow"></div>
 
     <div class="section">
@@ -139,7 +116,7 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
     </div>
 
     <div class="note-panel">
-        <p>資料來源：BNI Connect官方「地區-查看來賓」報表，2018-08-08 ~ 2026-09-01，__TOTAL_RECORDS__筆造訪紀錄。統計邏輯跟培訓總覽(index.html)一致：先依「所選時間範圍」篩選紀錄，再依「邀請人」統計次數由多到少排名（同次數依姓名排序），前十名列出。公開頁只顯示邀請人姓名/分會/次數，來賓個資（電話/Email/地址/公司/職業）一律不公開，跟培訓總覽的揭露原則一致。時間窗預設近6個月，可在上面點按鈕或輸入任意月數自訂查詢。</p>
+        <p>資料來源：BNI Connect官方「分會 - PALMS摘要報告」，這是官方認證的準確數字（跟「地區-查看來賓」明細報表的統計口徑不同，PALMS才是官方績效指標）。每個時間範圍是教練實際匯出的官方快照，「近N個月」代表「從N個月前到現在」——時間範圍越大自然涵蓋越小的範圍，不是互斥的分段。目前只能查詢下方列出的時間節點，若需要其他月數，需要教練重新匯出對應的PALMS報表。</p>
     </div>
 
     <div class="footer-nav">
@@ -149,65 +126,81 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
     </div>
 
     <script>
-        const RECORDS = __RECORDS_JSON__;
+        const CHAPTERS = __CHAPTERS_DATA_JSON__;
         const MEDALS = ['🥇', '🥈', '🥉'];
+        const CHAPTER_NAMES = Object.keys(CHAPTERS).sort();
 
-        function monthsAgo(n) {
-            const d = new Date();
-            d.setMonth(d.getMonth() - n);
-            return d;
+        let currentChapter = CHAPTER_NAMES[0];
+        let currentMonths = null;
+
+        function renderChapterTabs() {
+            const el = document.getElementById('chapterTabs');
+            el.innerHTML = CHAPTER_NAMES.map(name => `
+                <button class="chapter-btn${name === currentChapter ? ' active' : ''}" data-chapter="${name}">${name}分會</button>
+            `).join('');
+            el.querySelectorAll('.chapter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    currentChapter = btn.dataset.chapter;
+                    currentMonths = defaultMonths(CHAPTERS[currentChapter].months_available);
+                    renderChapterTabs();
+                    renderMonthTabs();
+                    renderAll();
+                });
+            });
         }
 
-        function fmtDate(d) {
-            return d.toISOString().slice(0, 10);
+        function renderMonthTabs() {
+            const months = CHAPTERS[currentChapter].months_available;
+            const el = document.getElementById('tabs');
+            el.innerHTML = months.map(m => `
+                <button class="tab-btn${m === currentMonths ? ' active' : ''}" data-months="${m}">近${m}個月</button>
+            `).join('');
+            el.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    currentMonths = parseInt(btn.dataset.months, 10);
+                    renderMonthTabs();
+                    renderAll();
+                });
+            });
         }
 
-        // 過濾：只留「所選時間範圍內」的邀約紀錄（跟培訓總覽filterByWindow邏輯一致）
-        function filterByWindow(months) {
-            const cutoff = fmtDate(monthsAgo(parseInt(months, 10)));
-            return RECORDS.filter(r => r.visit_date >= cutoff);
+        function currentMembers() {
+            return CHAPTERS[currentChapter].snapshots[String(currentMonths)] || [];
         }
 
-        function renderStats(filtered) {
-            const inviters = new Set(filtered.map(r => r.inviter));
-            const chapters = new Set(filtered.map(r => r.chapter).filter(Boolean));
+        function renderStats(members) {
+            const invited = members.filter(m => m.count > 0);
+            const totalGuests = members.reduce((sum, m) => sum + m.count, 0);
             const el = document.getElementById('statsRow');
             el.innerHTML = `
-                <div class="stat-card"><div class="num">${filtered.length}</div><div class="lbl">邀約來賓人次</div></div>
-                <div class="stat-card"><div class="num">${inviters.size}</div><div class="lbl">邀約會員數</div></div>
-                <div class="stat-card"><div class="num">${chapters.size}</div><div class="lbl">涵蓋分會數</div></div>
+                <div class="stat-card"><div class="num">${totalGuests}</div><div class="lbl">邀約來賓人次</div></div>
+                <div class="stat-card"><div class="num">${invited.length}</div><div class="lbl">有邀約的會員數</div></div>
+                <div class="stat-card"><div class="num">${members.length}</div><div class="lbl">分會會員總數</div></div>
             `;
         }
 
-        // 排行榜：依邀請人統計邀約次數，由多到少排名（同次數按姓名排序），逐字對照 index.html renderRanking
-        function renderRanking(filtered) {
-            const counts = {};
-            filtered.forEach(r => {
-                if (!counts[r.inviter]) counts[r.inviter] = { name: r.inviter, chapter: r.chapter, count: 0 };
-                counts[r.inviter].count++;
-            });
-            const ranked = Object.values(counts).sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+        function renderRanking(members) {
+            const ranked = members.filter(m => m.count > 0);
             const top10 = ranked.slice(0, 10);
 
             const sub = document.getElementById('rankSub');
             const podiumArea = document.getElementById('podiumArea');
             const listArea = document.getElementById('rankListArea');
 
+            sub.innerHTML = `${currentChapter}分會・近${currentMonths}個月`;
+
             if (top10.length === 0) {
-                sub.textContent = '';
                 podiumArea.innerHTML = '<div class="empty-note">這個時間範圍內還沒有邀約來賓紀錄</div>';
                 listArea.innerHTML = '';
                 return;
             }
 
-            sub.innerHTML = '<span class="congrats">★ 恭喜以下夥伴，熱心邀約來賓、壯大分會 ★</span>';
-
+            const congrats = document.createElement('div');
             const top3 = top10.slice(0, 3);
-            podiumArea.innerHTML = '<div class="podium">' + top3.map((p, i) => `
+            podiumArea.innerHTML = '<div class="congrats">★ 恭喜以下夥伴，熱心邀約來賓、壯大分會 ★</div><div class="podium">' + top3.map((p, i) => `
                 <div class="podium-card rank-${i + 1}">
                     <div class="medal">${MEDALS[i]}</div>
                     <div class="podium-name">${p.name}</div>
-                    <div class="podium-chapter">${p.chapter || '-'}</div>
                     <div class="podium-count">${p.count}</div>
                     <div class="podium-count-lbl">位來賓</div>
                 </div>
@@ -221,49 +214,27 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
                     <div class="rank-row">
                         <div class="rank-badge">${i + 4}</div>
                         <div class="rname">${p.name}</div>
-                        <div class="rchapter">${p.chapter || '-'}</div>
                         <div class="rcount">${p.count} 位</div>
                     </div>
                 `).join('') + '</div>';
             }
         }
 
-        function renderAll(months) {
-            const filtered = filterByWindow(months);
-            renderStats(filtered);
-            renderRanking(filtered);
+        function renderAll() {
+            const members = currentMembers();
+            renderStats(members);
+            renderRanking(members);
         }
 
-        function clearActiveTabs() {
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        // 初始化：預設抓6個月門檻（跟培訓總覽index.html預設一致），沒有剛好6個月的快照就退而求其次選最接近的
+        function defaultMonths(months) {
+            if (months.includes(6)) return 6;
+            return months.reduce((best, m) => Math.abs(m - 6) < Math.abs(best - 6) ? m : best, months[0]);
         }
-
-        // tab 按鈕
-        document.querySelectorAll('#tabs .tab-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                clearActiveTabs();
-                btn.classList.add('active');
-                renderAll(btn.dataset.months);
-            });
-        });
-
-        // 自訂輸入框
-        function runCustomMonths() {
-            const v = parseInt(document.getElementById('customMonths').value, 10);
-            if (!v || v < 1) {
-                alert('請輸入正整數月數');
-                return;
-            }
-            clearActiveTabs();
-            renderAll(String(v));
-        }
-        document.getElementById('customMonthsBtn').addEventListener('click', runCustomMonths);
-        document.getElementById('customMonths').addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') runCustomMonths();
-        });
-
-        // 初始 render
-        renderAll('6');
+        currentMonths = defaultMonths(CHAPTERS[currentChapter].months_available);
+        renderChapterTabs();
+        renderMonthTabs();
+        renderAll();
     </script>
 </body>
 </html>

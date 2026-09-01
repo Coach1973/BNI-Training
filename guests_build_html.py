@@ -2,7 +2,7 @@
 """讀 guests_data.json + guests_template.html，產生 guests.html。
 
 更新資料：
-  - BNI Connect 重新匯出 ~/Downloads/...xls → 重跑 guests_build_data.py
+  - 教練匯出新的PALMS報表到 ~/Downloads/ → 重跑 guests_build_data.py
   - guests_template.html 改了 UI → 重跑這支
 """
 import io
@@ -13,17 +13,15 @@ def main():
     data = json.load(io.open("guests_data.json", encoding="utf-8"))
     template = io.open("guests_template.html", encoding="utf-8").read()
 
-    records_json = json.dumps(data["records"], ensure_ascii=False)
-    chapters_str = "・".join(data["stats"]["chapters"])
-    total_records = data["stats"]["total_records"]
+    chapters_json = json.dumps(data["chapters"], ensure_ascii=False)
+    chapter_names = "・".join(sorted(data["chapters"].keys()))
 
-    html = template.replace("__RECORDS_JSON__", records_json)
-    html = html.replace("__TOTAL_RECORDS__", str(total_records))
-    html = html.replace("__CHAPTERS__", chapters_str)
+    html = template.replace("__CHAPTERS_DATA_JSON__", chapters_json)
+    html = html.replace("__CHAPTERS__", chapter_names)
 
     with io.open("guests.html", "w", encoding="utf-8") as f:
         f.write(html)
-    print("guests.html done, %d records embedded" % total_records)
+    print("guests.html done, chapters embedded: %s" % ", ".join(sorted(data["chapters"].keys())))
 
 
 if __name__ == "__main__":
