@@ -24,6 +24,14 @@
     {
       "id": "0817",
       "label": "8/17 主題培訓"
+    },
+    {
+      "id": "0907",
+      "label": "9/7 初階MSP"
+    },
+    {
+      "id": "0910",
+      "label": "9/10 主題培訓"
     }
   ],
   "people": [
@@ -36,9 +44,11 @@
         "0611": "present",
         "0615": "present",
         "0720": "present",
-        "0817": "present"
+        "0817": "present",
+        "0907": "present",
+        "0910": "present"
       },
-      "attended_count": 5
+      "attended_count": 7
     },
     {
       "name": "張騰文",
@@ -49,9 +59,11 @@
         "0611": "present",
         "0615": "present",
         "0720": "absent",
-        "0817": "present"
+        "0817": "present",
+        "0907": "present",
+        "0910": "present"
       },
-      "attended_count": 5
+      "attended_count": 7
     },
     {
       "name": "康文彬",
@@ -62,7 +74,9 @@
         "0611": "absent",
         "0615": "present",
         "0720": "absent",
-        "0817": "present"
+        "0817": "present",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 3
     },
@@ -75,7 +89,9 @@
         "0611": "absent",
         "0615": "absent",
         "0720": "present",
-        "0817": "present"
+        "0817": "present",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 2
     },
@@ -88,9 +104,11 @@
         "0611": "absent",
         "0615": "absent",
         "0720": "present",
-        "0817": "present"
+        "0817": "present",
+        "0907": "present",
+        "0910": "nodata"
       },
-      "attended_count": 2
+      "attended_count": 3
     },
     {
       "name": "陳佳玲",
@@ -101,176 +119,204 @@
         "0611": "absent",
         "0615": "absent",
         "0720": "absent",
-        "0817": "present"
+        "0817": "present",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
     {
       "name": "買駿航",
-      "chapter": "真鑫",
+      "chapter": null,
       "attendance": {
         "0413": "absent",
         "0511": "present",
         "0611": "present",
         "0615": "present",
         "0720": "present",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "present",
+        "0910": "present"
       },
-      "attended_count": 4
+      "attended_count": 6
     },
     {
       "name": "柯朝陽",
-      "chapter": "真鑽",
+      "chapter": null,
       "attendance": {
         "0413": "present",
         "0511": "present",
         "0611": "present",
         "0615": "present",
         "0720": "absent",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "absent",
+        "0910": "nodata"
       },
       "attended_count": 4
     },
     {
       "name": "吳亞平",
-      "chapter": "真鑫",
+      "chapter": null,
       "attendance": {
         "0413": "absent",
         "0511": "present",
         "0611": "present",
         "0615": "present",
         "0720": "present",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 4
     },
     {
       "name": "古禹澤",
-      "chapter": "真鑽",
+      "chapter": null,
       "attendance": {
         "0413": "present",
         "0511": "absent",
         "0611": "present",
         "0615": "present",
         "0720": "absent",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 3
     },
     {
       "name": "李美花",
-      "chapter": "真誠",
+      "chapter": null,
       "attendance": {
         "0413": "present",
         "0511": "absent",
         "0611": "present",
         "0615": "present",
         "0720": "absent",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "present",
+        "0910": "nodata"
       },
-      "attended_count": 3
+      "attended_count": 4
     },
     {
       "name": "黃一恭",
-      "chapter": "真鑽",
+      "chapter": null,
       "attendance": {
         "0413": "present",
         "0511": "present",
         "0611": "present",
         "0615": "absent",
         "0720": "absent",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 3
     },
     {
       "name": "張敬雍",
-      "chapter": "真鑽",
+      "chapter": null,
       "attendance": {
         "0413": "present",
         "0511": "absent",
         "0611": "present",
         "0615": "present",
         "0720": "teacher0",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "present"
       },
-      "attended_count": 4
+      "attended_count": 5
     },
     {
       "name": "張晴晴",
-      "chapter": "真鑫",
+      "chapter": null,
       "attendance": {
         "0413": "absent",
         "0511": "present",
         "0611": "present",
         "0615": "absent",
         "0720": "absent",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 2
     },
     {
       "name": "陳佩君",
-      "chapter": "真誠",
+      "chapter": null,
       "attendance": {
         "0413": "present",
         "0511": "share0",
         "0611": "present",
         "0615": "teacher0",
         "0720": "teacher0",
-        "0817": "teacher0"
+        "0817": "teacher0",
+        "0907": "teacher0",
+        "0910": "share0"
       },
-      "attended_count": 6
+      "attended_count": 8
     },
     {
       "name": "楊在珍",
-      "chapter": "真誠",
+      "chapter": null,
       "attendance": {
         "0413": "present",
         "0511": "present",
         "0611": "teacher0",
         "0615": "teacher0",
         "0720": "teacher0",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 5
     },
     {
       "name": "林佳伶",
-      "chapter": "真誠",
+      "chapter": null,
       "attendance": {
         "0413": "absent",
         "0511": "share0",
         "0611": "present",
         "0615": "teacher0",
         "0720": "teacher0",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 4
     },
     {
       "name": "杜亞洛",
-      "chapter": "真鑫",
+      "chapter": null,
       "attendance": {
         "0413": "absent",
         "0511": "present",
         "0611": "absent",
         "0615": "present",
         "0720": "absent",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 2
     },
     {
       "name": "劉彥彬",
-      "chapter": "真鑫",
+      "chapter": null,
       "attendance": {
         "0413": "absent",
         "0511": "present",
         "0611": "absent",
         "0615": "present",
         "0720": "absent",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 2
     },
@@ -283,230 +329,266 @@
         "0611": "absent",
         "0615": "present",
         "0720": "present",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 3
     },
     {
       "name": "蔡瑞穠",
-      "chapter": "真鑽",
+      "chapter": null,
       "attendance": {
         "0413": "absent",
         "0511": "absent",
         "0611": "absent",
         "0615": "present",
         "0720": "present",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 2
     },
     {
       "name": "莊政川",
-      "chapter": "真鑫",
+      "chapter": null,
       "attendance": {
         "0413": "absent",
         "0511": "present",
         "0611": "absent",
         "0615": "absent",
         "0720": "present",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "present"
       },
-      "attended_count": 2
+      "attended_count": 3
     },
     {
       "name": "楊博丞",
-      "chapter": "真鑫",
+      "chapter": null,
       "attendance": {
         "0413": "absent",
         "0511": "present",
         "0611": "absent",
         "0615": "absent",
         "0720": "present",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 2
     },
     {
       "name": "陳俊源",
-      "chapter": "真鑫",
+      "chapter": null,
       "attendance": {
         "0413": "absent",
         "0511": "present",
         "0611": "absent",
         "0615": "absent",
         "0720": "present",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "absent",
+        "0910": "nodata"
       },
       "attended_count": 2
     },
     {
       "name": "林佳慧",
-      "chapter": "真鑫",
+      "chapter": null,
       "attendance": {
         "0413": "absent",
         "0511": "present",
         "0611": "absent",
         "0615": "absent",
         "0720": "present",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 2
     },
     {
       "name": "楊智帆",
-      "chapter": "真鑽",
+      "chapter": null,
       "attendance": {
         "0413": "absent",
         "0511": "absent",
         "0611": "present",
         "0615": "absent",
         "0720": "absent",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "present"
       },
-      "attended_count": 1
+      "attended_count": 2
     },
     {
       "name": "邱南寅",
-      "chapter": "真鑽",
+      "chapter": null,
       "attendance": {
         "0413": "absent",
         "0511": "absent",
         "0611": "present",
         "0615": "absent",
         "0720": "absent",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "present"
       },
-      "attended_count": 1
+      "attended_count": 2
     },
     {
       "name": "宋映璇",
-      "chapter": "真鑽",
+      "chapter": null,
       "attendance": {
         "0413": "present",
         "0511": "nodata",
         "0611": "nodata",
         "0615": "nodata",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
     {
       "name": "郭展鴻",
-      "chapter": "真誠",
+      "chapter": null,
       "attendance": {
         "0413": "present",
         "0511": "nodata",
         "0611": "nodata",
         "0615": "nodata",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
     {
       "name": "葉建葳",
-      "chapter": "真誠",
+      "chapter": null,
       "attendance": {
         "0413": "present",
         "0511": "nodata",
         "0611": "nodata",
         "0615": "nodata",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
     {
       "name": "陳新典",
-      "chapter": "真愛",
+      "chapter": null,
       "attendance": {
         "0413": "present",
         "0511": "nodata",
         "0611": "nodata",
         "0615": "nodata",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
     {
       "name": "顏淳峯",
-      "chapter": "真鑽",
+      "chapter": null,
       "attendance": {
         "0413": "present",
         "0511": "nodata",
         "0611": "nodata",
         "0615": "nodata",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
     {
       "name": "楊仁豪",
-      "chapter": "真鑽",
+      "chapter": null,
       "attendance": {
         "0413": "present",
         "0511": "absent",
         "0611": "absent",
         "0615": "teacher0",
         "0720": "teacher0",
-        "0817": "teacher0"
+        "0817": "teacher0",
+        "0907": "nodata",
+        "0910": "present"
       },
-      "attended_count": 4
+      "attended_count": 5
     },
     {
       "name": "王聖凱",
-      "chapter": "真鑫",
+      "chapter": null,
       "attendance": {
         "0413": "nodata",
         "0511": "present",
         "0611": "nodata",
         "0615": "nodata",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "present"
       },
-      "attended_count": 1
+      "attended_count": 2
     },
     {
       "name": "吳玫萱",
-      "chapter": "真鑫",
+      "chapter": null,
       "attendance": {
         "0413": "nodata",
         "0511": "present",
         "0611": "nodata",
         "0615": "nodata",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
     {
       "name": "黃鑫豊",
-      "chapter": "真鑫",
+      "chapter": null,
       "attendance": {
         "0413": "nodata",
         "0511": "present",
         "0611": "nodata",
         "0615": "nodata",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
     {
       "name": "吳志煒",
-      "chapter": "真鑫",
+      "chapter": null,
       "attendance": {
         "0413": "nodata",
         "0511": "present",
         "0611": "nodata",
         "0615": "nodata",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "absent",
+        "0910": "present"
       },
-      "attended_count": 1
+      "attended_count": 2
     },
     {
       "name": "林尹渟",
@@ -517,22 +599,26 @@
         "0611": "nodata",
         "0615": "nodata",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "present"
       },
-      "attended_count": 1
+      "attended_count": 2
     },
     {
       "name": "楊尚儒",
-      "chapter": "真鑽",
+      "chapter": null,
       "attendance": {
         "0413": "absent",
         "0511": "present",
         "0611": "absent",
         "0615": "teacher0",
         "0720": "absent",
-        "0817": "absent"
+        "0817": "absent",
+        "0907": "present",
+        "0910": "present"
       },
-      "attended_count": 2
+      "attended_count": 4
     },
     {
       "name": "謝盛峰",
@@ -543,7 +629,9 @@
         "0611": "nodata",
         "0615": "nodata",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
@@ -556,7 +644,9 @@
         "0611": "nodata",
         "0615": "nodata",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
@@ -569,9 +659,11 @@
         "0611": "nodata",
         "0615": "present",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "present"
       },
-      "attended_count": 1
+      "attended_count": 2
     },
     {
       "name": "伍芬群",
@@ -582,7 +674,9 @@
         "0611": "nodata",
         "0615": "present",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
@@ -595,22 +689,26 @@
         "0611": "nodata",
         "0615": "present",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "present"
       },
-      "attended_count": 1
+      "attended_count": 2
     },
     {
       "name": "林宜宏",
-      "chapter": "真鑽",
+      "chapter": null,
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
         "0611": "nodata",
         "0615": "present",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "present",
+        "0910": "nodata"
       },
-      "attended_count": 1
+      "attended_count": 2
     },
     {
       "name": "徐偉倫",
@@ -621,20 +719,24 @@
         "0611": "nodata",
         "0615": "present",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
     {
       "name": "柯炫任",
-      "chapter": "真鑫",
+      "chapter": null,
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
         "0611": "nodata",
         "0615": "present",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
@@ -647,87 +749,101 @@
         "0611": "nodata",
         "0615": "present",
         "0720": "nodata",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
     {
       "name": "薛如媛",
-      "chapter": "真鑫",
+      "chapter": null,
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
         "0611": "nodata",
         "0615": "nodata",
         "0720": "present",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
     {
       "name": "柯宗佑",
-      "chapter": "真鑫",
+      "chapter": null,
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
         "0611": "nodata",
         "0615": "nodata",
         "0720": "present",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "present"
       },
-      "attended_count": 1
+      "attended_count": 2
     },
     {
       "name": "林富郎",
-      "chapter": "真鑽",
+      "chapter": null,
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
         "0611": "nodata",
         "0615": "nodata",
         "0720": "present",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
     {
       "name": "陳穗青",
-      "chapter": "真鑽",
+      "chapter": null,
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
         "0611": "nodata",
         "0615": "nodata",
         "0720": "present",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
     {
       "name": "洪嘉妘",
-      "chapter": "真鑽",
+      "chapter": null,
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
         "0611": "nodata",
         "0615": "nodata",
         "0720": "present",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 1
     },
     {
       "name": "傅恩平",
-      "chapter": "真鑽",
+      "chapter": null,
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
         "0611": "nodata",
         "0615": "nodata",
         "0720": "present",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "teacher0",
+        "0910": "present"
       },
-      "attended_count": 1
+      "attended_count": 3
     },
     {
       "name": "杜泱峻",
@@ -738,22 +854,26 @@
         "0611": "nodata",
         "0615": "nodata",
         "0720": "present",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "present",
+        "0910": "present"
       },
-      "attended_count": 1
+      "attended_count": 3
     },
     {
       "name": "郭馨文",
-      "chapter": "真鑽",
+      "chapter": null,
       "attendance": {
         "0413": "nodata",
         "0511": "nodata",
         "0611": "nodata",
         "0615": "nodata",
         "0720": "present",
-        "0817": "nodata"
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "present"
       },
-      "attended_count": 1
+      "attended_count": 2
     },
     {
       "name": "王彤",
@@ -764,9 +884,11 @@
         "0611": "nodata",
         "0615": "teacher0",
         "0720": "teacher0",
-        "0817": "teacher0"
+        "0817": "teacher0",
+        "0907": "teacher0",
+        "0910": "nodata"
       },
-      "attended_count": 5
+      "attended_count": 6
     },
     {
       "name": "張羽家",
@@ -777,9 +899,86 @@
         "0611": "nodata",
         "0615": "teacher0",
         "0720": "nodata",
-        "0817": "teacher0"
+        "0817": "teacher0",
+        "0907": "nodata",
+        "0910": "nodata"
       },
       "attended_count": 2
+    },
+    {
+      "name": "郭政輝",
+      "chapter": "真鑽",
+      "attendance": {
+        "0413": "nodata",
+        "0511": "nodata",
+        "0611": "nodata",
+        "0615": "nodata",
+        "0720": "nodata",
+        "0817": "nodata",
+        "0907": "present",
+        "0910": "nodata"
+      },
+      "attended_count": 1
+    },
+    {
+      "name": "張育慈",
+      "chapter": "真誠",
+      "attendance": {
+        "0413": "nodata",
+        "0511": "nodata",
+        "0611": "nodata",
+        "0615": "nodata",
+        "0720": "nodata",
+        "0817": "nodata",
+        "0907": "present",
+        "0910": "nodata"
+      },
+      "attended_count": 1
+    },
+    {
+      "name": "鄭樫峯",
+      "chapter": "真鑽",
+      "attendance": {
+        "0413": "nodata",
+        "0511": "nodata",
+        "0611": "nodata",
+        "0615": "nodata",
+        "0720": "nodata",
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "present"
+      },
+      "attended_count": 1
+    },
+    {
+      "name": "李孟哲",
+      "chapter": "真鑽",
+      "attendance": {
+        "0413": "nodata",
+        "0511": "nodata",
+        "0611": "nodata",
+        "0615": "nodata",
+        "0720": "nodata",
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "present"
+      },
+      "attended_count": 1
+    },
+    {
+      "name": "黃智宏",
+      "chapter": "真鑽",
+      "attendance": {
+        "0413": "nodata",
+        "0511": "nodata",
+        "0611": "nodata",
+        "0615": "nodata",
+        "0720": "nodata",
+        "0817": "nodata",
+        "0907": "nodata",
+        "0910": "present"
+      },
+      "attended_count": 1
     }
   ]
 }
