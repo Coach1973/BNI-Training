@@ -18,6 +18,7 @@ def main():
 
     html = template.replace("__CHAPTERS_DATA_JSON__", chapters_json)
     html = html.replace("__CHAPTERS__", chapter_names)
+    html = html.replace("__AS_OF__", max(c["as_of"] for c in data["chapters"].values()))
 
     with io.open("guests.html", "w", encoding="utf-8") as f:
         f.write(html)

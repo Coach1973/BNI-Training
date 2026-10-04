@@ -25,9 +25,11 @@ PALMS報表性質：每一份是「某個固定期間」的累積總數快照（
       ...
   } }
 """
+import csv
 import glob
 import json
 import os
+import re
 import xml.etree.ElementTree as ET
 from datetime import date
 
@@ -36,8 +38,10 @@ NS = {"ss": "urn:schemas-microsoft-com:office:spreadsheet"}
 DOWNLOADS_GLOB = os.path.expanduser("~/Downloads/__-palms-*.xls")
 OUT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "guests_data.json")
 
-# "今天" 基準：跟教練匯出報表當下的「至」日期一致，避免月數計算隨執行當下日期漂移
-TODAY = date(2026, 9, 1)
+# 「沒有邀約來賓的名單」要知道分會現在有誰（2026-10-05 教練交辦）：用 BNI Connect「會員資格會期報告」，
+# 扣掉教練確認已離會、但報告還留著的人。只取姓名＋最近會齡（月），電話等個資不進公開頁
+TENURE_CSV = os.path.expanduser("~/.openclaw/workspace/claude-brain/data/bni_membership_tenure_report_2026-10-04.csv")
+DEPARTED = {"真誠": {"郭素玲", "盧尚政"}}  # 教練 2026-10-05 00:23 確認已離會
 
 # 各分會實際成立月（2026-09-01教練親口逐一確認+資料本身交叉驗證）。有些PALMS
 # 報表的「從」日期比分會實際成立還早（例如真鑽報表填2018-01-01，但真鑽
@@ -62,13 +66,38 @@ def _row_cells(row):
     return cells
 
 
-def months_back(from_date_str, chapter):
-    y, m, d = (int(x) for x in from_date_str[:10].split("-"))
-    from_date = date(y, m, 1)
+def _date(s):
+    y, m, d = (int(x) for x in s[:10].split("-"))
+    return date(y, m, d)
+
+
+def months_back(date_from, date_to, chapter):
+    """「從～至」實際涵蓋幾個月（照天數換算再四捨五入）：2025-08-31～2026-08-31＝12、2026-03-01～2026-08-31＝6。
+    2026-10-05 前是用「從」的月份硬減固定的今天，從 8/31 起算的報表會多算一個月（近 12 個月變成 13）。"""
+    start = _date(date_from)
     founding = CHAPTER_FOUNDING.get(chapter)
-    if founding and from_date < founding:
-        from_date = founding
-    return (TODAY.year - from_date.year) * 12 + (TODAY.month - from_date.month)
+    if founding and start < founding:
+        start = founding
+    return round((_date(date_to) - start).days / 30.44)
+
+
+def _key(name):
+    """比對用：去掉空白、括號註記、英文名（「林佳伶 Lavi」＝「林佳伶」）。"""
+    return re.sub(r"[\sA-Za-z]", "", re.sub(r"[（(].*?[）)]", "", name or ""))
+
+
+def load_rosters():
+    rosters = {}
+    with open(TENURE_CSV, encoding="utf-8-sig") as f:
+        for r in csv.DictReader(f):
+            ch, name = r["分會"], r["姓名"].strip()
+            if name in DEPARTED.get(ch, ()):
+                continue
+            rosters.setdefault(ch, []).append({
+                "name": name, "key": _key(name),
+                "tenure_months": int(r["最近會齡_年"]) * 12 + int(r["最近會齡_月"]),
+            })
+    return rosters
 
 
 def parse_palms_file(path):
@@ -78,10 +107,11 @@ def parse_palms_file(path):
 
     chapter = _row_cells(rows[4]).get(9, "").strip()
     date_from = (_row_cells(rows[5]).get(9, "") or "").strip()
-    if not chapter or not date_from:
+    date_to = (_row_cells(rows[6]).get(9, "") or "").strip()
+    if not chapter or not date_from or not date_to:
         return None
 
-    months = months_back(date_from, chapter)
+    months = months_back(date_from, date_to, chapter)
 
     members = []
     for row in rows[8:]:
@@ -98,10 +128,10 @@ def parse_palms_file(path):
             count = int(float(guest_raw))
         except ValueError:
             continue
-        members.append({"name": name, "count": count})
+        members.append({"name": name, "key": _key(name), "count": count})
 
     members.sort(key=lambda m: (-m["count"], m["name"]))
-    return chapter, months, members
+    return chapter, months, members, date_to[:10]
 
 
 def main():
@@ -111,22 +141,43 @@ def main():
 
     print(f"找到 {len(files)} 份PALMS檔案")
 
-    chapters = {}  # chapter -> {months: members}, 同月數重複匯出取最後一份（mtime較新）
+    parsed_files = []
     for f in files:
         parsed = parse_palms_file(f)
         if parsed is None:
             print(f"  跳過（缺分會/從日期）：{os.path.basename(f)}")
             continue
-        chapter, months, members = parsed
+        parsed_files.append((f, *parsed))
+
+    # 「近 N 個月」必須是「從 N 個月前到最新匯出日」：每個分會只用「至」＝最新那一天的報表，
+    # 其他區間的報表（例如只匯出 4 月一個月、或 2023-09～2024-05）不是近 N 個月，跳過（2026-10-05 修）
+    latest_to = {}
+    for _, chapter, _, _, date_to in parsed_files:
+        latest_to[chapter] = max(latest_to.get(chapter, ""), date_to)
+
+    chapters = {}  # chapter -> {months: members}, 同月數重複匯出取最後一份（mtime較新）
+    for f, chapter, months, members, date_to in parsed_files:
+        if date_to != latest_to[chapter]:
+            print(f"  跳過（不是近N個月，至 {date_to}）：{chapter} {os.path.basename(f)}")
+            continue
         chapters.setdefault(chapter, {})[months] = members
         print(f"  {chapter} 近{months}個月：{len(members)}位會員，來源={os.path.basename(f)}")
 
+    rosters = load_rosters()
     output = {"chapters": {}}
     for chapter, snapshots in chapters.items():
+        # BNI Connect 偶爾把姓放到最後（PALMS「姵彤蔡」＝會期報告「蔡姵彤」），對不到時試著把最後一個字移到前面
+        roster_keys = {m["key"] for m in rosters.get(chapter, [])}
+        for members in snapshots.values():
+            for m in members:
+                if m["key"] not in roster_keys and m["key"][-1:] + m["key"][:-1] in roster_keys:
+                    m["key"] = m["key"][-1:] + m["key"][:-1]
         months_available = sorted(snapshots.keys())
         output["chapters"][chapter] = {
+            "as_of": latest_to[chapter],
             "months_available": months_available,
             "snapshots": {str(m): snapshots[m] for m in months_available},
+            "roster": rosters.get(chapter, []),
         }
 
     with open(OUT_PATH, "w", encoding="utf-8") as f:
@@ -134,7 +185,7 @@ def main():
 
     print(f"\n=== 完成，寫出 {OUT_PATH} ===")
     for chapter, data in output["chapters"].items():
-        print(f"  {chapter}：{len(data['months_available'])}個時間節點 {data['months_available']}")
+        print(f"  {chapter}：{len(data['months_available'])}個時間節點 {data['months_available']}，截至 {data['as_of']}，現任名單 {len(data['roster'])} 位")
 
 
 if __name__ == "__main__":

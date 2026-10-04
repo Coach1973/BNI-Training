@@ -96,12 +96,24 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
     .podium-card { width: 130px; padding: 14px 10px; }
     .podium-card.rank-1 { width: 150px; }
 }
+/* ===== 沒有邀約來賓的名單（反向查詢，2026-10-05 教練交辦，跟培訓總覽「未參加培訓名單」同一套） ===== */
+.section-title.warn { color: var(--red); }
+.absent-list { max-width: 900px; margin: 0 auto; background: var(--white); border-radius: 4px; border: 1px solid var(--line); overflow: hidden; }
+.absent-row { display: flex; align-items: center; gap: 14px; padding: 12px 20px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.absent-row:last-child { border-bottom: none; }
+.absent-row .aicon { color: var(--red); flex-shrink: 0; }
+.absent-row .aname { font-weight: 900; color: var(--ink); min-width: 90px; }
+.absent-row .achapter { color: var(--sub); font-size: .82rem; min-width: 60px; }
+.absent-row .anew { color: var(--gold); font-size: .78rem; font-weight: 700; }
+.absent-row .alast { color: var(--sub); font-size: .8rem; margin-left: auto; text-align: right; }
+.absent-row .alast.never { color: var(--red); font-weight: 700; }
+.all-clear { text-align: center; color: var(--gold); font-weight: 700; padding: 30px; font-size: 1.05rem; }
 </style>
 </head>
 <body>
     <div class="header-container">
         <h1>BNI大台南南區 來賓邀約排行榜</h1>
-        <p class="subtitle">｜資料來源：BNI Connect官方PALMS摘要報告｜__CHAPTERS__</p>
+        <p class="subtitle">｜資料來源：BNI Connect官方PALMS摘要報告｜__CHAPTERS__｜資料截至 __AS_OF__</p>
         <p class="subtitle-note">(預設顯示全區總排名，也可切換單一分會，選時間範圍統計該範圍內每人邀約來賓的次數，排行榜跟培訓總覽同一套邏輯)</p>
         <p class="subtitle-note">(翻轉中的分會或沒有每週進行會議的分會暫不列入計算)</p>
         <p class="subtitle-warn">如果會員發現邀約次數與您計算不同，請直接反應給執行董事</p>
@@ -118,8 +130,14 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
         <div id="rankListArea"></div>
     </div>
 
+    <div class="section">
+        <div class="section-title warn">⚠️ 沒有邀約來賓的名單</div>
+        <div class="section-sub" id="absentSub">所選時間範圍內一位來賓都沒有邀約的現任會員（含「從未邀約過」跟「有邀約過但不在這段期間」兩種）</div>
+        <div id="absentArea"></div>
+    </div>
+
     <div class="note-panel">
-        <p>資料來源：BNI Connect官方「分會 - PALMS摘要報告」，這是官方認證的準確數字（跟「地區-查看來賓」明細報表的統計口徑不同，PALMS才是官方績效指標）。每個時間範圍是教練實際匯出的官方快照，「近N個月」代表「從N個月前到現在」——時間範圍越大自然涵蓋越小的範圍，不是互斥的分段。目前只能查詢下方列出的時間節點，若需要其他月數，需要教練重新匯出對應的PALMS報表。「大台南南區全區」排名是三分會資料合併統計，若某分會沒有剛好對應到所選月數的快照，會自動改用該分會歷史最長的既有快照（例如成立不久的分會歷史比較短，會用它全部的歷史資料）。</p>
+        <p>資料來源：BNI Connect官方「分會 - PALMS摘要報告」，這是官方認證的準確數字（跟「地區-查看來賓」明細報表的統計口徑不同，PALMS才是官方績效指標）。每個時間範圍是教練實際匯出的官方快照，「近N個月」代表「從N個月前到現在」——時間範圍越大自然涵蓋越小的範圍，不是互斥的分段。目前只能查詢上方列出的時間節點，若需要其他月數，需要教練重新匯出對應的PALMS報表。「沒有邀約來賓的名單」以 BNI Connect 會員資格會期報告的現任會員為準（已離會的不列入）；標「入會 N 個月」代表他入會時間比所選期間短。「大台南南區全區」排名是三分會資料合併統計，若某分會沒有剛好對應到所選月數的快照，會自動改用該分會歷史最長的既有快照（例如成立不久的分會歷史比較短，會用它全部的歷史資料）。</p>
     </div>
 
     <div class="footer-nav">
@@ -252,10 +270,68 @@ p.subtitle-warn { color: #FF6B6B; font-size: .88rem; font-weight: 700; margin-to
             }
         }
 
+        // 分會在這次查詢實際用的月數：單一分會＝所選月數；全區＝每個分會不超過所選月數的最大快照（同 currentMembers）
+        function usedMonthsFor(chapterName) {
+            if (currentChapter !== REGION_KEY) return currentMonths;
+            const usable = CHAPTERS[chapterName].months_available.filter(m => m <= currentMonths);
+            return usable.length ? usable[usable.length - 1] : null;
+        }
+
+        function renderAbsentees() {
+            const chapters = currentChapter === REGION_KEY ? CHAPTER_NAMES : [currentChapter];
+            let roster = 0;
+            const absentees = [];
+            chapters.forEach(ch => {
+                const months = usedMonthsFor(ch);
+                if (months === null) return;
+                const data = CHAPTERS[ch];
+                const invited = new Set((data.snapshots[String(months)] || []).filter(m => m.count > 0).map(m => m.key));
+                (data.roster || []).forEach(p => {
+                    roster += 1;
+                    if (invited.has(p.key)) return;
+                    // 往更長的快照找：最近一次有邀約落在「近幾個月」內
+                    const longer = data.months_available.filter(m => m > months)
+                        .find(m => (data.snapshots[String(m)] || []).some(x => x.key === p.key && x.count > 0));
+                    absentees.push({ ...p, chapter: ch, months, longer });
+                });
+            });
+            const sub = document.getElementById('absentSub');
+            const area = document.getElementById('absentArea');
+            const windowLabel = `近${currentMonths}個月`;
+            if (roster === 0) {
+                sub.textContent = '這個分會還沒有現任會員名單';
+                area.innerHTML = '';
+                return;
+            }
+            if (absentees.length === 0) {
+                sub.textContent = `${windowLabel}內，全體 ${roster} 位會員都至少邀約過一位來賓`;
+                area.innerHTML = '<div class="all-clear">🎉 全員都有邀約，沒有人落後！</div>';
+                return;
+            }
+            // 從未邀約的排前面，其次是越久沒邀約的
+            absentees.sort((a, b) => (a.longer ? 1 : 0) - (b.longer ? 1 : 0) || (b.longer || 0) - (a.longer || 0) || a.chapter.localeCompare(b.chapter));
+            sub.textContent = `${windowLabel}內，共 ${absentees.length} / ${roster} 位現任會員沒有邀約任何來賓`;
+            area.innerHTML = '<div class="absent-list">' + absentees.map(p => {
+                const lastHtml = p.longer
+                    ? `<span class="alast">近${p.longer}個月內有邀約過</span>`
+                    : `<span class="alast never">從未有邀約紀錄</span>`;
+                const newHtml = p.tenure_months < p.months ? `<span class="anew">入會 ${p.tenure_months} 個月</span>` : '';
+                return `
+                <div class="absent-row">
+                    <span class="aicon">⚠️</span>
+                    <span class="aname">${p.name}</span>
+                    <span class="achapter">${p.chapter}</span>
+                    ${newHtml}
+                    ${lastHtml}
+                </div>`;
+            }).join('') + '</div>';
+        }
+
         function renderAll() {
             const members = currentMembers();
             renderStats(members);
             renderRanking(members);
+            renderAbsentees();
         }
 
         // 預設抓6個月門檻（跟培訓總覽index.html預設一致），沒有剛好6個月的快照就退而求其次選最接近的
