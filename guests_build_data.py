@@ -30,6 +30,7 @@ import glob
 import json
 import os
 import re
+import sqlite3
 import xml.etree.ElementTree as ET
 from datetime import date
 
@@ -42,6 +43,16 @@ OUT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "guests_data
 # 扣掉教練確認已離會、但報告還留著的人。只取姓名＋最近會齡（月），電話等個資不進公開頁
 TENURE_CSV = os.path.expanduser("~/.openclaw/workspace/claude-brain/data/bni_membership_tenure_report_2026-10-04.csv")
 DEPARTED = {"真誠": {"郭素玲", "盧尚政"}}  # 教練 2026-10-05 00:23 確認已離會
+
+# PALMS 報表只匯出到 8/31；9/1 以後的來賓，用各分會戰情表每週填的來賓名單（誰邀的）補上
+# （教練 2026-10-05：「從戰情表裡面最新的資訊，更新回來賓總表，這樣你就不用進 connect 裡面查」）。
+# 只取「邀請人→人數」，來賓姓名不進公開頁。
+GITHUB = os.path.expanduser("~/github_repos")
+DASHBOARDS = {
+    "真鑽": os.path.join(GITHUB, "zhenzuan-guests", "zhenzuan_guests.db"),
+    "真鑫": os.path.join(GITHUB, "zhenxin-guests", "zhenxin_guests.db"),
+    "真誠": os.path.join(GITHUB, "zhencheng-guests", "zhencheng_guests.db"),
+}
 
 # 各分會實際成立月（2026-09-01教練親口逐一確認+資料本身交叉驗證）。有些PALMS
 # 報表的「從」日期比分會實際成立還早（例如真鑽報表填2018-01-01，但真鑽
@@ -84,6 +95,26 @@ def months_back(date_from, date_to, chapter):
 def _key(name):
     """比對用：去掉空白、括號註記、英文名（「林佳伶 Lavi」＝「林佳伶」）。"""
     return re.sub(r"[\sA-Za-z]", "", re.sub(r"[（(].*?[）)]", "", name or ""))
+
+
+def load_dashboard_guests(chapter, after):
+    """回傳（{邀請人: 戰情表在 after 之後記的來賓數}, 戰情表最新有資料的週）；沒有這個分會的戰情表就回 ({}, None)。"""
+    path = DASHBOARDS.get(chapter)
+    if not path or not os.path.exists(path):
+        return {}, None
+    conn = sqlite3.connect("file:%s?mode=ro" % path, uri=True)
+    counts = {}
+    for inviter, n in conn.execute(
+        "SELECT inviter, COUNT(*) FROM guest_list WHERE week_date > ? AND inviter IS NOT NULL AND inviter != '' GROUP BY inviter",
+        (after,),
+    ):
+        counts[inviter] = n
+    # 最新有填資料的週（出席或早鳥或來賓任一有值），比「週次表」最後一週可靠（週次會先開好）
+    last = conn.execute(
+        "SELECT MAX(week_date) FROM weekly_data WHERE attendance IS NOT NULL OR early_bird IS NOT NULL OR guests IS NOT NULL"
+    ).fetchone()[0]
+    conn.close()
+    return counts, last
 
 
 def load_rosters():
@@ -173,8 +204,25 @@ def main():
                 if m["key"] not in roster_keys and m["key"][-1:] + m["key"][:-1] in roster_keys:
                     m["key"] = m["key"][-1:] + m["key"][:-1]
         months_available = sorted(snapshots.keys())
+        # 9/1 以後的來賓：戰情表每週填的邀請人名單，每份快照都加上（快照都是「到 8/31 為止」，加上之後就是「到最新一週為止」）
+        dash_counts, dash_last = load_dashboard_guests(chapter, latest_to[chapter])
+        extra = {}
+        roster_name = {m["key"]: m["name"] for m in rosters.get(chapter, [])}
+        for inviter, n in dash_counts.items():
+            extra[_key(inviter)] = extra.get(_key(inviter), 0) + n
+        if extra:
+            for members in snapshots.values():
+                by_key = {m["key"]: m for m in members}
+                for key, n in extra.items():
+                    if key in by_key:
+                        by_key[key]["count"] += n
+                    else:
+                        members.append({"name": roster_name.get(key, key), "key": key, "count": n})
+                members.sort(key=lambda m: (-m["count"], m["name"]))
         output["chapters"][chapter] = {
-            "as_of": latest_to[chapter],
+            "as_of": max(latest_to[chapter], dash_last or ""),
+            "palms_to": latest_to[chapter],
+            "extra_counts": extra,
             "months_available": months_available,
             "snapshots": {str(m): snapshots[m] for m in months_available},
             "roster": rosters.get(chapter, []),
@@ -185,7 +233,7 @@ def main():
 
     print(f"\n=== 完成，寫出 {OUT_PATH} ===")
     for chapter, data in output["chapters"].items():
-        print(f"  {chapter}：{len(data['months_available'])}個時間節點 {data['months_available']}，截至 {data['as_of']}，現任名單 {len(data['roster'])} 位")
+        print(f"  {chapter}：{len(data['months_available'])}個時間節點 {data['months_available']}，截至 {data['as_of']}（官方報表到 {data['palms_to']}，戰情表補 {sum(data['extra_counts'].values())} 位），現任名單 {len(data['roster'])} 位")
 
 
 if __name__ == "__main__":
