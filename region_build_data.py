@@ -362,6 +362,11 @@ def main():
         if r["name"] not in DEPARTED_MEMBERS and r["chapter"] in CHAPTER_ALLOWLIST
     ]
 
+    # 教練 2026-10-13：離會的人（不在三個戰情表在籍名單上）不留在培訓總覽，見 departed.py
+    import departed
+    _dep = departed.Filter()
+    public_records = [r for r in public_records if not _dep.departed(r["name"])]
+
     chapters = sorted(set(r["chapter"] for r in public_records if r["chapter"]))
     event_types = sorted(set(r["event_type"] for r in public_records))
     dates = sorted(r["event_date"] for r in public_records)

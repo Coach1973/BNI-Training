@@ -228,6 +228,10 @@ def main():
             "roster": rosters.get(chapter, []),
         }
 
+    # 教練 2026-10-13：離會的人（不在三個戰情表在籍名單上）不留在來賓總覽，見 departed.py
+    import departed
+    departed.filter_guests(output)
+
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
