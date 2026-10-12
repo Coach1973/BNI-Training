@@ -95,11 +95,42 @@ class Filter:
         return gone
 
 
-def filter_training(data, f=None):
-    """培訓總覽 data.json：拿掉離會者的出席紀錄與名冊。"""
+# 同一個人兩種寫法時，培訓總覽只留一個（教練 2026-10-13：「林佳伶 Lavi」就留這一個）
+MERGE_NAMES = {"林佳伶": "林佳伶 Lavi"}
+
+
+def merge_names(records):
+    """把舊寫法改成保留的寫法；合併後同一天重複的（官方報表與 MSP 名單各記一次）只留原本就用保留寫法的那筆。"""
+    keep = {(r["name"], r["event_date"]) for r in records if r["name"] in MERGE_NAMES.values()}
+    out = []
+    for r in records:
+        new = MERGE_NAMES.get(r["name"])
+        if new:
+            if (new, r["event_date"]) in keep:
+                continue
+            keep.add((new, r["event_date"]))
+            r = dict(r, name=new)
+        out.append(r)
+    return out
+
+
+def clean_training_records(records, f=None):
     f = f or Filter()
-    data["records"] = [r for r in data["records"] if not f.departed(r["name"])]
-    data["roster"] = [r for r in data["roster"] if not f.departed(r["name"])]
+    return [r for r in merge_names(records) if not f.departed(r["name"])]
+
+
+def filter_training(data, f=None):
+    """培訓總覽 data.json：拿掉離會者的出席紀錄與名冊，同人兩種寫法合併。"""
+    f = f or Filter()
+    data["records"] = clean_training_records(data["records"], f)
+    seen, roster = set(), []
+    for r in data["roster"]:
+        name = MERGE_NAMES.get(r["name"], r["name"])
+        if f.departed(name) or name in seen:
+            continue
+        seen.add(name)
+        roster.append(dict(r, name=name))
+    data["roster"] = roster
     return f
 
 
