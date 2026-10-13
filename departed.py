@@ -96,7 +96,7 @@ class Filter:
 
 
 # 同一個人兩種寫法時，培訓總覽只留一個（教練 2026-10-13：「林佳伶 Lavi」就留這一個）
-MERGE_NAMES = {"林佳伶": "林佳伶 Lavi"}
+MERGE_NAMES = {"林佳伶": "林佳伶 Lavi", "姵彤蔡": "蔡姵彤", "蔡珮彤": "蔡姵彤"}  # 蔡姵彤：教練 10/13 確認三種寫法是同一人，留戰情表的寫法
 
 
 def merge_names(records):
@@ -139,7 +139,7 @@ def filter_guests(data, f=None):
     f = f or Filter()
     for ch in data["chapters"].values():
         for months, members in ch["snapshots"].items():
-            ch["snapshots"][months] = [m for m in members if not f.departed(m["name"])]
+            ch["snapshots"][months] = [dict(m, name=MERGE_NAMES.get(m["name"], m["name"])) for m in members if not f.departed(m["name"])]
         ch["roster"] = [m for m in ch.get("roster", []) if not f.departed(m["name"])]
         ch["extra_counts"] = {k: v for k, v in ch.get("extra_counts", {}).items() if not f.departed(k)}
     return f
